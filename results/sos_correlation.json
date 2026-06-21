@@ -1,0 +1,435 @@
+{
+  "pearson_r": -0.41904752640324266,
+  "pearson_p": 0.00337075347457577,
+  "spearman_rho": -0.3774067456593032,
+  "spearman_p": 0.008917610752954745,
+  "avg_omission_high_sos": 0.3333333333333333,
+  "avg_omission_low_sos": 0.7111111111111111,
+  "hypothesis_supported": false,
+  "kill_triggered": true,
+  "triples_analyzed": [
+    {
+      "triple": [
+        "Alan_Bean",
+        "birthDate",
+        "1932-03-15"
+      ],
+      "sos": 0.4790740830759347,
+      "omission_rate": 0.0
+    },
+    {
+      "triple": [
+        "Alan_Bean",
+        "birthPlace",
+        "Wheeler, Texas"
+      ],
+      "sos": 0.28595819844850245,
+      "omission_rate": 0.0
+    },
+    {
+      "triple": [
+        "Alan_Bean",
+        "nationality",
+        "United States"
+      ],
+      "sos": 0.24216971700579992,
+      "omission_rate": 0.55
+    },
+    {
+      "triple": [
+        "Alan_Bean",
+        "occupation",
+        "Test pilot"
+      ],
+      "sos": 0.35083379629326195,
+      "omission_rate": 0.65
+    },
+    {
+      "triple": [
+        "Alan_Bean",
+        "was_selected_by_NASA",
+        "1963"
+      ],
+      "sos": 0.5225026734632645,
+      "omission_rate": 0.25
+    },
+    {
+      "triple": [
+        "Wheeler, Texas",
+        "country",
+        "United States"
+      ],
+      "sos": 0.2776783594647142,
+      "omission_rate": 0.25
+    },
+    {
+      "triple": [
+        "Wheeler, Texas",
+        "timeZone",
+        "Central Time Zone"
+      ],
+      "sos": 0.3672235769939589,
+      "omission_rate": 0.05
+    },
+    {
+      "triple": [
+        "Auburn University",
+        "city",
+        "Auburn, Alabama"
+      ],
+      "sos": 0.27404255524784116,
+      "omission_rate": 0.3
+    },
+    {
+      "triple": [
+        "Auburn University",
+        "state",
+        "Alabama"
+      ],
+      "sos": 0.27235564767559306,
+      "omission_rate": 0.9
+    },
+    {
+      "triple": [
+        "Auburn University",
+        "established",
+        "1856"
+      ],
+      "sos": 0.5422180227605192,
+      "omission_rate": 0.0
+    },
+    {
+      "triple": [
+        "Auburn University",
+        "type",
+        "Public university"
+      ],
+      "sos": 0.3535043936625514,
+      "omission_rate": 0.75
+    },
+    {
+      "triple": [
+        "Auburn, Alabama",
+        "country",
+        "United States"
+      ],
+      "sos": 0.21700315933039738,
+      "omission_rate": 0.9
+    },
+    {
+      "triple": [
+        "Auburn, Alabama",
+        "county",
+        "Lee County, Alabama"
+      ],
+      "sos": 0.3215311946458167,
+      "omission_rate": 0.65
+    },
+    {
+      "triple": [
+        "Baklava",
+        "origin",
+        "Turkey"
+      ],
+      "sos": 0.3223263064600671,
+      "omission_rate": 0.05
+    },
+    {
+      "triple": [
+        "Baklava",
+        "mainIngredient",
+        "Phyllo dough, nuts, honey"
+      ],
+      "sos": 0.40095581604898134,
+      "omission_rate": 0.35
+    },
+    {
+      "triple": [
+        "Baklava",
+        "type",
+        "Dessert"
+      ],
+      "sos": 0.45159586096353777,
+      "omission_rate": 0.9
+    },
+    {
+      "triple": [
+        "Turkey",
+        "capital",
+        "Ankara"
+      ],
+      "sos": 0.33443985072642624,
+      "omission_rate": 0.45
+    },
+    {
+      "triple": [
+        "Turkey",
+        "currency",
+        "Turkish lira"
+      ],
+      "sos": 0.36425196619393974,
+      "omission_rate": 0.65
+    },
+    {
+      "triple": [
+        "Adolfo Suarez Airport",
+        "city",
+        "Madrid"
+      ],
+      "sos": 0.3144064539902326,
+      "omission_rate": 0.45
+    },
+    {
+      "triple": [
+        "Adolfo Suarez Airport",
+        "elevation",
+        "609 meters"
+      ],
+      "sos": 0.5584377844003653,
+      "omission_rate": 0.3
+    },
+    {
+      "triple": [
+        "Madrid",
+        "country",
+        "Spain"
+      ],
+      "sos": 0.27001259197899075,
+      "omission_rate": 1.0
+    },
+    {
+      "triple": [
+        "Madrid",
+        "leaderName",
+        "Manuela Carmena"
+      ],
+      "sos": 0.3759113518759991,
+      "omission_rate": 0.45
+    },
+    {
+      "triple": [
+        "Spain",
+        "capital",
+        "Madrid"
+      ],
+      "sos": 0.31456549663655897,
+      "omission_rate": 0.7
+    },
+    {
+      "triple": [
+        "Spain",
+        "currency",
+        "Euro"
+      ],
+      "sos": 0.3489643993858028,
+      "omission_rate": 0.8
+    },
+    {
+      "triple": [
+        "Alamo Plaza",
+        "location",
+        "San Antonio, Texas"
+      ],
+      "sos": 0.309072817821762,
+      "omission_rate": 0.4
+    },
+    {
+      "triple": [
+        "Alamo Plaza",
+        "state",
+        "Texas"
+      ],
+      "sos": 0.3393768440992918,
+      "omission_rate": 0.8
+    },
+    {
+      "triple": [
+        "San Antonio, Texas",
+        "country",
+        "United States"
+      ],
+      "sos": 0.2061062980617966,
+      "omission_rate": 0.85
+    },
+    {
+      "triple": [
+        "San Antonio, Texas",
+        "mayor",
+        "Ron Nirenberg"
+      ],
+      "sos": 0.3645526598388429,
+      "omission_rate": 0.5
+    },
+    {
+      "triple": [
+        "Apple Inc",
+        "foundedBy",
+        "Steve Jobs"
+      ],
+      "sos": 0.4019636986908629,
+      "omission_rate": 0.2
+    },
+    {
+      "triple": [
+        "Apple Inc",
+        "headquarters",
+        "Cupertino, California"
+      ],
+      "sos": 0.3369514683805711,
+      "omission_rate": 0.05
+    },
+    {
+      "triple": [
+        "Apple Inc",
+        "keyPeople",
+        "Tim Cook"
+      ],
+      "sos": 0.4166539900606282,
+      "omission_rate": 0.65
+    },
+    {
+      "triple": [
+        "Cupertino, California",
+        "country",
+        "United States"
+      ],
+      "sos": 0.26073055769173104,
+      "omission_rate": 0.8
+    },
+    {
+      "triple": [
+        "Steve Jobs",
+        "birthPlace",
+        "San Francisco"
+      ],
+      "sos": 0.3604413617791603,
+      "omission_rate": 0.2
+    },
+    {
+      "triple": [
+        "Ankara",
+        "country",
+        "Turkey"
+      ],
+      "sos": 0.2827707337400144,
+      "omission_rate": 0.85
+    },
+    {
+      "triple": [
+        "Ankara",
+        "populationTotal",
+        "5747325"
+      ],
+      "sos": 0.5273506870006603,
+      "omission_rate": 0.2
+    },
+    {
+      "triple": [
+        "Turkey",
+        "memberOf",
+        "NATO"
+      ],
+      "sos": 0.3387091923835789,
+      "omission_rate": 0.55
+    },
+    {
+      "triple": [
+        "United States",
+        "memberOf",
+        "NATO"
+      ],
+      "sos": 0.3494690225891678,
+      "omission_rate": 0.8
+    },
+    {
+      "triple": [
+        "Spain",
+        "memberOf",
+        "NATO"
+      ],
+      "sos": 0.3376422588253738,
+      "omission_rate": 0.85
+    },
+    {
+      "triple": [
+        "Steve Jobs",
+        "founded",
+        "NeXT"
+      ],
+      "sos": 0.4311112777404028,
+      "omission_rate": 0.5
+    },
+    {
+      "triple": [
+        "Steve Jobs",
+        "nationality",
+        "United States"
+      ],
+      "sos": 0.29934585553644055,
+      "omission_rate": 1.0
+    },
+    {
+      "triple": [
+        "Tim Cook",
+        "education",
+        "Auburn University"
+      ],
+      "sos": 0.3809719269599734,
+      "omission_rate": 0.0
+    },
+    {
+      "triple": [
+        "Madrid",
+        "timezone",
+        "Central European Time"
+      ],
+      "sos": 0.36698712714272286,
+      "omission_rate": 0.8
+    },
+    {
+      "triple": [
+        "Spain",
+        "language",
+        "Spanish"
+      ],
+      "sos": 0.3820037779157721,
+      "omission_rate": 0.9
+    },
+    {
+      "triple": [
+        "Ankara",
+        "timezone",
+        "Turkey Time Zone"
+      ],
+      "sos": 0.3443949008424797,
+      "omission_rate": 0.95
+    },
+    {
+      "triple": [
+        "United States",
+        "capital",
+        "Washington D.C."
+      ],
+      "sos": 0.38424016240425884,
+      "omission_rate": 0.7
+    },
+    {
+      "triple": [
+        "NATO",
+        "headquarters",
+        "Brussels, Belgium"
+      ],
+      "sos": 0.3399008414745128,
+      "omission_rate": 0.45
+    },
+    {
+      "triple": [
+        "Brussels, Belgium",
+        "country",
+        "Belgium"
+      ],
+      "sos": 0.2962753466529595,
+      "omission_rate": 0.9
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Local environments and IDEs
+.vscode/
+.idea/
+venv/
+env/
+
+# Project caches & temporary files
+cache/
+.ipynb_checkpoints/
+
+# System files
+.DS_Store
+Thumbs.db

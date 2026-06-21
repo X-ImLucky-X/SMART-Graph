@@ -1,0 +1,149 @@
+{
+  "task_id": "webnlg_astronaut",
+  "input_triples": [
+    [
+      "Alan_Bean",
+      "birthDate",
+      "1932-03-15"
+    ],
+    [
+      "Alan_Bean",
+      "birthPlace",
+      "Wheeler, Texas"
+    ],
+    [
+      "Alan_Bean",
+      "nationality",
+      "United States"
+    ],
+    [
+      "Alan_Bean",
+      "occupation",
+      "Test pilot"
+    ],
+    [
+      "Alan_Bean",
+      "was_selected_by_NASA",
+      "1963"
+    ],
+    [
+      "Wheeler, Texas",
+      "country",
+      "United States"
+    ],
+    [
+      "Wheeler, Texas",
+      "timeZone",
+      "Central Time Zone"
+    ]
+  ],
+  "extracted_triples": [
+    [
+      "Alan Bean",
+      "was born on",
+      "March 15, 1932"
+    ],
+    [
+      "Alan Bean",
+      "was born in",
+      "Wheeler, Texas"
+    ],
+    [
+      "Wheeler, Texas",
+      "is located in time zone",
+      "Central Time Zone"
+    ],
+    [
+      "Wheeler, Texas",
+      "is part of the country",
+      "United States"
+    ],
+    [
+      "Alan Bean",
+      "is a national of",
+      "United States"
+    ],
+    [
+      "Alan Bean",
+      "served as",
+      "test pilot"
+    ],
+    [
+      "Alan Bean",
+      "was selected by NASA",
+      "in 1963"
+    ]
+  ],
+  "sweep": [
+    {
+      "threshold": 0.5,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.55,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.6,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.65,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.7,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.75,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.8,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.85,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.9,
+      "sdr": 0.0,
+      "coverage": 1.0,
+      "omissions_count": 0,
+      "hallucinations_count": 0
+    },
+    {
+      "threshold": 0.95,
+      "sdr": 1.1429,
+      "coverage": 0.4286,
+      "omissions_count": 4,
+      "hallucinations_count": 4
+    }
+  ]
+}

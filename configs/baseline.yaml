@@ -1,0 +1,6 @@
+# Baseline run configurations
+model: "qwen2.5:7b"
+embedding_model: "nomic-embed-text:latest"
+seed: 42
+correlation_runs: 20
+similarity_threshold: 0.75

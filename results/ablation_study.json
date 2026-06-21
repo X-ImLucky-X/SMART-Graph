@@ -1,0 +1,38 @@
+[
+  {
+    "variant": "1. Baseline",
+    "sdr": 1.4468,
+    "coverage": 0.0,
+    "aps": 0.0,
+    "omissions": 47,
+    "hallucinations": 21,
+    "runtime_seconds": 4.16
+  },
+  {
+    "variant": "2. Variant A (SOS Only)",
+    "sdr": 1.4468,
+    "coverage": 0.0,
+    "aps": 0.0,
+    "omissions": 47,
+    "hallucinations": 21,
+    "runtime_seconds": 7.93
+  },
+  {
+    "variant": "3. Variant B (SOS + ACBS)",
+    "sdr": 1.6596,
+    "coverage": 0.0,
+    "aps": 0.0,
+    "omissions": 47,
+    "hallucinations": 31,
+    "runtime_seconds": 156.89
+  },
+  {
+    "variant": "4. Full SMART-Graph",
+    "sdr": 0.4894,
+    "coverage": 0.6809,
+    "aps": 0.6667,
+    "omissions": 15,
+    "hallucinations": 8,
+    "runtime_seconds": 181.14
+  }
+]

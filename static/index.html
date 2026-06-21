@@ -1,0 +1,934 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SMART-Graph: Attention-Calibrated Graph Serialization</title>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <!-- Chart.js CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  
+  <style>
+    :root {
+      --bg-base: #0f172a;
+      --bg-surface: rgba(30, 41, 59, 0.7);
+      --bg-card: rgba(15, 23, 42, 0.6);
+      --border-color: rgba(255, 255, 255, 0.08);
+      --text-primary: #f8fafc;
+      --text-secondary: #94a3b8;
+      --accent: #8b5cf6;
+      --accent-hover: #7c3aed;
+      --accent-glow: rgba(139, 92, 246, 0.15);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: var(--bg-base);
+      color: var(--text-primary);
+      font-family: 'Inter', sans-serif;
+      line-height: 1.5;
+      overflow-x: hidden;
+      background-image: 
+        radial-gradient(at 0% 0%, rgba(139, 92, 246, 0.08) 0px, transparent 50%),
+        radial-gradient(at 100% 100%, rgba(16, 185, 129, 0.05) 0px, transparent 50%);
+      background-attachment: fixed;
+    }
+
+    header {
+      padding: 1.5rem 2rem;
+      border-bottom: 1px solid var(--border-color);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(15, 23, 42, 0.4);
+      backdrop-filter: blur(12px);
+      position: sticky;
+      top: 0;
+      z-index: 10;
+    }
+
+    .logo-container h1 {
+      font-size: 1.25rem;
+      font-weight: 700;
+      letter-spacing: -0.025em;
+      background: linear-gradient(to right, #a78bfa, #34d399);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    .logo-container p {
+      font-size: 0.75rem;
+      color: var(--text-secondary);
+    }
+
+    .container {
+      display: grid;
+      grid-template-columns: 320px 1fr 400px;
+      gap: 1.5rem;
+      padding: 1.5rem;
+      max-width: 1600px;
+      margin: 0 auto;
+      height: calc(100vh - 80px);
+    }
+
+    @media (max-width: 1200px) {
+      .container {
+        grid-template-columns: 1fr;
+        height: auto;
+      }
+    }
+
+    .panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border-color);
+      border-radius: 16px;
+      backdrop-filter: blur(16px);
+      display: flex;
+      flex-direction: column;
+      overflow: hidden;
+      box-shadow: 0 4px 30px rgba(0, 0, 0, 0.2);
+    }
+
+    .panel-header {
+      padding: 1rem 1.25rem;
+      border-bottom: 1px solid var(--border-color);
+      font-weight: 600;
+      font-size: 0.9rem;
+      letter-spacing: 0.05em;
+      text-transform: uppercase;
+      color: var(--text-secondary);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: rgba(30, 41, 59, 0.3);
+    }
+
+    .panel-content {
+      padding: 1.25rem;
+      overflow-y: auto;
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      gap: 1.25rem;
+    }
+
+    /* Form Elements */
+    .form-group {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    label {
+      font-size: 0.8rem;
+      font-weight: 500;
+      color: var(--text-secondary);
+    }
+
+    select, input, textarea {
+      width: 100%;
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem;
+      color: var(--text-primary);
+      font-family: inherit;
+      font-size: 0.875rem;
+      transition: all 0.2s;
+    }
+
+    select:focus, input:focus, textarea:focus {
+      outline: none;
+      border-color: var(--accent);
+      box-shadow: 0 0 0 3px var(--accent-glow);
+    }
+
+    .slider-container {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+    }
+
+    .slider-val {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.85rem;
+      min-width: 32px;
+      text-align: right;
+    }
+
+    .btn {
+      background: var(--accent);
+      color: white;
+      border: none;
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-weight: 600;
+      font-size: 0.875rem;
+      cursor: pointer;
+      transition: all 0.2s;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    .btn:hover {
+      background: var(--accent-hover);
+    }
+
+    .btn-secondary {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border-color);
+    }
+
+    .btn-secondary:hover {
+      background: rgba(255, 255, 255, 0.1);
+    }
+
+    .btn:disabled {
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    /* Triple Cards */
+    .triple-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem;
+      font-size: 0.8rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.25rem;
+      position: relative;
+    }
+
+    .triple-header {
+      display: flex;
+      justify-content: space-between;
+      font-size: 0.7rem;
+      color: var(--text-secondary);
+    }
+
+    .triple-content {
+      font-family: 'JetBrains Mono', monospace;
+      display: flex;
+      gap: 0.5rem;
+      flex-wrap: wrap;
+    }
+
+    .triple-part {
+      background: rgba(255, 255, 255, 0.04);
+      padding: 0.15rem 0.4rem;
+      border-radius: 4px;
+    }
+
+    .outlier-badge {
+      padding: 0.1rem 0.3rem;
+      border-radius: 4px;
+      font-size: 0.65rem;
+      font-weight: 600;
+    }
+
+    .outlier-high {
+      background: rgba(239, 68, 68, 0.15);
+      color: var(--danger);
+      border: 1px solid rgba(239, 68, 68, 0.3);
+    }
+
+    .outlier-low {
+      background: rgba(16, 185, 129, 0.15);
+      color: var(--success);
+      border: 1px solid rgba(16, 185, 129, 0.3);
+    }
+
+    /* Pipeline Step Box */
+    .step-box {
+      border: 1px dashed var(--border-color);
+      border-radius: 12px;
+      padding: 1rem;
+      display: flex;
+      flex-direction: column;
+      gap: 0.75rem;
+      background: rgba(255, 255, 255, 0.01);
+    }
+
+    .step-title {
+      font-size: 0.8rem;
+      font-weight: 600;
+      color: var(--accent);
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    /* Output text block */
+    .text-output {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 1rem;
+      font-size: 0.9rem;
+      white-space: pre-wrap;
+      color: #e2e8f0;
+      max-height: 200px;
+      overflow-y: auto;
+    }
+
+    /* Bipartite mapping layout */
+    .alignment-map {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+    }
+
+    .align-item {
+      display: grid;
+      grid-template-columns: 1fr 40px 1fr;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.75rem;
+    }
+
+    .align-arrow {
+      text-align: center;
+      color: var(--accent);
+      font-weight: bold;
+    }
+
+    .align-card {
+      background: rgba(255, 255, 255, 0.02);
+      border: 1px solid var(--border-color);
+      padding: 0.5rem;
+      border-radius: 6px;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+    }
+
+    .align-matched {
+      border-left: 3px solid var(--success);
+    }
+
+    .align-omitted {
+      border-left: 3px solid var(--danger);
+      opacity: 0.7;
+    }
+
+    .align-hallucinated {
+      border-left: 3px solid var(--warning);
+    }
+
+    /* Metrics Grid */
+    .metrics-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 0.75rem;
+    }
+
+    .metric-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border-color);
+      border-radius: 8px;
+      padding: 0.75rem;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .metric-val {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    .metric-lbl {
+      font-size: 0.65rem;
+      color: var(--text-secondary);
+      text-transform: uppercase;
+      margin-top: 0.25rem;
+      text-align: center;
+    }
+
+    /* Tabs */
+    .tabs {
+      display: flex;
+      border-bottom: 1px solid var(--border-color);
+      gap: 1rem;
+      margin-bottom: 0.5rem;
+    }
+
+    .tab {
+      padding: 0.5rem 0;
+      color: var(--text-secondary);
+      font-size: 0.85rem;
+      font-weight: 500;
+      cursor: pointer;
+      border-bottom: 2px solid transparent;
+      transition: all 0.2s;
+    }
+
+    .tab.active {
+      color: var(--accent);
+      border-bottom-color: var(--accent);
+    }
+
+    .tab-content {
+      display: none;
+      flex-direction: column;
+      gap: 1rem;
+      flex: 1;
+    }
+
+    .tab-content.active {
+      display: flex;
+    }
+
+    /* Scrollbar */
+    ::-webkit-scrollbar {
+      width: 6px;
+      height: 6px;
+    }
+    ::-webkit-scrollbar-track {
+      background: transparent;
+    }
+    ::-webkit-scrollbar-thumb {
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 3px;
+    }
+    ::-webkit-scrollbar-thumb:hover {
+      background: rgba(255, 255, 255, 0.2);
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="logo-container">
+      <h1>SMART-Graph Dashboard</h1>
+      <p>Attention-Calibrated Graph Serialization for Reducing Semantic Divergence</p>
+    </div>
+    <div style="font-size: 0.8rem; color: var(--text-secondary); font-family: 'JetBrains Mono', monospace;" id="status-bar">
+      Local Environment Active
+    </div>
+  </header>
+
+  <div class="container">
+    
+    <!-- LEFT PANEL: Controls -->
+    <div class="panel">
+      <div class="panel-header">Pipeline Controls</div>
+      <div class="panel-content">
+        
+        <div class="form-group">
+          <label for="model-select">Local LLM Model</label>
+          <select id="model-select">
+            <option value="qwen2.5:7b">qwen2.5:7b</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label>Max Cluster Size (K)</label>
+          <div class="slider-container">
+            <input type="range" id="size-slider" min="3" max="15" value="8">
+            <span class="slider-val" id="size-val">8</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>Vulnerability Budget (B)</label>
+          <div class="slider-container">
+            <input type="range" id="budget-slider" min="0.5" max="3.0" step="0.1" value="1.5">
+            <span class="slider-val" id="budget-val">1.5</span>
+          </div>
+        </div>
+
+        <div class="form-group">
+          <label>SMGA Soft Match Threshold</label>
+          <div class="slider-container">
+            <input type="range" id="threshold-slider" min="0.5" max="0.95" step="0.05" value="0.75">
+            <span class="slider-val" id="threshold-val">0.75</span>
+          </div>
+        </div>
+
+        <hr style="border: 0; border-top: 1px solid var(--border-color);">
+
+        <button class="btn" id="btn-process">Process Input Graph</button>
+        <button class="btn btn-secondary" id="btn-correlation">Run SOS Correlation</button>
+        <button class="btn btn-secondary" id="btn-ablation">Run Ablation Study</button>
+        <button class="btn btn-secondary" id="btn-benchmark">Run Benchmark Suite</button>
+
+      </div>
+    </div>
+
+    <!-- MIDDLE PANEL: Workspace -->
+    <div class="panel">
+      <div class="panel-header">
+        <span>Workspace &amp; Pipeline</span>
+        <span style="font-size: 0.75rem; color: var(--accent); font-family: 'JetBrains Mono', monospace;" id="elapsed-time"></span>
+      </div>
+      <div class="panel-content">
+        
+        <div class="tabs">
+          <div class="tab active" data-tab="tab-input">Input Graph</div>
+          <div class="tab" data-tab="tab-pipeline">Step-by-Step Flow</div>
+          <div class="tab" data-tab="tab-text">Final Text</div>
+        </div>
+
+        <!-- Tab 1: Input -->
+        <div class="tab-content active" id="tab-input">
+          <div class="form-group" style="flex: 1; display: flex; flex-direction: column;">
+            <label for="triples-input">Raw Graph Triples (JSON array)</label>
+            <textarea id="triples-input" style="flex: 1; font-family: 'JetBrains Mono', monospace; font-size: 0.75rem; resize: none;"></textarea>
+          </div>
+          <div style="display: flex; gap: 0.5rem;">
+            <button class="btn btn-secondary" style="flex: 1;" id="btn-load-small">Load Native Small</button>
+            <button class="btn btn-secondary" style="flex: 1;" id="btn-load-large">Load Synthetic Large</button>
+          </div>
+        </div>
+
+        <!-- Tab 2: Pipeline Steps -->
+        <div class="tab-content" id="tab-pipeline">
+          
+          <div class="step-box">
+            <div class="step-title"><span>1.</span> SOS Outlier Profiling</div>
+            <div id="pipeline-sos-list" style="display: grid; grid-template-columns: 1fr 1fr; gap: 0.5rem; max-height: 150px; overflow-y: auto;">
+              <div style="font-size: 0.75rem; color: var(--text-secondary); grid-column: span 2;">Process graph first...</div>
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-title"><span>2.</span> ACBS Budget-Constrained Partitions</div>
+            <div id="pipeline-partitions" style="display: flex; flex-direction: column; gap: 0.5rem; max-height: 150px; overflow-y: auto;">
+              <div style="font-size: 0.75rem; color: var(--text-secondary);">Process graph first...</div>
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-title"><span>3.</span> V-Shaped Prompt Serializations</div>
+            <div id="pipeline-serialization" style="font-family: 'JetBrains Mono', monospace; font-size: 0.7rem; color: var(--text-secondary); max-height: 120px; overflow-y: auto; background: rgba(0,0,0,0.2); padding: 0.5rem; border-radius: 6px;">
+              Process graph first...
+            </div>
+          </div>
+
+          <div class="step-box">
+            <div class="step-title"><span>4.</span> Soft-Match Bipartite Alignments</div>
+            <div id="pipeline-alignment" class="alignment-map" style="max-height: 150px; overflow-y: auto;">
+              <div style="font-size: 0.75rem; color: var(--text-secondary);">Process graph first...</div>
+            </div>
+          </div>
+
+        </div>
+
+        <!-- Tab 3: Final text -->
+        <div class="tab-content" id="tab-text">
+          <div class="form-group">
+            <label>Synthesized Output Document</label>
+            <div class="text-output" id="final-text-container" style="height: 350px; max-height: none;">Run pipeline to generate document...</div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- RIGHT PANEL: Results -->
+    <div class="panel">
+      <div class="panel-header">Evaluation Analytics</div>
+      <div class="panel-content">
+        
+        <div class="tabs" id="right-tabs">
+          <div class="tab active" data-tab="tab-metrics">Metrics</div>
+          <div class="tab" data-tab="tab-charts">Research Plots</div>
+        </div>
+
+        <!-- Right Tab 1: Metrics -->
+        <div class="tab-content active" id="tab-metrics">
+          <div class="metrics-grid">
+            <div class="metric-card" style="grid-column: span 2; border-color: var(--accent);">
+              <div class="metric-val" id="val-sdr">--</div>
+              <div class="metric-lbl">Semantic Divergence Rate (SDR)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val" id="val-coverage">--</div>
+              <div class="metric-lbl">Fact Coverage</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val" id="val-aps">--</div>
+              <div class="metric-lbl">Attention Protection (APS)</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val" id="val-omissions">--</div>
+              <div class="metric-lbl">Omitted Facts</div>
+            </div>
+            <div class="metric-card">
+              <div class="metric-val" id="val-hallucinations">--</div>
+              <div class="metric-lbl">Hallucinations</div>
+            </div>
+          </div>
+
+          <div style="flex: 1; display: flex; flex-direction: column; gap: 0.5rem; background: rgba(0,0,0,0.15); border: 1px solid var(--border-color); border-radius: 8px; padding: 0.75rem;">
+            <label style="font-weight: 600;">Cost &amp; Cache Diagnostics</label>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem; margin-top: 0.25rem;">
+              <span class="text-secondary">Embedding Requests:</span>
+              <span id="diag-emb">--</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+              <span class="text-secondary">Embed Cache Hits:</span>
+              <span id="diag-hits">--</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+              <span class="text-secondary">Cache Hit Rate:</span>
+              <span id="diag-rate">--</span>
+            </div>
+            <div style="display: flex; justify-content: space-between; font-size: 0.75rem;">
+              <span class="text-secondary">Generation LLM Calls:</span>
+              <span id="diag-gen">--</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- Right Tab 2: Charts -->
+        <div class="tab-content" id="tab-charts">
+          <div style="width: 100%; height: 180px; position: relative;">
+            <canvas id="chart-main"></canvas>
+          </div>
+          <div style="width: 100%; height: 180px; position: relative; margin-top: 1rem;">
+            <canvas id="chart-secondary"></canvas>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <script>
+    // Config values
+    let currentChart1 = null;
+    let currentChart2 = null;
+
+    // Default template graphs
+    const sampleSmall = [
+      ["Baklava", "origin", "Turkey"],
+      ["Baklava", "mainIngredient", "Phyllo dough, nuts, honey"],
+      ["Baklava", "type", "Dessert"],
+      ["Turkey", "capital", "Ankara"],
+      ["Turkey", "currency", "Turkish lira"],
+      ["Ankara", "country", "Turkey"],
+      ["Ankara", "populationTotal", "5747325"]
+    ];
+
+    const sampleLarge = [
+      ["Alan_Bean", "birthDate", "1932-03-15"],
+      ["Alan_Bean", "birthPlace", "Wheeler, Texas"],
+      ["Alan_Bean", "nationality", "United States"],
+      ["Alan_Bean", "occupation", "Test pilot"],
+      ["Alan_Bean", "was_selected_by_NASA", "1963"],
+      ["Wheeler, Texas", "country", "United States"],
+      ["Wheeler, Texas", "timeZone", "Central Time Zone"],
+      ["Auburn University", "city", "Auburn, Alabama"],
+      ["Auburn University", "state", "Alabama"],
+      ["Auburn University", "established", "1856"],
+      ["Auburn University", "type", "Public university"],
+      ["Auburn, Alabama", "country", "United States"],
+      ["Auburn, Alabama", "county", "Lee County, Alabama"],
+      ["Baklava", "origin", "Turkey"],
+      ["Baklava", "mainIngredient", "Phyllo dough, nuts, honey"],
+      ["Baklava", "type", "Dessert"],
+      ["Turkey", "capital", "Ankara"],
+      ["Turkey", "currency", "Turkish lira"],
+      ["Adolfo Suarez Airport", "city", "Madrid"],
+      ["Adolfo Suarez Airport", "elevation", "609 meters"],
+      ["Madrid", "country", "Spain"],
+      ["Madrid", "leaderName", "Manuela Carmena"],
+      ["Spain", "capital", "Madrid"],
+      ["Spain", "currency", "Euro"],
+      ["Alamo Plaza", "location", "San Antonio, Texas"],
+      ["Alamo Plaza", "state", "Texas"],
+      ["San Antonio, Texas", "country", "United States"],
+      ["San Antonio, Texas", "mayor", "Ron Nirenberg"],
+      ["Apple Inc", "foundedBy", "Steve Jobs"],
+      ["Apple Inc", "headquarters", "Cupertino, California"],
+      ["Apple Inc", "keyPeople", "Tim Cook"],
+      ["Cupertino, California", "country", "United States"],
+      ["Steve Jobs", "birthPlace", "San Francisco"],
+      ["Ankara", "country", "Turkey"],
+      ["Ankara", "populationTotal", "5747325"],
+      ["Turkey", "memberOf", "NATO"],
+      ["United States", "memberOf", "NATO"],
+      ["Spain", "memberOf", "NATO"],
+      ["Steve Jobs", "founded", "NeXT"],
+      ["Steve Jobs", "nationality", "United States"],
+      ["Tim Cook", "education", "Auburn University"],
+      ["Madrid", "timezone", "Central European Time"],
+      ["Spain", "language", "Spanish"],
+      ["Ankara", "timezone", "Turkey Time Zone"],
+      ["United States", "capital", "Washington D.C."],
+      ["NATO", "headquarters", "Brussels, Belgium"],
+      ["Brussels, Belgium", "country", "Belgium"]
+    ];
+
+    // Sliders
+    document.getElementById('size-slider').addEventListener('input', e => {
+      document.getElementById('size-val').innerText = e.target.value;
+    });
+    document.getElementById('budget-slider').addEventListener('input', e => {
+      document.getElementById('budget-val').innerText = e.target.value;
+    });
+    document.getElementById('threshold-slider').addEventListener('input', e => {
+      document.getElementById('threshold-val').innerText = e.target.value;
+    });
+
+    // Tab switcher
+    document.querySelectorAll('.tab').forEach(tab => {
+      tab.addEventListener('click', () => {
+        const container = tab.parentElement.nextElementSibling;
+        tab.parentElement.querySelectorAll('.tab').forEach(t => t.classList.remove('active'));
+        tab.classList.add('active');
+        
+        const tabId = tab.getAttribute('data-tab');
+        const contents = tab.parentElement.parentElement.querySelectorAll('.tab-content');
+        contents.forEach(c => {
+          if (c.id === tabId) {
+            c.classList.add('active');
+          } else {
+            c.classList.remove('active');
+          }
+        });
+      });
+    });
+
+    // Load templates
+    document.getElementById('btn-load-small').addEventListener('click', () => {
+      document.getElementById('triples-input').value = JSON.stringify(sampleSmall, null, 2);
+    });
+    document.getElementById('btn-load-large').addEventListener('click', () => {
+      document.getElementById('triples-input').value = JSON.stringify(sampleLarge, null, 2);
+    });
+
+    // Load models
+    async function loadModels() {
+      try {
+        const res = await fetch('/api/models');
+        const data = await res.json();
+        const select = document.getElementById('model-select');
+        select.innerHTML = '';
+        data.models.forEach(m => {
+          const opt = document.createElement('option');
+          opt.value = m;
+          opt.innerText = m;
+          select.appendChild(opt);
+        });
+      } catch (err) {
+        console.error("Failed to load models list", err);
+      }
+    }
+
+    // Process custom input
+    document.getElementById('btn-process').addEventListener('click', async () => {
+      const triplesInput = document.getElementById('triples-input').value;
+      if (!triplesInput.trim()) {
+        alert("Please load or enter a JSON triple list first!");
+        return;
+      }
+      
+      let triples;
+      try {
+        triples = JSON.parse(triplesInput);
+      } catch (e) {
+        alert("Invalid JSON format in triples text area!");
+        return;
+      }
+
+      const btn = document.getElementById('btn-process');
+      btn.disabled = true;
+      btn.innerText = "Processing...";
+      
+      const payload = {
+        triples: triples,
+        model: document.getElementById('model-select').value,
+        max_cluster_size: parseInt(document.getElementById('size-slider').value),
+        vulnerability_budget: parseFloat(document.getElementById('budget-slider').value),
+        similarity_threshold: parseFloat(document.getElementById('threshold-slider').value)
+      };
+
+      try {
+        const start = performance.now();
+        const res = await fetch('/api/process', {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify(payload)
+        });
+        const elapsed = ((performance.now() - start) / 1000).toFixed(2);
+        document.getElementById('elapsed-time').innerText = `Elapsed: ${elapsed}s`;
+
+        const data = await res.json();
+        
+        // Show text tab
+        document.querySelector('[data-tab="tab-text"]').click();
+        document.getElementById('final-text-container').innerText = data.synthesized_text;
+
+        // Render metrics
+        document.getElementById('val-sdr').innerText = data.metrics.semantic_divergence_rate.toFixed(4);
+        document.getElementById('val-coverage').innerText = `${(data.metrics.coverage * 100).toFixed(1)}%`;
+        document.getElementById('val-aps').innerText = `${(data.metrics.attention_protection_score * 100).toFixed(1)}%`;
+        document.getElementById('val-omissions').innerText = data.metrics.omissions_count;
+        document.getElementById('val-hallucinations').innerText = data.metrics.hallucinations_count;
+
+        // Diagnostics
+        document.getElementById('diag-emb').innerText = data.cost.embedding_calls;
+        document.getElementById('diag-hits').innerText = data.cost.cache_hits;
+        document.getElementById('diag-rate').innerText = `${(data.cost.cache_hit_rate * 100).toFixed(1)}%`;
+        document.getElementById('diag-gen').innerText = data.cost.generation_calls;
+
+        // Render pipeline steps
+        renderPipeline(data);
+        
+      } catch (err) {
+        alert("Execution failed: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerText = "Process Input Graph";
+      }
+    });
+
+    function renderPipeline(data) {
+      // 1. SOS list
+      const sosList = document.getElementById('pipeline-sos-list');
+      sosList.innerHTML = '';
+      data.sos_scores.forEach((score, idx) => {
+        const t = data.triples[idx];
+        const isHigh = score > 0.45;
+        const card = document.createElement('div');
+        card.className = 'triple-card';
+        card.innerHTML = `
+          <div class="triple-header">
+            <span>Triple #${idx+1}</span>
+            <span class="outlier-badge ${isHigh ? 'outlier-high' : 'outlier-low'}">SOS: ${score.toFixed(3)}</span>
+          </div>
+          <div class="triple-content">
+            <span class="triple-part">${t[0]}</span>
+            <span style="color:var(--accent)">${t[1]}</span>
+            <span class="triple-part">${t[2]}</span>
+          </div>
+        `;
+        sosList.appendChild(card);
+      });
+
+      // 2. Partitions
+      const partitionsDiv = document.getElementById('pipeline-partitions');
+      partitionsDiv.innerHTML = '';
+      data.partitions.forEach((c, idx) => {
+        const box = document.createElement('div');
+        box.className = 'step-box';
+        box.style.borderStyle = 'solid';
+        box.innerHTML = `
+          <div style="font-weight:600; font-size:0.75rem;">Cluster #${idx+1} (${c.length} triples)</div>
+          <div style="display:flex; flex-direction:column; gap:0.25rem;">
+            ${c.map(t => `<div style="font-size:0.7rem; font-family:'JetBrains Mono',monospace;">- ${t[0]} | ${t[1]} | ${t[2]}</div>`).join('')}
+          </div>
+        `;
+        partitionsDiv.appendChild(box);
+      });
+
+      // 3. Serialization
+      const serialDiv = document.getElementById('pipeline-serialization');
+      serialDiv.innerHTML = '';
+      data.partitions.forEach((c, idx) => {
+        serialDiv.innerHTML += `<strong>Cluster ${idx+1} U-Arrangement:</strong><br>`;
+        c.forEach((t, tIdx) => {
+          serialDiv.innerHTML += `  [Position ${tIdx+1}]: ${t[0]} - ${t[1]} - ${t[2]}<br>`;
+        });
+        serialDiv.innerHTML += `<br>`;
+      });
+
+      // 4. Alignment
+      const alignDiv = document.getElementById('pipeline-alignment');
+      alignDiv.innerHTML = '';
+      data.alignments.matched_pairs.forEach(pair => {
+        const item = document.createElement('div');
+        item.className = 'align-item';
+        item.innerHTML = `
+          <div class="align-card align-matched" title="${pair.input_triple.join(' | ')}">${pair.input_triple.join(' | ')}</div>
+          <div class="align-arrow">↔</div>
+          <div class="align-card align-matched" title="${pair.extracted_triple.join(' | ')}">${pair.extracted_triple.join(' | ')}</div>
+        `;
+        alignDiv.appendChild(item);
+      });
+
+      data.alignments.omitted_triples.forEach(t => {
+        const item = document.createElement('div');
+        item.className = 'align-item';
+        item.innerHTML = `
+          <div class="align-card align-omitted" title="${t.join(' | ')}">${t.join(' | ')}</div>
+          <div class="align-arrow" style="color:var(--danger)">∅</div>
+          <div class="align-card align-omitted" style="color:var(--danger)">OMITTED</div>
+        `;
+        alignDiv.appendChild(item);
+      });
+
+      data.alignments.hallucinated_triples.forEach(t => {
+        const item = document.createElement('div');
+        item.className = 'align-item';
+        item.innerHTML = `
+          <div class="align-card align-hallucinated" style="color:var(--warning)">HALLUCINATION</div>
+          <div class="align-arrow" style="color:var(--warning)">+</div>
+          <div class="align-card align-hallucinated" title="${t.join(' | ')}">${t.join(' | ')}</div>
+        `;
+        alignDiv.appendChild(item);
+      });
+    }
+
+    // Run study buttons wrapper
+    async function runStudyRoute(endpoint, buttonId) {
+      const btn = document.getElementById(buttonId);
+      const originalText = btn.innerText;
+      btn.disabled = true;
+      btn.innerText = "Running Study...";
+      
+      try {
+        const res = await fetch(endpoint, { method: 'POST' });
+        const data = await res.json();
+        alert(`${originalText} complete! Check console or analytics tabs.`);
+        console.log(data);
+      } catch (err) {
+        alert("Failed: " + err.message);
+      } finally {
+        btn.disabled = false;
+        btn.innerText = originalText;
+      }
+    }
+
+    document.getElementById('btn-correlation').addEventListener('click', () => {
+      runStudyRoute('/api/correlation', 'btn-correlation');
+    });
+
+    document.getElementById('btn-ablation').addEventListener('click', () => {
+      runStudyRoute('/api/ablation', 'btn-ablation');
+    });
+
+    document.getElementById('btn-benchmark').addEventListener('click', () => {
+      runStudyRoute('/api/benchmark', 'btn-benchmark');
+    });
+
+    // On Load
+    window.addEventListener('load', () => {
+      loadModels();
+      document.getElementById('btn-load-small').click();
+    });
+  </script>
+</body>
+</html>

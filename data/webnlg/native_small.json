@@ -1,0 +1,203 @@
+[
+  {
+    "id": "webnlg_astronaut",
+    "category": "Astronaut",
+    "triples": [
+      [
+        "Alan_Bean",
+        "birthDate",
+        "1932-03-15"
+      ],
+      [
+        "Alan_Bean",
+        "birthPlace",
+        "Wheeler, Texas"
+      ],
+      [
+        "Alan_Bean",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Alan_Bean",
+        "occupation",
+        "Test pilot"
+      ],
+      [
+        "Alan_Bean",
+        "was_selected_by_NASA",
+        "1963"
+      ],
+      [
+        "Wheeler, Texas",
+        "country",
+        "United States"
+      ],
+      [
+        "Wheeler, Texas",
+        "timeZone",
+        "Central Time Zone"
+      ]
+    ]
+  },
+  {
+    "id": "webnlg_university",
+    "category": "University",
+    "triples": [
+      [
+        "Auburn University",
+        "city",
+        "Auburn, Alabama"
+      ],
+      [
+        "Auburn University",
+        "state",
+        "Alabama"
+      ],
+      [
+        "Auburn University",
+        "established",
+        "1856"
+      ],
+      [
+        "Auburn University",
+        "type",
+        "Public university"
+      ],
+      [
+        "Auburn, Alabama",
+        "country",
+        "United States"
+      ],
+      [
+        "Auburn, Alabama",
+        "county",
+        "Lee County, Alabama"
+      ]
+    ]
+  },
+  {
+    "id": "webnlg_food",
+    "category": "Food",
+    "triples": [
+      [
+        "Baklava",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "mainIngredient",
+        "Phyllo dough, nuts, honey"
+      ],
+      [
+        "Baklava",
+        "type",
+        "Dessert"
+      ],
+      [
+        "Turkey",
+        "capital",
+        "Ankara"
+      ],
+      [
+        "Turkey",
+        "currency",
+        "Turkish lira"
+      ]
+    ]
+  },
+  {
+    "id": "webnlg_airport",
+    "category": "Airport",
+    "triples": [
+      [
+        "Adolfo Suarez Airport",
+        "city",
+        "Madrid"
+      ],
+      [
+        "Adolfo Suarez Airport",
+        "elevation",
+        "609 meters"
+      ],
+      [
+        "Madrid",
+        "country",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "leaderName",
+        "Manuela Carmena"
+      ],
+      [
+        "Spain",
+        "capital",
+        "Madrid"
+      ],
+      [
+        "Spain",
+        "currency",
+        "Euro"
+      ]
+    ]
+  },
+  {
+    "id": "webnlg_monument",
+    "category": "Monument",
+    "triples": [
+      [
+        "Alamo Plaza",
+        "location",
+        "San Antonio, Texas"
+      ],
+      [
+        "Alamo Plaza",
+        "state",
+        "Texas"
+      ],
+      [
+        "San Antonio, Texas",
+        "country",
+        "United States"
+      ],
+      [
+        "San Antonio, Texas",
+        "mayor",
+        "Ron Nirenberg"
+      ]
+    ]
+  },
+  {
+    "id": "webnlg_company",
+    "category": "Company",
+    "triples": [
+      [
+        "Apple Inc",
+        "foundedBy",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc",
+        "headquarters",
+        "Cupertino, California"
+      ],
+      [
+        "Apple Inc",
+        "keyPeople",
+        "Tim Cook"
+      ],
+      [
+        "Cupertino, California",
+        "country",
+        "United States"
+      ],
+      [
+        "Steve Jobs",
+        "birthPlace",
+        "San Francisco"
+      ]
+    ]
+  }
+]

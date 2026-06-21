@@ -1,0 +1,8 @@
+# SMART-Graph run configurations
+model: "qwen2.5:7b"
+embedding_model: "nomic-embed-text:latest"
+seed: 42
+max_cluster_size: 8
+vulnerability_budget: 1.5
+similarity_threshold: 0.75
+correlation_runs: 20

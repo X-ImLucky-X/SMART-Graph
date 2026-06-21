@@ -1,0 +1,56 @@
+<svg viewBox="0 0 1000 450" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" style="background:#13151a; font-family:'Inter', sans-serif;">
+      <!-- Title -->
+      <text x="500" y="35" text-anchor="middle" font-size="20" font-weight="bold" fill="#f8fafc">SMART-Graph Performance &amp; Attention Analysis</text>
+      
+      <!-- Chart 1: SDR vs Scale -->
+      <g transform="translate(80, 80)">
+        <text x="200" y="-15" text-anchor="middle" font-size="14" font-weight="bold" fill="#94a3b8">Semantic Divergence Rate (SDR) vs Graph Scale</text>
+        <!-- Axes -->
+        <line x1="0" y1="280" x2="380" y2="280" stroke="#475569" stroke-width="1.5" />
+        <line x1="0" y1="0" x2="0" y2="280" stroke="#475569" stroke-width="1.5" />
+        <!-- Axis Labels -->
+        <text x="190" y="315" text-anchor="middle" font-size="11" fill="#94a3b8">Graph Size (Triple Count)</text>
+        <text x="-45" y="140" text-anchor="middle" font-size="11" fill="#94a3b8" transform="rotate(-90 -45 140)">SDR Score</text>
+        
+        <!-- Y Gridlines and ticks -->
+        <line x1="0" y1="0" x2="380" y2="0" stroke="#334155" stroke-dasharray="4" />
+        <text x="-10" y="5" text-anchor="end" font-size="10" fill="#64748b">1.0</text>
+        <line x1="0" y1="140" x2="380" y2="140" stroke="#334155" stroke-dasharray="4" />
+        <text x="-10" y="145" text-anchor="end" font-size="10" fill="#64748b">0.5</text>
+        <text x="-10" y="285" text-anchor="end" font-size="10" fill="#64748b">0.0</text>
+    <line x1="20.0" y1="280" x2="20.0" y2="285" stroke="#475569" /><text x="20.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">4</text><line x1="27.906976744186046" y1="280" x2="27.906976744186046" y2="285" stroke="#475569" /><text x="27.906976744186046" y="298" text-anchor="middle" font-size="9" fill="#64748b">5</text><line x1="35.81395348837209" y1="280" x2="35.81395348837209" y2="285" stroke="#475569" /><text x="35.81395348837209" y="298" text-anchor="middle" font-size="9" fill="#64748b">6</text><line x1="43.72093023255814" y1="280" x2="43.72093023255814" y2="285" stroke="#475569" /><text x="43.72093023255814" y="298" text-anchor="middle" font-size="9" fill="#64748b">7</text><line x1="59.53488372093023" y1="280" x2="59.53488372093023" y2="285" stroke="#475569" /><text x="59.53488372093023" y="298" text-anchor="middle" font-size="9" fill="#64748b">9</text><line x1="75.34883720930233" y1="280" x2="75.34883720930233" y2="285" stroke="#475569" /><text x="75.34883720930233" y="298" text-anchor="middle" font-size="9" fill="#64748b">11</text><line x1="91.16279069767442" y1="280" x2="91.16279069767442" y2="285" stroke="#475569" /><text x="91.16279069767442" y="298" text-anchor="middle" font-size="9" fill="#64748b">13</text><line x1="360.0" y1="280" x2="360.0" y2="285" stroke="#475569" /><text x="360.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">47</text><circle cx="20.0" cy="0.0" r="3.5" fill="#ef4444" /><circle cx="27.9" cy="112.0" r="3.5" fill="#ef4444" /><circle cx="35.8" cy="93.3" r="3.5" fill="#ef4444" /><circle cx="43.7" cy="240.0" r="3.5" fill="#ef4444" /><circle cx="59.5" cy="186.7" r="3.5" fill="#ef4444" /><circle cx="75.3" cy="229.1" r="3.5" fill="#ef4444" /><circle cx="91.2" cy="193.8" r="3.5" fill="#ef4444" /><circle cx="360.0" cy="137.0" r="3.5" fill="#ef4444" /><path d="M20.0,0.0 L27.9,112.0 L35.8,93.3 L43.7,240.0 L59.5,186.7 L75.3,229.1 L91.2,193.8 L360.0,137.0 " fill="none" stroke="#ef4444" stroke-width="2.5" /><circle cx="20.0" cy="0.0" r="3.5" fill="#f97316" /><circle cx="27.9" cy="140.0" r="3.5" fill="#f97316" /><circle cx="35.8" cy="210.0" r="3.5" fill="#f97316" /><circle cx="43.7" cy="160.0" r="3.5" fill="#f97316" /><circle cx="59.5" cy="155.6" r="3.5" fill="#f97316" /><circle cx="75.3" cy="203.6" r="3.5" fill="#f97316" /><circle cx="91.2" cy="150.8" r="3.5" fill="#f97316" /><circle cx="360.0" cy="131.1" r="3.5" fill="#f97316" /><path d="M20.0,0.0 L27.9,140.0 L35.8,210.0 L43.7,160.0 L59.5,155.6 L75.3,203.6 L91.2,150.8 L360.0,131.1 " fill="none" stroke="#f97316" stroke-width="2.5" /><circle cx="20.0" cy="0.0" r="3.5" fill="#3b82f6" /><circle cx="27.9" cy="-56.0" r="3.5" fill="#3b82f6" /><circle cx="35.8" cy="70.0" r="3.5" fill="#3b82f6" /><circle cx="43.7" cy="120.0" r="3.5" fill="#3b82f6" /><circle cx="59.5" cy="248.9" r="3.5" fill="#3b82f6" /><circle cx="75.3" cy="203.6" r="3.5" fill="#3b82f6" /><circle cx="91.2" cy="150.8" r="3.5" fill="#3b82f6" /><circle cx="360.0" cy="148.9" r="3.5" fill="#3b82f6" /><path d="M20.0,0.0 L27.9,-56.0 L35.8,70.0 L43.7,120.0 L59.5,248.9 L75.3,203.6 L91.2,150.8 L360.0,148.9 " fill="none" stroke="#3b82f6" stroke-width="2.5" /><circle cx="20.0" cy="-56.0" r="3.5" fill="#10b981" /><circle cx="27.9" cy="112.0" r="3.5" fill="#10b981" /><circle cx="35.8" cy="163.3" r="3.5" fill="#10b981" /><circle cx="43.7" cy="160.0" r="3.5" fill="#10b981" /><circle cx="59.5" cy="62.2" r="3.5" fill="#10b981" /><circle cx="75.3" cy="-56.0" r="3.5" fill="#10b981" /><circle cx="91.2" cy="172.3" r="3.5" fill="#10b981" /><circle cx="360.0" cy="166.8" r="3.5" fill="#10b981" /><path d="M20.0,-56.0 L27.9,112.0 L35.8,163.3 L43.7,160.0 L59.5,62.2 L75.3,-56.0 L91.2,172.3 L360.0,166.8 " fill="none" stroke="#10b981" stroke-width="2.5" />
+      </g>
+      <!-- Chart 2: Attention Curve -->
+      <g transform="translate(560, 80)">
+        <text x="200" y="-15" text-anchor="middle" font-size="14" font-weight="bold" fill="#94a3b8">Fact Retention vs Serialized Position</text>
+        <!-- Axes -->
+        <line x1="0" y1="280" x2="380" y2="280" stroke="#475569" stroke-width="1.5" />
+        <line x1="0" y1="0" x2="0" y2="280" stroke="#475569" stroke-width="1.5" />
+        <!-- Axis Labels -->
+        <text x="190" y="315" text-anchor="middle" font-size="11" fill="#94a3b8">Relative Position in Prompt (0.0 = Start, 1.0 = End)</text>
+        <text x="-45" y="140" text-anchor="middle" font-size="11" fill="#94a3b8" transform="rotate(-90 -45 140)">Retention Rate (%)</text>
+        
+        <!-- Y Gridlines and ticks -->
+        <line x1="0" y1="0" x2="380" y2="0" stroke="#334155" stroke-dasharray="4" />
+        <text x="-10" y="5" text-anchor="end" font-size="10" fill="#64748b">100%</text>
+        <line x1="0" y1="140" x2="380" y2="140" stroke="#334155" stroke-dasharray="4" />
+        <text x="-10" y="145" text-anchor="end" font-size="10" fill="#64748b">50%</text>
+        <text x="-10" y="285" text-anchor="end" font-size="10" fill="#64748b">0%</text>
+    <line x1="0.0" y1="280" x2="0.0" y2="285" stroke="#475569" /><text x="0.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">0.00</text><line x1="95.0" y1="280" x2="95.0" y2="285" stroke="#475569" /><text x="95.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">0.25</text><line x1="190.0" y1="280" x2="190.0" y2="285" stroke="#475569" /><text x="190.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">0.50</text><line x1="285.0" y1="280" x2="285.0" y2="285" stroke="#475569" /><text x="285.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">0.75</text><line x1="380.0" y1="280" x2="380.0" y2="285" stroke="#475569" /><text x="380.0" y="298" text-anchor="middle" font-size="9" fill="#64748b">1.00</text><circle cx="38.0" cy="93.3" r="3.5" fill="#ef4444" /><circle cx="114.0" cy="105.0" r="3.5" fill="#ef4444" /><circle cx="190.0" cy="60.9" r="3.5" fill="#ef4444" /><circle cx="266.0" cy="70.0" r="3.5" fill="#ef4444" /><circle cx="342.0" cy="93.3" r="3.5" fill="#ef4444" /><path d="M38.0,93.3 L114.0,105.0 L190.0,60.9 L266.0,70.0 L342.0,93.3 " fill="none" stroke="#ef4444" stroke-width="2.5" /><circle cx="38.0" cy="51.9" r="3.5" fill="#f97316" /><circle cx="114.0" cy="58.3" r="3.5" fill="#f97316" /><circle cx="190.0" cy="121.7" r="3.5" fill="#f97316" /><circle cx="266.0" cy="58.3" r="3.5" fill="#f97316" /><circle cx="342.0" cy="72.6" r="3.5" fill="#f97316" /><path d="M38.0,51.9 L114.0,58.3 L190.0,121.7 L266.0,58.3 L342.0,72.6 " fill="none" stroke="#f97316" stroke-width="2.5" /><circle cx="38.0" cy="31.1" r="3.5" fill="#3b82f6" /><circle cx="114.0" cy="46.7" r="3.5" fill="#3b82f6" /><circle cx="190.0" cy="73.0" r="3.5" fill="#3b82f6" /><circle cx="266.0" cy="58.3" r="3.5" fill="#3b82f6" /><circle cx="342.0" cy="103.7" r="3.5" fill="#3b82f6" /><path d="M38.0,31.1 L114.0,46.7 L190.0,73.0 L266.0,58.3 L342.0,103.7 " fill="none" stroke="#3b82f6" stroke-width="2.5" /><circle cx="38.0" cy="41.5" r="3.5" fill="#10b981" /><circle cx="114.0" cy="23.3" r="3.5" fill="#10b981" /><circle cx="190.0" cy="48.7" r="3.5" fill="#10b981" /><circle cx="266.0" cy="93.3" r="3.5" fill="#10b981" /><circle cx="342.0" cy="83.0" r="3.5" fill="#10b981" /><path d="M38.0,41.5 L114.0,23.3 L190.0,48.7 L266.0,93.3 L342.0,83.0 " fill="none" stroke="#10b981" stroke-width="2.5" />
+      </g>
+      <!-- Legend -->
+      <g transform="translate(250, 415)">
+        <rect x="0" y="0" width="12" height="12" fill="#ef4444" rx="2" />
+        <text x="18" y="10" font-size="11" fill="#f1f5f9">Baseline A (Flat)</text>
+        
+        <rect x="135" y="0" width="12" height="12" fill="#f97316" rx="2" />
+        <text x="153" y="10" font-size="11" fill="#f1f5f9">Baseline B (Random)</text>
+        
+        <rect x="290" y="0" width="12" height="12" fill="#3b82f6" rx="2" />
+        <text x="308" y="10" font-size="11" fill="#f1f5f9">Baseline D (Community)</text>
+        
+        <rect x="450" y="0" width="12" height="12" fill="#10b981" rx="2" />
+        <text x="468" y="10" font-size="11" fill="#f1f5f9">SMART-Graph (ACBS)</text>
+      </g>
+    </svg>
+    
