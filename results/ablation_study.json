@@ -1,38 +1,38 @@
 [
   {
     "variant": "1. Baseline",
-    "sdr": 1.4468,
+    "sdr": 1.4043,
     "coverage": 0.0,
     "aps": 0.0,
     "omissions": 47,
-    "hallucinations": 21,
-    "runtime_seconds": 4.16
+    "hallucinations": 19,
+    "runtime_seconds": 4.03
   },
   {
     "variant": "2. Variant A (SOS Only)",
-    "sdr": 1.4468,
+    "sdr": 1.4255,
     "coverage": 0.0,
     "aps": 0.0,
     "omissions": 47,
-    "hallucinations": 21,
-    "runtime_seconds": 7.93
+    "hallucinations": 20,
+    "runtime_seconds": 5.07
   },
   {
     "variant": "3. Variant B (SOS + ACBS)",
-    "sdr": 1.6596,
+    "sdr": 1.6809,
     "coverage": 0.0,
     "aps": 0.0,
     "omissions": 47,
-    "hallucinations": 31,
-    "runtime_seconds": 156.89
+    "hallucinations": 32,
+    "runtime_seconds": 137.54
   },
   {
     "variant": "4. Full SMART-Graph",
-    "sdr": 0.4894,
-    "coverage": 0.6809,
-    "aps": 0.6667,
-    "omissions": 15,
-    "hallucinations": 8,
-    "runtime_seconds": 181.14
+    "sdr": 0.5319,
+    "coverage": 0.5745,
+    "aps": 0.5556,
+    "omissions": 20,
+    "hallucinations": 5,
+    "runtime_seconds": 149.36
   }
 ]
