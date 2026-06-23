@@ -44,7 +44,9 @@ SMART-Graph
 
 ### 2.1 Semantic Outlier Score (SOS) Profiling
 To compute the risk profile of each triple $t_i$ in a graph $G$, we calculate its cosine distance from the global narrative centroid $\vec{C}$, scaled by a literal value multiplier:
+
 $$SOS(t_i) = \left( 1 - \cos(\vec{t}_i, \vec{C}) \right) \times \left(1 + \delta(t_i)\right)$$
+
 $$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or dates} \\\\ 0 & \text{otherwise} \end{cases}$$
 
 ### 2.2 Attention-Calibrated Boundary Stratification (ACBS)
@@ -54,11 +56,14 @@ We decompose the global graph using a greedy, neighborhood-expanding traversal o
   $$\sum_{t \in \text{cluster}} SOS(t) \le \mathcal{B}$$
 
 Each cluster is serialized in a **U-shape** layout, placing high-SOS triples at the primacy (start) and recency (end) of the context window:
+
 $$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd-highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th-highest}}, t_{\text{2nd-highest}}]$$
 
 ### 2.3 Soft-Match Graph Alignment (SMGA)
 Exact string matching (set difference) fails to account for phrasing shifts (e.g. "Apple Inc" vs "Apple"). We build a dense similarity matrix between input and extracted triples and use the **Hungarian Bipartite Matching Algorithm** to find the optimal 1-to-1 alignments:
+
 $$\max \sum_{(i,j) \in \text{Matches}} \cos(\vec{t}_i, \vec{t}_j) \quad \text{s.t. } \cos(\vec{t}_i, \vec{t}_j) \ge \tau$$
+
 where $\tau$ is the similarity threshold (default $0.75$).
 
 ---

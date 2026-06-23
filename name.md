@@ -23,10 +23,13 @@ SMART-Graph
 
 ### 1.1 Semantic Outlier Score (SOS) Profiling
 To identify which triples in a global graph $G$ are most vulnerable to context omission, we compute their semantic distance from the global narrative centroid $\vec{C}$. Given a set of triples $T$, the centroid vector is:
+
 $$\vec{C} = \frac{1}{|T|} \sum_{t_i \in T} \text{embed}(t_i)$$
 
 The $SOS$ for any individual triple $t_i$ is its cosine distance from the centroid, scaled by a literal complexity penalty $\delta(t_i)$:
+
 $$SOS(t_i) = \left( 1 - \cos(\vec{t}_i, \vec{C}) \right) \times \left(1 + \delta(t_i)\right)$$
+
 $$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or numeric dates} \\\\ 0 & \text{otherwise} \end{cases}$$
 
 ### 1.2 Attention-Calibrated Boundary Stratification (ACBS)
@@ -36,11 +39,14 @@ Triples are partitioned into subgraphs using a greedy, neighborhood-expanding tr
    $$\sum_{t \in \text{cluster}} SOS(t) \le \mathcal{B}$$
 
 Once a cluster is formed, triples are sorted by $SOS$ and distributed in a **U-shape** across the prompt window, mapping the highest-risk facts to the primacy and recency boundaries where attention remains near 100%:
+
 $$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd-highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th-highest}}, t_{\text{2nd-highest}}]$$
 
 ### 1.3 Soft-Match Graph Alignment (SMGA)
 To evaluate fact retention without string matching sensitivities (such as "Apple Inc" vs "Apple"), we construct a weighted bipartite graph between input triples ($T_{\text{input}}$) and extracted triples ($T_{\text{extracted}}$). Edges represent cosine similarities of their nomic embeddings. We apply the **Hungarian Algorithm** (`linear_sum_assignment`) to find the optimal 1-to-1 matchings:
+
 $$\max \sum_{(i,j) \in \text{Matches}} \cos(\vec{t}_i, \vec{t}_j) \quad \text{s.t. } \cos(\vec{t}_i, \vec{t}_j) \ge \tau$$
+
 where $\tau$ is the soft-match threshold (default $0.75$).
 
 ---
