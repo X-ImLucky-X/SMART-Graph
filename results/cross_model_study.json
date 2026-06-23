@@ -1,11 +1,11 @@
 {
   "model_statistics": {
     "qwen2.5:7b": {
-      "t_statistic": -2.0112284198392576,
-      "p_value": 0.1819839658183335,
-      "cohens_d": -1.1611832695960211,
-      "sdr_baseline_mean": 0.3133333333333333,
-      "sdr_smart_mean": 0.46690000000000004
+      "t_statistic": -1.0886247679335397,
+      "p_value": 0.39001885609443276,
+      "cohens_d": -0.628517802812923,
+      "sdr_baseline_mean": 0.27276666666666666,
+      "sdr_smart_mean": 0.3909
     },
     "llama3:latest": {
       "t_statistic": 4.899871841254951,
@@ -28,23 +28,23 @@
         "graph_name": "WebNLG_Astronaut",
         "scale": 7,
         "mode": "baseline_a",
-        "sdr": 0.1429,
-        "coverage": 0.8571,
+        "sdr": 0.0,
+        "coverage": 1.0,
         "aps": 1.0,
-        "omissions": 1,
+        "omissions": 0,
         "hallucinations": 0,
-        "runtime_seconds": 1.98
+        "runtime_seconds": 2.59
       },
       {
         "graph_name": "WebNLG_Astronaut",
         "scale": 7,
         "mode": "smart_graph",
-        "sdr": 0.4286,
+        "sdr": 0.2857,
         "coverage": 0.8571,
         "aps": 1.0,
         "omissions": 1,
-        "hallucinations": 2,
-        "runtime_seconds": 2.51
+        "hallucinations": 1,
+        "runtime_seconds": 3.8
       },
       {
         "graph_name": "WebNLG_Combined_0",
@@ -55,40 +55,40 @@
         "aps": 1.0,
         "omissions": 4,
         "hallucinations": 0,
-        "runtime_seconds": 3.1
+        "runtime_seconds": 4.23
       },
       {
         "graph_name": "WebNLG_Combined_0",
         "scale": 13,
         "mode": "smart_graph",
         "sdr": 0.4615,
-        "coverage": 0.7692,
+        "coverage": 0.8462,
         "aps": 1.0,
-        "omissions": 3,
-        "hallucinations": 3,
-        "runtime_seconds": 17.4
+        "omissions": 2,
+        "hallucinations": 4,
+        "runtime_seconds": 19.0
       },
       {
         "graph_name": "Synthetic_Chained_Large",
         "scale": 47,
         "mode": "baseline_a",
-        "sdr": 0.4894,
-        "coverage": 0.5532,
-        "aps": 0.7778,
-        "omissions": 21,
-        "hallucinations": 2,
-        "runtime_seconds": 9.4
+        "sdr": 0.5106,
+        "coverage": 0.4894,
+        "aps": 0.5556,
+        "omissions": 24,
+        "hallucinations": 0,
+        "runtime_seconds": 10.42
       },
       {
         "graph_name": "Synthetic_Chained_Large",
         "scale": 47,
         "mode": "smart_graph",
-        "sdr": 0.5106,
-        "coverage": 0.5532,
-        "aps": 0.3333,
-        "omissions": 21,
+        "sdr": 0.4255,
+        "coverage": 0.6383,
+        "aps": 0.6667,
+        "omissions": 17,
         "hallucinations": 3,
-        "runtime_seconds": 198.56
+        "runtime_seconds": 183.16
       }
     ],
     "llama3:latest": [
@@ -101,7 +101,7 @@
         "aps": 1.0,
         "omissions": 1,
         "hallucinations": 2,
-        "runtime_seconds": 9.1
+        "runtime_seconds": 12.6
       },
       {
         "graph_name": "WebNLG_Astronaut",
@@ -112,7 +112,7 @@
         "aps": 1.0,
         "omissions": 1,
         "hallucinations": 1,
-        "runtime_seconds": 2.58
+        "runtime_seconds": 1.84
       },
       {
         "graph_name": "WebNLG_Combined_0",
@@ -123,7 +123,7 @@
         "aps": 0.5,
         "omissions": 6,
         "hallucinations": 1,
-        "runtime_seconds": 4.11
+        "runtime_seconds": 2.5
       },
       {
         "graph_name": "WebNLG_Combined_0",
@@ -134,7 +134,7 @@
         "aps": 1.0,
         "omissions": 3,
         "hallucinations": 3,
-        "runtime_seconds": 27.98
+        "runtime_seconds": 12.39
       },
       {
         "graph_name": "Synthetic_Chained_Large",
@@ -145,7 +145,7 @@
         "aps": 0.6667,
         "omissions": 29,
         "hallucinations": 0,
-        "runtime_seconds": 7.92
+        "runtime_seconds": 4.31
       },
       {
         "graph_name": "Synthetic_Chained_Large",
@@ -156,7 +156,7 @@
         "aps": 0.6667,
         "omissions": 25,
         "hallucinations": 0,
-        "runtime_seconds": 184.78
+        "runtime_seconds": 88.02
       }
     ],
     "gemma:latest": [
@@ -169,7 +169,7 @@
         "aps": 1.0,
         "omissions": 3,
         "hallucinations": 2,
-        "runtime_seconds": 15.04
+        "runtime_seconds": 18.89
       },
       {
         "graph_name": "WebNLG_Astronaut",
@@ -180,7 +180,7 @@
         "aps": 1.0,
         "omissions": 1,
         "hallucinations": 0,
-        "runtime_seconds": 4.41
+        "runtime_seconds": 4.44
       },
       {
         "graph_name": "WebNLG_Combined_0",
@@ -191,7 +191,7 @@
         "aps": 1.0,
         "omissions": 6,
         "hallucinations": 1,
-        "runtime_seconds": 7.66
+        "runtime_seconds": 6.12
       },
       {
         "graph_name": "WebNLG_Combined_0",
@@ -202,7 +202,7 @@
         "aps": 0.5,
         "omissions": 5,
         "hallucinations": 1,
-        "runtime_seconds": 22.82
+        "runtime_seconds": 21.27
       },
       {
         "graph_name": "Synthetic_Chained_Large",
@@ -213,7 +213,7 @@
         "aps": 0.5556,
         "omissions": 35,
         "hallucinations": 0,
-        "runtime_seconds": 12.6
+        "runtime_seconds": 11.79
       },
       {
         "graph_name": "Synthetic_Chained_Large",
@@ -224,7 +224,7 @@
         "aps": 0.4444,
         "omissions": 27,
         "hallucinations": 1,
-        "runtime_seconds": 142.22
+        "runtime_seconds": 134.38
       }
     ]
   }

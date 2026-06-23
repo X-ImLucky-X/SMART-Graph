@@ -1,6 +1,8 @@
 # SMART-Graph 🧠🕸️
 ### Attention-Calibrated Graph Serialization for Reducing Semantic Divergence in Long-Context Data-to-Text Generation
 
+> **SMART-Graph reduces long-context factual coverage collapse from 30.88% to 52.94% on 70-triple graphs (+71.4% relative coverage improvement).**
+
 ---
 
 [![Python 3.11+](https://img.shields.io/badge/python-3.11+-blue.svg)](https://www.python.org/)
@@ -19,7 +21,7 @@ By decomposing large input graphs into semantically cohesive subgraphs and seria
 In long-context generation, transformers display an inherent primacy and recency bias. Facts buried in the middle of a massive context window are routinely dropped by the attention layers, leading to high omission rates.
 
 ### The Pack-Dilution & Outlier Isolation Effects
-Through our empirical correlation studies, we discovered two opposing semantic phenomena:
+Through our empirical correlation studies, we observed two opposing semantic phenomena:
 1. **Pack-Dilution**: Semantically close facts (in-liers) are naturally packed by the LLM into complex compound sentences. The vector embeddings of these compound sentences dilute the individual factual representations, making them highly susceptible to matching failures.
 2. **Outlier Isolation**: Semantically distant facts (outliers) stand out contextually. The LLM is forced to write simple, isolated sentences for them, preserving their semantic similarity to the source triples and protecting them from omission.
 
@@ -63,15 +65,15 @@ where $\tau$ is the similarity threshold (default $0.75$).
 
 ## 3. Empirical Research Findings
 
-All metrics were evaluated using `qwen2.5:7b` (generation & extraction) and `nomic-embed-text` (embeddings) running on a Windows 10 host equipped with an `Intel i7-12650H` CPU and `16 GB` of RAM.
+All metrics were evaluated using `qwen2.5:7b` (generation & extraction) and `nomic-embed-text` (embeddings) running locally on a GPU-enabled host.
 
-### 3.1 SOS Omission Correlation ($H_1$ Validation)
+### 3.1 SOS Omission Correlation (Supporting evidence for the Outlier Isolation hypothesis)
 We ran flat sequential prompting across 20 trials on our 47-triple synthetic chained graph:
 - **Pearson Correlation ($r$)**: **`-0.4190`** ($p = 0.0033$, highly statistically significant)
 - **Spearman Correlation ($\rho$)**: **`-0.3774`** ($p = 0.0089$)
-- **High-SOS Outliers Omission Rate**: **`33.33%`** (high retention)
-- **Low-SOS In-liers Omission Rate**: **`71.11%`** (high omission due to pack-dilution)
-- *Conclusion*: Outlier scores strongly correlate with omissions, proving that in-liers are highly vulnerable to conflation-driven omissions under flat prompting.
+- **High-SOS Outliers Omission Rate**: **`33.33%`** (indicating high retention)
+- **Low-SOS In-liers Omission Rate**: **`71.11%`** (indicating high omission due to pack-dilution)
+- *Conclusion*: Outlier scores exhibit a significant negative correlation with omissions, indicating that in-liers are highly vulnerable to conflation-driven omissions under flat prompting, whereas outliers are isolated into dedicated, simpler sentences.
 
 ### 3.2 Ablation Study
 Tested on our 47-triple synthetic chained graph to assess individual component gains:
@@ -101,7 +103,8 @@ Aggregated over 10 graphs of sizes from 4 to 47 triples with $95\%$ Confidence I
 .
 ├── configs/
 │   ├── baseline.yaml               # Flat baseline run config
-│   └── smart_graph.yaml            # SMART-Graph ACBS + SMGA parameters
+│   ├── smart_graph.yaml            # SMART-Graph ACBS + SMGA parameters
+│   └── final_paper_config.yaml     # Frozen optimal hyperparameter settings
 ├── data/
 │   ├── webnlg/                     # Native WebNLG data files
 │   └── generated_large/            # Synthetic connected long graphs (40-70 triples)
@@ -113,7 +116,8 @@ Aggregated over 10 graphs of sizes from 4 to 47 triples with $95\%$ Confidence I
 │   └── risks.md                    # Research risk register and early kill criteria
 ├── utils/
 │   ├── hardware.py                 # System signature utility
-│   └── vector_engine.py            # Local embeddings and SOS computations
+│   ├── vector_engine.py            # Local embeddings and SOS computations
+│   └── compile_latex.py            # LaTeX manuscript table compiler
 ├── clustering/
 │   └── acbs_engine.py              # ACBS engine (SOS, budgeting, U-shape sorting)
 ├── evaluators/
@@ -123,15 +127,27 @@ Aggregated over 10 graphs of sizes from 4 to 47 triples with $95\%$ Confidence I
 │   ├── runs/                       # Local experiment logs (run_XXX.json)
 │   ├── ablation.py                 # Ablation matrix evaluator
 │   ├── threshold_sweep.py          # Parametric sweep of soft-match thresholds
-│   └── sos_correlation.py          # Primary correlation study (SOS vs Omissions)
+│   ├── sos_correlation.py          # Primary correlation study (SOS vs Omissions)
+│   ├── large_graph_study.py        # Scaling study across large graph contexts
+│   ├── cross_model_study.py        # Generalizability study on Qwen/Llama/Gemma
+│   ├── sentence_isolation_study.py # Outlier Isolation vs Pack-Dilution test
+│   ├── grid_search.py              # Parameter sweeps for Pareto frontiers
+│   └── verify_reproducibility.py   # Clean-cache replication verification script
 ├── results/                        # Exported research assets
 │   ├── sos_correlation.json        # Output of the correlation study
 │   ├── threshold_sweep.json        # Output of the threshold sweep
 │   ├── ablation_study.json         # Output of the ablation matrix
 │   ├── benchmark.csv               # Raw benchmark runs data
 │   ├── benchmark.svg               # SVG plots (SDR vs Scale, Attention Curve)
+│   ├── grid_search.json            # Pareto frontier optimization database
+│   ├── pareto_frontier.svg         # Visual plot of the Pareto frontier
+│   ├── latex_tables.tex            # Auto-generated publication-ready LaTeX tables
 │   └── report.md                   # Auto-generated LaTeX-ready research report
+├── paper/                          # Academic manuscript draft directory
 ├── run_benchmark.py                # Comprehensive scaling benchmark suite
+├── run_all_experiments.py          # Master runner for the entire pipeline
+├── reproducibility.md              # Detailed environment and setup guides
+├── requirements.txt                # Project dependency list
 └── app.py                          # FastAPI backend service
 ```
 
@@ -148,21 +164,20 @@ ollama pull nomic-embed-text
 
 Install python dependencies:
 ```bash
-pip install numpy scipy networkx pyyaml uvicorn fastapi
+pip install -r requirements.txt
 ```
 
 ### 5.2 Running the Code
 
-1. **Reconstruct Datasets**:
+1. **Execute All Experiments (Sequential Pipeline)**:
    ```bash
-   python data/build_datasets.py
+   python run_all_experiments.py
    ```
 
-2. **Execute Experiments**:
-   - Run SOS Correlation study: `python experiments/sos_correlation.py`
-   - Run Threshold Sweep: `python experiments/threshold_sweep.py`
-   - Run Ablation Study: `python experiments/ablation.py`
-   - Run Scaling Benchmarks: `python run_benchmark.py`
+2. **Verify Reproducibility (Clean Cache)**:
+   ```bash
+   python experiments/verify_reproducibility.py
+   ```
 
 3. **Launch the Dashboard**:
    ```bash

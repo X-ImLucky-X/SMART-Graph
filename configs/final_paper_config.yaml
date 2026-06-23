@@ -1,0 +1,7 @@
+# SMART-Graph Final frozen hyperparameter configuration for the academic paper
+model: "qwen2.5:7b"
+embedding_model: "nomic-embed-text:latest"
+seed: 42
+max_cluster_size: 8            # Optimal K from Pareto sweep
+vulnerability_budget: 2.0      # Optimal budget B from Pareto sweep
+similarity_threshold: 0.75     # Similarity matching threshold

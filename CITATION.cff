@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this research asset, please cite it as below."
+authors:
+  - family-names: "Lakshmanan"
+    given-names: "Developer"
+title: "SMART-Graph: Attention-Calibrated Graph Serialization for Reducing Semantic Divergence in Long-Context Data-to-Text Generation"
+version: 1.0.0
+date-released: 2026-06-24
+url: "https://github.com/X-ImLucky-X/SMART-Graph"
+repository-code: "https://github.com/X-ImLucky-X/SMART-Graph"
+keywords:
+  - graph serialization
+  - data-to-text
+  - long-context llms
+  - lost-in-the-middle
+  - soft-match alignment
+  - hungarian algorithm
+license: MIT
