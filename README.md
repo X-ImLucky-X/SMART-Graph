@@ -45,7 +45,7 @@ SMART-Graph
 ### 2.1 Semantic Outlier Score (SOS) Profiling
 To compute the risk profile of each triple $t_i$ in a graph $G$, we calculate its cosine distance from the global narrative centroid $\vec{C}$, scaled by a literal value multiplier:
 $$SOS(t_i) = \left( 1 - \cos(\vec{t}_i, \vec{C}) \right) \times \left(1 + \delta(t_i)\right)$$
-$$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or dates} \\ 0 & \text{otherwise} \end{cases}$$
+$$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or dates} \\\\ 0 & \text{otherwise} \end{cases}$$
 
 ### 2.2 Attention-Calibrated Boundary Stratification (ACBS)
 We decompose the global graph using a greedy, neighborhood-expanding traversal on the semantic relation graph (where nodes are triples sharing entities). Expansion is bounded by:

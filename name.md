@@ -27,7 +27,7 @@ $$\vec{C} = \frac{1}{|T|} \sum_{t_i \in T} \text{embed}(t_i)$$
 
 The $SOS$ for any individual triple $t_i$ is its cosine distance from the centroid, scaled by a literal complexity penalty $\delta(t_i)$:
 $$SOS(t_i) = \left( 1 - \cos(\vec{t}_i, \vec{C}) \right) \times \left(1 + \delta(t_i)\right)$$
-$$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or numeric dates} \\ 0 & \text{otherwise} \end{cases}$$
+$$\delta(t_i) = \begin{cases} 0.5 & \text{if } t_i \text{ contains digits or numeric dates} \\\\ 0 & \text{otherwise} \end{cases}$$
 
 ### 1.2 Attention-Calibrated Boundary Stratification (ACBS)
 Triples are partitioned into subgraphs using a greedy, neighborhood-expanding traversal on the semantic relation graph (where nodes are triples sharing entities). Expansion is strictly bound by:
