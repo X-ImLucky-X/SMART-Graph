@@ -1,0 +1,55 @@
+% ==================================================================
+% AUTO-GENERATED ACADEMIC TABLES FOR SMART-GRAPH MANUSCRIPT
+% ==================================================================
+
+
+\begin{table}[t]
+\centering
+\caption{Cross-Model Generality Analysis (Baseline vs. SMART-Graph)}
+\label{tab:cross_model}
+\begin{tabular}{lccccc}
+\toprule
+\textbf{Model} & \textbf{Baseline SDR} & \textbf{SMART SDR} & \textbf{$t$-stat} & \textbf{$p$-value} & \textbf{Cohen's $d$} \\
+\midrule
+qwen2.5:7b & 0.3133 & 0.4669 & -2.0112 & 0.1820 & \mathbf{-1.1612} \\
+llama3:latest & 0.5280 & 0.4264 & 4.8999 & \mathbf{0.0392} & \mathbf{2.8289} \\
+gemma:latest & 0.6658 & 0.4000 & 1.7237 & 0.2269 & \mathbf{0.9952} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table*}[t]
+\centering
+\caption{Large Graph Scaling Benchmarks (Fact Coverage \% / Semantic Divergence Rate)}
+\label{tab:large_graph}
+\begin{tabular}{ccccc}
+\toprule
+\textbf{Scale (Triples)} & \textbf{Flat Seq. (A)} & \textbf{Flat Random (B)} & \textbf{Modularity (D)} & \textbf{SMART-Graph (Ours)} \\
+\midrule
+40 & 60.00\% / 0.4250 & 57.50\% / 0.4500 & \mathbf{80.00\%} / \mathbf{0.2750} & 65.00\% / 0.4750 \\
+50 & 36.73\% / 0.6531 & 40.82\% / \mathbf{0.6122} & 36.73\% / 0.6735 & \mathbf{51.02\%} / 0.6735 \\
+60 & 41.38\% / \mathbf{0.5862} & 39.66\% / 0.6034 & 32.76\% / 0.6724 & \mathbf{46.55\%} / 0.7069 \\
+70 & 30.88\% / 0.7059 & 44.12\% / 0.5882 & \mathbf{61.76\%} / \mathbf{0.4412} & 52.94\% / 0.5000 \\
+\bottomrule
+\end{tabular}
+\end{table*}
+
+
+
+\begin{table}[t]
+\centering
+\caption{Pareto-Optimal Hyperparameter Configurations (Coverage vs. SDR)}
+\label{tab:pareto_frontier}
+\begin{tabular}{ccccc}
+\toprule
+\textbf{Config ($K, \mathcal{B}$)} & \textbf{Avg. Coverage} & \textbf{Avg. SDR} & \textbf{Avg. APS} & \textbf{Avg. Runtime (s)} \\
+\midrule
+($K=8$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 9.48s \\
+($K=10$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 0.00s \\
+($K=12$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 0.00s \\
+\bottomrule
+\end{tabular}
+\end{table}
+

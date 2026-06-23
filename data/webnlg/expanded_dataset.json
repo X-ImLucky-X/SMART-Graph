@@ -1,0 +1,3252 @@
+[
+  {
+    "id": "graph_expanded_001",
+    "scale": 7,
+    "triples": [
+      [
+        "Yuri Gagarin",
+        "birthDate",
+        "1862-01-01"
+      ],
+      [
+        "Yuri Gagarin",
+        "birthPlace",
+        "New York"
+      ],
+      [
+        "Yuri Gagarin",
+        "nationality",
+        "Japan"
+      ],
+      [
+        "Yuri Gagarin",
+        "occupation",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Yuri Gagarin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_2"
+      ],
+      [
+        "Amsterdam",
+        "relatedTo",
+        "Value_City_9"
+      ],
+      [
+        "Buzz Aldrin",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_002",
+    "scale": 10,
+    "triples": [
+      [
+        "Heathrow Airport",
+        "city",
+        "New York"
+      ],
+      [
+        "Heathrow Airport",
+        "elevation",
+        "Value_Airport_4"
+      ],
+      [
+        "Heathrow Airport",
+        "hubFor",
+        "Value_Airport_9"
+      ],
+      [
+        "Chris Hadfield",
+        "birthDate",
+        "1806-01-01"
+      ],
+      [
+        "Chris Hadfield",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Chris Hadfield",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Chris Hadfield",
+        "occupation",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Chris Hadfield",
+        "was_selected_by_NASA",
+        "Value_Astronaut_9"
+      ],
+      [
+        "CDG Airport",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Neil Armstrong",
+        "countryOfOrigin",
+        "United States"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_003",
+    "scale": 4,
+    "triples": [
+      [
+        "Eiffel Tower",
+        "location",
+        "New York"
+      ],
+      [
+        "Eiffel Tower",
+        "state",
+        "Value_Monument_7"
+      ],
+      [
+        "Eiffel Tower",
+        "established",
+        "1887-01-01"
+      ],
+      [
+        "Taj Mahal",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_004",
+    "scale": 5,
+    "triples": [
+      [
+        "Harvard University",
+        "city",
+        "London"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_7"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1824-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_6"
+      ],
+      [
+        "MIT",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_005",
+    "scale": 10,
+    "triples": [
+      [
+        "Croissant",
+        "origin",
+        "Japan"
+      ],
+      [
+        "Croissant",
+        "mainIngredient",
+        "Value_Food_9"
+      ],
+      [
+        "Croissant",
+        "type",
+        "Value_Food_2"
+      ],
+      [
+        "Sally Ride",
+        "birthDate",
+        "1820-01-01"
+      ],
+      [
+        "Sally Ride",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Sally Ride",
+        "nationality",
+        "Japan"
+      ],
+      [
+        "Sally Ride",
+        "occupation",
+        "Value_Astronaut_5"
+      ],
+      [
+        "Sally Ride",
+        "was_selected_by_NASA",
+        "Value_Astronaut_10"
+      ],
+      [
+        "Taco",
+        "countryOfOrigin",
+        "Japan"
+      ],
+      [
+        "Chris Hadfield",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_006",
+    "scale": 4,
+    "triples": [
+      [
+        "Microsoft",
+        "foundedBy",
+        "Value_Company_4"
+      ],
+      [
+        "Microsoft",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Microsoft",
+        "keyPeople",
+        "Value_Company_2"
+      ],
+      [
+        "Google",
+        "countryOfOrigin",
+        "United States"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_007",
+    "scale": 4,
+    "triples": [
+      [
+        "CDG Airport",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "CDG Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "CDG Airport",
+        "hubFor",
+        "Value_Airport_3"
+      ],
+      [
+        "Haneda Airport",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_008",
+    "scale": 5,
+    "triples": [
+      [
+        "MIT",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "MIT",
+        "state",
+        "Value_University_2"
+      ],
+      [
+        "MIT",
+        "established",
+        "1955-01-01"
+      ],
+      [
+        "MIT",
+        "type",
+        "Value_University_3"
+      ],
+      [
+        "Yale University",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_009",
+    "scale": 5,
+    "triples": [
+      [
+        "Oxford University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_9"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1856-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_6"
+      ],
+      [
+        "Harvard University",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_010",
+    "scale": 1,
+    "triples": [
+      [
+        "Tokyo",
+        "relatedTo",
+        "Value_City_7"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_011",
+    "scale": 6,
+    "triples": [
+      [
+        "Chris Hadfield",
+        "birthDate",
+        "1983-01-01"
+      ],
+      [
+        "Chris Hadfield",
+        "birthPlace",
+        "Tokyo"
+      ],
+      [
+        "Chris Hadfield",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Chris Hadfield",
+        "occupation",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Chris Hadfield",
+        "was_selected_by_NASA",
+        "Value_Astronaut_8"
+      ],
+      [
+        "Sally Ride",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_012",
+    "scale": 9,
+    "triples": [
+      [
+        "JFK Airport",
+        "city",
+        "New York"
+      ],
+      [
+        "JFK Airport",
+        "elevation",
+        "Value_Airport_9"
+      ],
+      [
+        "JFK Airport",
+        "hubFor",
+        "Value_Airport_9"
+      ],
+      [
+        "MIT",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "MIT",
+        "state",
+        "Value_University_10"
+      ],
+      [
+        "MIT",
+        "established",
+        "1909-01-01"
+      ],
+      [
+        "MIT",
+        "type",
+        "Value_University_10"
+      ],
+      [
+        "CDG Airport",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "MIT",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_013",
+    "scale": 5,
+    "triples": [
+      [
+        "Oxford University",
+        "city",
+        "London"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_1"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1828-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_3"
+      ],
+      [
+        "Cambridge University",
+        "countryOfOrigin",
+        "France"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_014",
+    "scale": 1,
+    "triples": [
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_10"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_015",
+    "scale": 4,
+    "triples": [
+      [
+        "LAX Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "LAX Airport",
+        "elevation",
+        "Value_Airport_9"
+      ],
+      [
+        "LAX Airport",
+        "hubFor",
+        "Value_Airport_5"
+      ],
+      [
+        "LAX Airport",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_016",
+    "scale": 4,
+    "triples": [
+      [
+        "Microsoft",
+        "foundedBy",
+        "Value_Company_9"
+      ],
+      [
+        "Microsoft",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Microsoft",
+        "keyPeople",
+        "Value_Company_6"
+      ],
+      [
+        "Microsoft",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_017",
+    "scale": 4,
+    "triples": [
+      [
+        "CDG Airport",
+        "city",
+        "London"
+      ],
+      [
+        "CDG Airport",
+        "elevation",
+        "Value_Airport_5"
+      ],
+      [
+        "CDG Airport",
+        "hubFor",
+        "Value_Airport_9"
+      ],
+      [
+        "JFK Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_018",
+    "scale": 6,
+    "triples": [
+      [
+        "Yuri Gagarin",
+        "birthDate",
+        "1963-01-01"
+      ],
+      [
+        "Yuri Gagarin",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Yuri Gagarin",
+        "nationality",
+        "Japan"
+      ],
+      [
+        "Yuri Gagarin",
+        "occupation",
+        "Value_Astronaut_10"
+      ],
+      [
+        "Yuri Gagarin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Neil Armstrong",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_019",
+    "scale": 1,
+    "triples": [
+      [
+        "Los Angeles",
+        "relatedTo",
+        "Value_City_9"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_020",
+    "scale": 4,
+    "triples": [
+      [
+        "Colosseum",
+        "location",
+        "London"
+      ],
+      [
+        "Colosseum",
+        "state",
+        "Value_Monument_2"
+      ],
+      [
+        "Colosseum",
+        "established",
+        "1892-01-01"
+      ],
+      [
+        "Taj Mahal",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_021",
+    "scale": 15,
+    "triples": [
+      [
+        "Buzz Aldrin",
+        "birthDate",
+        "1987-01-01"
+      ],
+      [
+        "Buzz Aldrin",
+        "birthPlace",
+        "Paris"
+      ],
+      [
+        "Buzz Aldrin",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Buzz Aldrin",
+        "occupation",
+        "Value_Astronaut_2"
+      ],
+      [
+        "Buzz Aldrin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_9"
+      ],
+      [
+        "Stanford University",
+        "city",
+        "New York"
+      ],
+      [
+        "Stanford University",
+        "state",
+        "Value_University_8"
+      ],
+      [
+        "Stanford University",
+        "established",
+        "1940-01-01"
+      ],
+      [
+        "Stanford University",
+        "type",
+        "Value_University_3"
+      ],
+      [
+        "Taj Mahal",
+        "location",
+        "Los Angeles"
+      ],
+      [
+        "Taj Mahal",
+        "state",
+        "Value_Monument_10"
+      ],
+      [
+        "Taj Mahal",
+        "established",
+        "1908-01-01"
+      ],
+      [
+        "Neil Armstrong",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Yale University",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Machu Picchu",
+        "countryOfOrigin",
+        "United States"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_022",
+    "scale": 12,
+    "triples": [
+      [
+        "Tesla",
+        "foundedBy",
+        "Value_Company_6"
+      ],
+      [
+        "Tesla",
+        "headquarters",
+        "Paris"
+      ],
+      [
+        "Tesla",
+        "keyPeople",
+        "Value_Company_9"
+      ],
+      [
+        "Croissant",
+        "origin",
+        "Japan"
+      ],
+      [
+        "Croissant",
+        "mainIngredient",
+        "Value_Food_2"
+      ],
+      [
+        "Croissant",
+        "type",
+        "Value_Food_4"
+      ],
+      [
+        "JFK Airport",
+        "city",
+        "London"
+      ],
+      [
+        "JFK Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "JFK Airport",
+        "hubFor",
+        "Value_Airport_1"
+      ],
+      [
+        "Netflix",
+        "countryOfOrigin",
+        "Japan"
+      ],
+      [
+        "Curry",
+        "countryOfOrigin",
+        "Japan"
+      ],
+      [
+        "JFK Airport",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_023",
+    "scale": 19,
+    "triples": [
+      [
+        "Harvard University",
+        "city",
+        "London"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_6"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1818-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_9"
+      ],
+      [
+        "Neil Armstrong",
+        "birthDate",
+        "1871-01-01"
+      ],
+      [
+        "Neil Armstrong",
+        "birthPlace",
+        "Amsterdam"
+      ],
+      [
+        "Neil Armstrong",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Neil Armstrong",
+        "occupation",
+        "Value_Astronaut_8"
+      ],
+      [
+        "Neil Armstrong",
+        "was_selected_by_NASA",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Netflix",
+        "foundedBy",
+        "Value_Company_3"
+      ],
+      [
+        "Netflix",
+        "headquarters",
+        "Amsterdam"
+      ],
+      [
+        "Netflix",
+        "keyPeople",
+        "Value_Company_10"
+      ],
+      [
+        "Great Wall",
+        "location",
+        "Paris"
+      ],
+      [
+        "Great Wall",
+        "state",
+        "Value_Monument_4"
+      ],
+      [
+        "Great Wall",
+        "established",
+        "2000-01-01"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Sally Ride",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Google",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_024",
+    "scale": 8,
+    "triples": [
+      [
+        "Meta",
+        "foundedBy",
+        "Value_Company_7"
+      ],
+      [
+        "Meta",
+        "headquarters",
+        "Paris"
+      ],
+      [
+        "Meta",
+        "keyPeople",
+        "Value_Company_1"
+      ],
+      [
+        "Schiphol Airport",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "Schiphol Airport",
+        "elevation",
+        "Value_Airport_2"
+      ],
+      [
+        "Schiphol Airport",
+        "hubFor",
+        "Value_Airport_1"
+      ],
+      [
+        "Meta",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Schiphol Airport",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_025",
+    "scale": 12,
+    "triples": [
+      [
+        "New York",
+        "relatedTo",
+        "Value_City_9"
+      ],
+      [
+        "Sally Ride",
+        "birthDate",
+        "1835-01-01"
+      ],
+      [
+        "Sally Ride",
+        "birthPlace",
+        "Paris"
+      ],
+      [
+        "Sally Ride",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Sally Ride",
+        "occupation",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Sally Ride",
+        "was_selected_by_NASA",
+        "Value_Astronaut_5"
+      ],
+      [
+        "Oxford University",
+        "city",
+        "New York"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_2"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1913-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_9"
+      ],
+      [
+        "Buzz Aldrin",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Harvard University",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_026",
+    "scale": 16,
+    "triples": [
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_8"
+      ],
+      [
+        "Sally Ride",
+        "birthDate",
+        "1854-01-01"
+      ],
+      [
+        "Sally Ride",
+        "birthPlace",
+        "Paris"
+      ],
+      [
+        "Sally Ride",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Sally Ride",
+        "occupation",
+        "Value_Astronaut_1"
+      ],
+      [
+        "Sally Ride",
+        "was_selected_by_NASA",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Meta",
+        "foundedBy",
+        "Value_Company_1"
+      ],
+      [
+        "Meta",
+        "headquarters",
+        "Paris"
+      ],
+      [
+        "Meta",
+        "keyPeople",
+        "Value_Company_5"
+      ],
+      [
+        "Oxford University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_7"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1978-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_9"
+      ],
+      [
+        "Mae Jemison",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Tesla",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_027",
+    "scale": 9,
+    "triples": [
+      [
+        "Harvard University",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_9"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1815-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_6"
+      ],
+      [
+        "Pizza",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Pizza",
+        "mainIngredient",
+        "Value_Food_1"
+      ],
+      [
+        "Pizza",
+        "type",
+        "Value_Food_10"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Curry",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_028",
+    "scale": 19,
+    "triples": [
+      [
+        "Harvard University",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_2"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1972-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_4"
+      ],
+      [
+        "Sally Ride",
+        "birthDate",
+        "1830-01-01"
+      ],
+      [
+        "Sally Ride",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Sally Ride",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Sally Ride",
+        "occupation",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Sally Ride",
+        "was_selected_by_NASA",
+        "Value_Astronaut_10"
+      ],
+      [
+        "Great Wall",
+        "location",
+        "London"
+      ],
+      [
+        "Great Wall",
+        "state",
+        "Value_Monument_10"
+      ],
+      [
+        "Great Wall",
+        "established",
+        "1820-01-01"
+      ],
+      [
+        "Meta",
+        "foundedBy",
+        "Value_Company_10"
+      ],
+      [
+        "Meta",
+        "headquarters",
+        "Los Angeles"
+      ],
+      [
+        "Meta",
+        "keyPeople",
+        "Value_Company_9"
+      ],
+      [
+        "MIT",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Yuri Gagarin",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Statue of Liberty",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Tesla",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_029",
+    "scale": 13,
+    "triples": [
+      [
+        "Cambridge University",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "Cambridge University",
+        "state",
+        "Value_University_5"
+      ],
+      [
+        "Cambridge University",
+        "established",
+        "1917-01-01"
+      ],
+      [
+        "Cambridge University",
+        "type",
+        "Value_University_6"
+      ],
+      [
+        "Pizza",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Pizza",
+        "mainIngredient",
+        "Value_Food_1"
+      ],
+      [
+        "Pizza",
+        "type",
+        "Value_Food_8"
+      ],
+      [
+        "LAX Airport",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "LAX Airport",
+        "elevation",
+        "Value_Airport_2"
+      ],
+      [
+        "LAX Airport",
+        "hubFor",
+        "Value_Airport_2"
+      ],
+      [
+        "Yale University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Sushi",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "LAX Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_030",
+    "scale": 15,
+    "triples": [
+      [
+        "MIT",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "MIT",
+        "state",
+        "Value_University_3"
+      ],
+      [
+        "MIT",
+        "established",
+        "1912-01-01"
+      ],
+      [
+        "MIT",
+        "type",
+        "Value_University_9"
+      ],
+      [
+        "Gelato",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_5"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_10"
+      ],
+      [
+        "Mae Jemison",
+        "birthDate",
+        "1935-01-01"
+      ],
+      [
+        "Mae Jemison",
+        "birthPlace",
+        "London"
+      ],
+      [
+        "Mae Jemison",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Mae Jemison",
+        "occupation",
+        "Value_Astronaut_9"
+      ],
+      [
+        "Mae Jemison",
+        "was_selected_by_NASA",
+        "Value_Astronaut_5"
+      ],
+      [
+        "Cambridge University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Pizza",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Neil Armstrong",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_031",
+    "scale": 11,
+    "triples": [
+      [
+        "Yuri Gagarin",
+        "birthDate",
+        "1872-01-01"
+      ],
+      [
+        "Yuri Gagarin",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Yuri Gagarin",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Yuri Gagarin",
+        "occupation",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Yuri Gagarin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_6"
+      ],
+      [
+        "New York",
+        "relatedTo",
+        "Value_City_5"
+      ],
+      [
+        "Great Wall",
+        "location",
+        "Paris"
+      ],
+      [
+        "Great Wall",
+        "state",
+        "Value_Monument_5"
+      ],
+      [
+        "Great Wall",
+        "established",
+        "1813-01-01"
+      ],
+      [
+        "Buzz Aldrin",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Machu Picchu",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_032",
+    "scale": 15,
+    "triples": [
+      [
+        "New York",
+        "relatedTo",
+        "Value_City_5"
+      ],
+      [
+        "Sushi",
+        "origin",
+        "Spain"
+      ],
+      [
+        "Sushi",
+        "mainIngredient",
+        "Value_Food_8"
+      ],
+      [
+        "Sushi",
+        "type",
+        "Value_Food_9"
+      ],
+      [
+        "Mae Jemison",
+        "birthDate",
+        "1909-01-01"
+      ],
+      [
+        "Mae Jemison",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Mae Jemison",
+        "nationality",
+        "Spain"
+      ],
+      [
+        "Mae Jemison",
+        "occupation",
+        "Value_Astronaut_1"
+      ],
+      [
+        "Mae Jemison",
+        "was_selected_by_NASA",
+        "Value_Astronaut_2"
+      ],
+      [
+        "Eiffel Tower",
+        "location",
+        "Amsterdam"
+      ],
+      [
+        "Eiffel Tower",
+        "state",
+        "Value_Monument_3"
+      ],
+      [
+        "Eiffel Tower",
+        "established",
+        "1939-01-01"
+      ],
+      [
+        "Pizza",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Yuri Gagarin",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Great Wall",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_033",
+    "scale": 16,
+    "triples": [
+      [
+        "MIT",
+        "city",
+        "London"
+      ],
+      [
+        "MIT",
+        "state",
+        "Value_University_6"
+      ],
+      [
+        "MIT",
+        "established",
+        "1853-01-01"
+      ],
+      [
+        "MIT",
+        "type",
+        "Value_University_4"
+      ],
+      [
+        "Schiphol Airport",
+        "city",
+        "London"
+      ],
+      [
+        "Schiphol Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "Schiphol Airport",
+        "hubFor",
+        "Value_Airport_9"
+      ],
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_10"
+      ],
+      [
+        "Mae Jemison",
+        "birthDate",
+        "1839-01-01"
+      ],
+      [
+        "Mae Jemison",
+        "birthPlace",
+        "New York"
+      ],
+      [
+        "Mae Jemison",
+        "nationality",
+        "Spain"
+      ],
+      [
+        "Mae Jemison",
+        "occupation",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Mae Jemison",
+        "was_selected_by_NASA",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Heathrow Airport",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Neil Armstrong",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_034",
+    "scale": 10,
+    "triples": [
+      [
+        "New York",
+        "relatedTo",
+        "Value_City_2"
+      ],
+      [
+        "CDG Airport",
+        "city",
+        "London"
+      ],
+      [
+        "CDG Airport",
+        "elevation",
+        "Value_Airport_8"
+      ],
+      [
+        "CDG Airport",
+        "hubFor",
+        "Value_Airport_4"
+      ],
+      [
+        "Stanford University",
+        "city",
+        "Paris"
+      ],
+      [
+        "Stanford University",
+        "state",
+        "Value_University_6"
+      ],
+      [
+        "Stanford University",
+        "established",
+        "1878-01-01"
+      ],
+      [
+        "Stanford University",
+        "type",
+        "Value_University_4"
+      ],
+      [
+        "JFK Airport",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Harvard University",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_035",
+    "scale": 12,
+    "triples": [
+      [
+        "Haneda Airport",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Haneda Airport",
+        "elevation",
+        "Value_Airport_9"
+      ],
+      [
+        "Haneda Airport",
+        "hubFor",
+        "Value_Airport_7"
+      ],
+      [
+        "Gelato",
+        "origin",
+        "United States"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_9"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_6"
+      ],
+      [
+        "Microsoft",
+        "foundedBy",
+        "Value_Company_2"
+      ],
+      [
+        "Microsoft",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Microsoft",
+        "keyPeople",
+        "Value_Company_3"
+      ],
+      [
+        "LAX Airport",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Taco",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Microsoft",
+        "countryOfOrigin",
+        "United States"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_036",
+    "scale": 8,
+    "triples": [
+      [
+        "Machu Picchu",
+        "location",
+        "Tokyo"
+      ],
+      [
+        "Machu Picchu",
+        "state",
+        "Value_Monument_7"
+      ],
+      [
+        "Machu Picchu",
+        "established",
+        "1955-01-01"
+      ],
+      [
+        "LAX Airport",
+        "city",
+        "London"
+      ],
+      [
+        "LAX Airport",
+        "elevation",
+        "Value_Airport_7"
+      ],
+      [
+        "LAX Airport",
+        "hubFor",
+        "Value_Airport_10"
+      ],
+      [
+        "Statue of Liberty",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Haneda Airport",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_037",
+    "scale": 8,
+    "triples": [
+      [
+        "Netflix",
+        "foundedBy",
+        "Value_Company_9"
+      ],
+      [
+        "Netflix",
+        "headquarters",
+        "Amsterdam"
+      ],
+      [
+        "Netflix",
+        "keyPeople",
+        "Value_Company_4"
+      ],
+      [
+        "Haneda Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "Haneda Airport",
+        "elevation",
+        "Value_Airport_2"
+      ],
+      [
+        "Haneda Airport",
+        "hubFor",
+        "Value_Airport_6"
+      ],
+      [
+        "Netflix",
+        "countryOfOrigin",
+        "United States"
+      ],
+      [
+        "Haneda Airport",
+        "countryOfOrigin",
+        "United States"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_038",
+    "scale": 8,
+    "triples": [
+      [
+        "Amazon",
+        "foundedBy",
+        "Value_Company_7"
+      ],
+      [
+        "Amazon",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Amazon",
+        "keyPeople",
+        "Value_Company_7"
+      ],
+      [
+        "Gelato",
+        "origin",
+        "France"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_5"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_9"
+      ],
+      [
+        "Google",
+        "countryOfOrigin",
+        "France"
+      ],
+      [
+        "Sushi",
+        "countryOfOrigin",
+        "France"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_039",
+    "scale": 17,
+    "triples": [
+      [
+        "Netflix",
+        "foundedBy",
+        "Value_Company_1"
+      ],
+      [
+        "Netflix",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Netflix",
+        "keyPeople",
+        "Value_Company_5"
+      ],
+      [
+        "JFK Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "JFK Airport",
+        "elevation",
+        "Value_Airport_10"
+      ],
+      [
+        "JFK Airport",
+        "hubFor",
+        "Value_Airport_10"
+      ],
+      [
+        "Cambridge University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Cambridge University",
+        "state",
+        "Value_University_8"
+      ],
+      [
+        "Cambridge University",
+        "established",
+        "1913-01-01"
+      ],
+      [
+        "Cambridge University",
+        "type",
+        "Value_University_8"
+      ],
+      [
+        "Gelato",
+        "origin",
+        "United Kingdom"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_4"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_9"
+      ],
+      [
+        "Meta",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Schiphol Airport",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Stanford University",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Gelato",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_040",
+    "scale": 8,
+    "triples": [
+      [
+        "Gelato",
+        "origin",
+        "Japan"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_10"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_6"
+      ],
+      [
+        "Eiffel Tower",
+        "location",
+        "New York"
+      ],
+      [
+        "Eiffel Tower",
+        "state",
+        "Value_Monument_5"
+      ],
+      [
+        "Eiffel Tower",
+        "established",
+        "1857-01-01"
+      ],
+      [
+        "Sushi",
+        "countryOfOrigin",
+        "Japan"
+      ],
+      [
+        "Statue of Liberty",
+        "countryOfOrigin",
+        "Japan"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_041",
+    "scale": 20,
+    "triples": [
+      [
+        "Mae Jemison",
+        "birthDate",
+        "1947-01-01"
+      ],
+      [
+        "Mae Jemison",
+        "birthPlace",
+        "New York"
+      ],
+      [
+        "Mae Jemison",
+        "nationality",
+        "United Kingdom"
+      ],
+      [
+        "Mae Jemison",
+        "occupation",
+        "Value_Astronaut_7"
+      ],
+      [
+        "Mae Jemison",
+        "was_selected_by_NASA",
+        "Value_Astronaut_8"
+      ],
+      [
+        "Oxford University",
+        "city",
+        "New York"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_3"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1967-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_1"
+      ],
+      [
+        "Heathrow Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "Heathrow Airport",
+        "elevation",
+        "Value_Airport_4"
+      ],
+      [
+        "Heathrow Airport",
+        "hubFor",
+        "Value_Airport_3"
+      ],
+      [
+        "Amsterdam",
+        "relatedTo",
+        "Value_City_9"
+      ],
+      [
+        "Meta",
+        "foundedBy",
+        "Value_Company_1"
+      ],
+      [
+        "Meta",
+        "headquarters",
+        "Los Angeles"
+      ],
+      [
+        "Meta",
+        "keyPeople",
+        "Value_Company_4"
+      ],
+      [
+        "Buzz Aldrin",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "JFK Airport",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Meta",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_042",
+    "scale": 28,
+    "triples": [
+      [
+        "Machu Picchu",
+        "location",
+        "Paris"
+      ],
+      [
+        "Machu Picchu",
+        "state",
+        "Value_Monument_8"
+      ],
+      [
+        "Machu Picchu",
+        "established",
+        "1866-01-01"
+      ],
+      [
+        "New York",
+        "relatedTo",
+        "Value_City_5"
+      ],
+      [
+        "Netflix",
+        "foundedBy",
+        "Value_Company_8"
+      ],
+      [
+        "Netflix",
+        "headquarters",
+        "Amsterdam"
+      ],
+      [
+        "Netflix",
+        "keyPeople",
+        "Value_Company_4"
+      ],
+      [
+        "Taco",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Taco",
+        "mainIngredient",
+        "Value_Food_8"
+      ],
+      [
+        "Taco",
+        "type",
+        "Value_Food_2"
+      ],
+      [
+        "Cambridge University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Cambridge University",
+        "state",
+        "Value_University_4"
+      ],
+      [
+        "Cambridge University",
+        "established",
+        "1869-01-01"
+      ],
+      [
+        "Cambridge University",
+        "type",
+        "Value_University_6"
+      ],
+      [
+        "Haneda Airport",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Haneda Airport",
+        "elevation",
+        "Value_Airport_2"
+      ],
+      [
+        "Haneda Airport",
+        "hubFor",
+        "Value_Airport_3"
+      ],
+      [
+        "Neil Armstrong",
+        "birthDate",
+        "1859-01-01"
+      ],
+      [
+        "Neil Armstrong",
+        "birthPlace",
+        "Paris"
+      ],
+      [
+        "Neil Armstrong",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Neil Armstrong",
+        "occupation",
+        "Value_Astronaut_3"
+      ],
+      [
+        "Neil Armstrong",
+        "was_selected_by_NASA",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Meta",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Croissant",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "MIT",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "LAX Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Sally Ride",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_043",
+    "scale": 28,
+    "triples": [
+      [
+        "Buzz Aldrin",
+        "birthDate",
+        "1890-01-01"
+      ],
+      [
+        "Buzz Aldrin",
+        "birthPlace",
+        "Tokyo"
+      ],
+      [
+        "Buzz Aldrin",
+        "nationality",
+        "United Kingdom"
+      ],
+      [
+        "Buzz Aldrin",
+        "occupation",
+        "Value_Astronaut_7"
+      ],
+      [
+        "Buzz Aldrin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_7"
+      ],
+      [
+        "Yale University",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "Yale University",
+        "state",
+        "Value_University_9"
+      ],
+      [
+        "Yale University",
+        "established",
+        "2004-01-01"
+      ],
+      [
+        "Yale University",
+        "type",
+        "Value_University_10"
+      ],
+      [
+        "JFK Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "JFK Airport",
+        "elevation",
+        "Value_Airport_4"
+      ],
+      [
+        "JFK Airport",
+        "hubFor",
+        "Value_Airport_5"
+      ],
+      [
+        "Colosseum",
+        "location",
+        "Paris"
+      ],
+      [
+        "Colosseum",
+        "state",
+        "Value_Monument_1"
+      ],
+      [
+        "Colosseum",
+        "established",
+        "1899-01-01"
+      ],
+      [
+        "Taco",
+        "origin",
+        "United Kingdom"
+      ],
+      [
+        "Taco",
+        "mainIngredient",
+        "Value_Food_7"
+      ],
+      [
+        "Taco",
+        "type",
+        "Value_Food_3"
+      ],
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_3"
+      ],
+      [
+        "Netflix",
+        "foundedBy",
+        "Value_Company_9"
+      ],
+      [
+        "Netflix",
+        "headquarters",
+        "London"
+      ],
+      [
+        "Netflix",
+        "keyPeople",
+        "Value_Company_7"
+      ],
+      [
+        "Chris Hadfield",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Yale University",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Schiphol Airport",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Pizza",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Tesla",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_044",
+    "scale": 28,
+    "triples": [
+      [
+        "Oxford University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Oxford University",
+        "state",
+        "Value_University_6"
+      ],
+      [
+        "Oxford University",
+        "established",
+        "1994-01-01"
+      ],
+      [
+        "Oxford University",
+        "type",
+        "Value_University_7"
+      ],
+      [
+        "Haneda Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "Haneda Airport",
+        "elevation",
+        "Value_Airport_5"
+      ],
+      [
+        "Haneda Airport",
+        "hubFor",
+        "Value_Airport_2"
+      ],
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_1"
+      ],
+      [
+        "Mae Jemison",
+        "birthDate",
+        "1938-01-01"
+      ],
+      [
+        "Mae Jemison",
+        "birthPlace",
+        "London"
+      ],
+      [
+        "Mae Jemison",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Mae Jemison",
+        "occupation",
+        "Value_Astronaut_6"
+      ],
+      [
+        "Mae Jemison",
+        "was_selected_by_NASA",
+        "Value_Astronaut_4"
+      ],
+      [
+        "Machu Picchu",
+        "location",
+        "London"
+      ],
+      [
+        "Machu Picchu",
+        "state",
+        "Value_Monument_1"
+      ],
+      [
+        "Machu Picchu",
+        "established",
+        "1993-01-01"
+      ],
+      [
+        "Pizza",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Pizza",
+        "mainIngredient",
+        "Value_Food_4"
+      ],
+      [
+        "Pizza",
+        "type",
+        "Value_Food_4"
+      ],
+      [
+        "Microsoft",
+        "foundedBy",
+        "Value_Company_10"
+      ],
+      [
+        "Microsoft",
+        "headquarters",
+        "New York"
+      ],
+      [
+        "Microsoft",
+        "keyPeople",
+        "Value_Company_4"
+      ],
+      [
+        "Stanford University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "CDG Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Mae Jemison",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Curry",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Google",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_045",
+    "scale": 28,
+    "triples": [
+      [
+        "Microsoft",
+        "foundedBy",
+        "Value_Company_10"
+      ],
+      [
+        "Microsoft",
+        "headquarters",
+        "London"
+      ],
+      [
+        "Microsoft",
+        "keyPeople",
+        "Value_Company_5"
+      ],
+      [
+        "Curry",
+        "origin",
+        "Spain"
+      ],
+      [
+        "Curry",
+        "mainIngredient",
+        "Value_Food_7"
+      ],
+      [
+        "Curry",
+        "type",
+        "Value_Food_7"
+      ],
+      [
+        "Amsterdam",
+        "relatedTo",
+        "Value_City_4"
+      ],
+      [
+        "Harvard University",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_4"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1826-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_5"
+      ],
+      [
+        "Machu Picchu",
+        "location",
+        "Los Angeles"
+      ],
+      [
+        "Machu Picchu",
+        "state",
+        "Value_Monument_2"
+      ],
+      [
+        "Machu Picchu",
+        "established",
+        "2003-01-01"
+      ],
+      [
+        "Chris Hadfield",
+        "birthDate",
+        "2000-01-01"
+      ],
+      [
+        "Chris Hadfield",
+        "birthPlace",
+        "London"
+      ],
+      [
+        "Chris Hadfield",
+        "nationality",
+        "Spain"
+      ],
+      [
+        "Chris Hadfield",
+        "occupation",
+        "Value_Astronaut_6"
+      ],
+      [
+        "Chris Hadfield",
+        "was_selected_by_NASA",
+        "Value_Astronaut_9"
+      ],
+      [
+        "CDG Airport",
+        "city",
+        "Amsterdam"
+      ],
+      [
+        "CDG Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "CDG Airport",
+        "hubFor",
+        "Value_Airport_2"
+      ],
+      [
+        "Netflix",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Gelato",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "MIT",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Sally Ride",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "CDG Airport",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_046",
+    "scale": 18,
+    "triples": [
+      [
+        "Schiphol Airport",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Schiphol Airport",
+        "elevation",
+        "Value_Airport_5"
+      ],
+      [
+        "Schiphol Airport",
+        "hubFor",
+        "Value_Airport_10"
+      ],
+      [
+        "Curry",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Curry",
+        "mainIngredient",
+        "Value_Food_8"
+      ],
+      [
+        "Curry",
+        "type",
+        "Value_Food_8"
+      ],
+      [
+        "Paris",
+        "relatedTo",
+        "Value_City_10"
+      ],
+      [
+        "MIT",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "MIT",
+        "state",
+        "Value_University_4"
+      ],
+      [
+        "MIT",
+        "established",
+        "1822-01-01"
+      ],
+      [
+        "MIT",
+        "type",
+        "Value_University_5"
+      ],
+      [
+        "Colosseum",
+        "location",
+        "New York"
+      ],
+      [
+        "Colosseum",
+        "state",
+        "Value_Monument_8"
+      ],
+      [
+        "Colosseum",
+        "established",
+        "1945-01-01"
+      ],
+      [
+        "LAX Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Gelato",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Taj Mahal",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_047",
+    "scale": 20,
+    "triples": [
+      [
+        "Haneda Airport",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Haneda Airport",
+        "elevation",
+        "Value_Airport_5"
+      ],
+      [
+        "Haneda Airport",
+        "hubFor",
+        "Value_Airport_10"
+      ],
+      [
+        "Gelato",
+        "origin",
+        "Spain"
+      ],
+      [
+        "Gelato",
+        "mainIngredient",
+        "Value_Food_5"
+      ],
+      [
+        "Gelato",
+        "type",
+        "Value_Food_9"
+      ],
+      [
+        "Harvard University",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_4"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1821-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_4"
+      ],
+      [
+        "Amsterdam",
+        "relatedTo",
+        "Value_City_7"
+      ],
+      [
+        "Sally Ride",
+        "birthDate",
+        "1942-01-01"
+      ],
+      [
+        "Sally Ride",
+        "birthPlace",
+        "New York"
+      ],
+      [
+        "Sally Ride",
+        "nationality",
+        "Spain"
+      ],
+      [
+        "Sally Ride",
+        "occupation",
+        "Value_Astronaut_8"
+      ],
+      [
+        "Sally Ride",
+        "was_selected_by_NASA",
+        "Value_Astronaut_8"
+      ],
+      [
+        "CDG Airport",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Pizza",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Harvard University",
+        "countryOfOrigin",
+        "Spain"
+      ],
+      [
+        "Yuri Gagarin",
+        "countryOfOrigin",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_048",
+    "scale": 22,
+    "triples": [
+      [
+        "LAX Airport",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "LAX Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "LAX Airport",
+        "hubFor",
+        "Value_Airport_7"
+      ],
+      [
+        "Tesla",
+        "foundedBy",
+        "Value_Company_9"
+      ],
+      [
+        "Tesla",
+        "headquarters",
+        "Tokyo"
+      ],
+      [
+        "Tesla",
+        "keyPeople",
+        "Value_Company_6"
+      ],
+      [
+        "Cambridge University",
+        "city",
+        "Paris"
+      ],
+      [
+        "Cambridge University",
+        "state",
+        "Value_University_5"
+      ],
+      [
+        "Cambridge University",
+        "established",
+        "1878-01-01"
+      ],
+      [
+        "Cambridge University",
+        "type",
+        "Value_University_5"
+      ],
+      [
+        "Sushi",
+        "origin",
+        "United Kingdom"
+      ],
+      [
+        "Sushi",
+        "mainIngredient",
+        "Value_Food_2"
+      ],
+      [
+        "Sushi",
+        "type",
+        "Value_Food_4"
+      ],
+      [
+        "Tokyo",
+        "relatedTo",
+        "Value_City_2"
+      ],
+      [
+        "Machu Picchu",
+        "location",
+        "Los Angeles"
+      ],
+      [
+        "Machu Picchu",
+        "state",
+        "Value_Monument_3"
+      ],
+      [
+        "Machu Picchu",
+        "established",
+        "1849-01-01"
+      ],
+      [
+        "JFK Airport",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Tesla",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Oxford University",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Taco",
+        "countryOfOrigin",
+        "United Kingdom"
+      ],
+      [
+        "Machu Picchu",
+        "countryOfOrigin",
+        "United Kingdom"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_049",
+    "scale": 28,
+    "triples": [
+      [
+        "Tokyo",
+        "relatedTo",
+        "Value_City_3"
+      ],
+      [
+        "Taj Mahal",
+        "location",
+        "London"
+      ],
+      [
+        "Taj Mahal",
+        "state",
+        "Value_Monument_9"
+      ],
+      [
+        "Taj Mahal",
+        "established",
+        "1832-01-01"
+      ],
+      [
+        "Amazon",
+        "foundedBy",
+        "Value_Company_1"
+      ],
+      [
+        "Amazon",
+        "headquarters",
+        "London"
+      ],
+      [
+        "Amazon",
+        "keyPeople",
+        "Value_Company_9"
+      ],
+      [
+        "Taco",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Taco",
+        "mainIngredient",
+        "Value_Food_3"
+      ],
+      [
+        "Taco",
+        "type",
+        "Value_Food_8"
+      ],
+      [
+        "Buzz Aldrin",
+        "birthDate",
+        "1803-01-01"
+      ],
+      [
+        "Buzz Aldrin",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Buzz Aldrin",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Buzz Aldrin",
+        "occupation",
+        "Value_Astronaut_5"
+      ],
+      [
+        "Buzz Aldrin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_8"
+      ],
+      [
+        "CDG Airport",
+        "city",
+        "Paris"
+      ],
+      [
+        "CDG Airport",
+        "elevation",
+        "Value_Airport_6"
+      ],
+      [
+        "CDG Airport",
+        "hubFor",
+        "Value_Airport_3"
+      ],
+      [
+        "Harvard University",
+        "city",
+        "Tokyo"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_8"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1829-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_2"
+      ],
+      [
+        "Colosseum",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Meta",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Pizza",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Chris Hadfield",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Schiphol Airport",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Cambridge University",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  },
+  {
+    "id": "graph_expanded_050",
+    "scale": 20,
+    "triples": [
+      [
+        "Harvard University",
+        "city",
+        "Los Angeles"
+      ],
+      [
+        "Harvard University",
+        "state",
+        "Value_University_7"
+      ],
+      [
+        "Harvard University",
+        "established",
+        "1955-01-01"
+      ],
+      [
+        "Harvard University",
+        "type",
+        "Value_University_10"
+      ],
+      [
+        "Los Angeles",
+        "relatedTo",
+        "Value_City_4"
+      ],
+      [
+        "Great Wall",
+        "location",
+        "Paris"
+      ],
+      [
+        "Great Wall",
+        "state",
+        "Value_Monument_8"
+      ],
+      [
+        "Great Wall",
+        "established",
+        "1913-01-01"
+      ],
+      [
+        "Taco",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Taco",
+        "mainIngredient",
+        "Value_Food_10"
+      ],
+      [
+        "Taco",
+        "type",
+        "Value_Food_7"
+      ],
+      [
+        "Yuri Gagarin",
+        "birthDate",
+        "1945-01-01"
+      ],
+      [
+        "Yuri Gagarin",
+        "birthPlace",
+        "Los Angeles"
+      ],
+      [
+        "Yuri Gagarin",
+        "nationality",
+        "Turkey"
+      ],
+      [
+        "Yuri Gagarin",
+        "occupation",
+        "Value_Astronaut_1"
+      ],
+      [
+        "Yuri Gagarin",
+        "was_selected_by_NASA",
+        "Value_Astronaut_10"
+      ],
+      [
+        "Cambridge University",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Eiffel Tower",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Sushi",
+        "countryOfOrigin",
+        "Turkey"
+      ],
+      [
+        "Mae Jemison",
+        "countryOfOrigin",
+        "Turkey"
+      ]
+    ]
+  }
+]

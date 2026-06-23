@@ -1,0 +1,169 @@
+{
+  "paired_stats": {
+    "t_statistic": 0.052402509136101026,
+    "p_value": 0.9615021307971278,
+    "cohens_d": 0.026201254568050513
+  },
+  "results": [
+    {
+      "scale": 40,
+      "mode": "baseline_a",
+      "sdr": 0.425,
+      "coverage": 0.6,
+      "aps": 0.625,
+      "omissions": 16,
+      "hallucinations": 1,
+      "runtime_seconds": 5.78
+    },
+    {
+      "scale": 40,
+      "mode": "baseline_b",
+      "sdr": 0.45,
+      "coverage": 0.575,
+      "aps": 0.875,
+      "omissions": 17,
+      "hallucinations": 1,
+      "runtime_seconds": 7.08
+    },
+    {
+      "scale": 40,
+      "mode": "baseline_d",
+      "sdr": 0.275,
+      "coverage": 0.8,
+      "aps": 0.875,
+      "omissions": 8,
+      "hallucinations": 3,
+      "runtime_seconds": 51.07
+    },
+    {
+      "scale": 40,
+      "mode": "smart_graph",
+      "sdr": 0.475,
+      "coverage": 0.65,
+      "aps": 0.5,
+      "omissions": 14,
+      "hallucinations": 5,
+      "runtime_seconds": 117.05
+    },
+    {
+      "scale": 50,
+      "mode": "baseline_a",
+      "sdr": 0.6531,
+      "coverage": 0.3673,
+      "aps": 0.5556,
+      "omissions": 31,
+      "hallucinations": 1,
+      "runtime_seconds": 6.24
+    },
+    {
+      "scale": 50,
+      "mode": "baseline_b",
+      "sdr": 0.6122,
+      "coverage": 0.4082,
+      "aps": 0.6667,
+      "omissions": 29,
+      "hallucinations": 1,
+      "runtime_seconds": 11.09
+    },
+    {
+      "scale": 50,
+      "mode": "baseline_d",
+      "sdr": 0.6735,
+      "coverage": 0.3673,
+      "aps": 0.3333,
+      "omissions": 31,
+      "hallucinations": 2,
+      "runtime_seconds": 67.45
+    },
+    {
+      "scale": 50,
+      "mode": "smart_graph",
+      "sdr": 0.6735,
+      "coverage": 0.5102,
+      "aps": 0.6667,
+      "omissions": 24,
+      "hallucinations": 9,
+      "runtime_seconds": 244.24
+    },
+    {
+      "scale": 60,
+      "mode": "baseline_a",
+      "sdr": 0.5862,
+      "coverage": 0.4138,
+      "aps": 0.4545,
+      "omissions": 34,
+      "hallucinations": 0,
+      "runtime_seconds": 7.77
+    },
+    {
+      "scale": 60,
+      "mode": "baseline_b",
+      "sdr": 0.6034,
+      "coverage": 0.3966,
+      "aps": 0.1818,
+      "omissions": 35,
+      "hallucinations": 0,
+      "runtime_seconds": 6.23
+    },
+    {
+      "scale": 60,
+      "mode": "baseline_d",
+      "sdr": 0.6724,
+      "coverage": 0.3276,
+      "aps": 0.2727,
+      "omissions": 39,
+      "hallucinations": 0,
+      "runtime_seconds": 74.09
+    },
+    {
+      "scale": 60,
+      "mode": "smart_graph",
+      "sdr": 0.7069,
+      "coverage": 0.4655,
+      "aps": 0.4545,
+      "omissions": 31,
+      "hallucinations": 10,
+      "runtime_seconds": 261.24
+    },
+    {
+      "scale": 70,
+      "mode": "baseline_a",
+      "sdr": 0.7059,
+      "coverage": 0.3088,
+      "aps": 0.4615,
+      "omissions": 47,
+      "hallucinations": 1,
+      "runtime_seconds": 7.3
+    },
+    {
+      "scale": 70,
+      "mode": "baseline_b",
+      "sdr": 0.5882,
+      "coverage": 0.4412,
+      "aps": 0.6154,
+      "omissions": 38,
+      "hallucinations": 2,
+      "runtime_seconds": 8.45
+    },
+    {
+      "scale": 70,
+      "mode": "baseline_d",
+      "sdr": 0.4412,
+      "coverage": 0.6176,
+      "aps": 0.6923,
+      "omissions": 26,
+      "hallucinations": 4,
+      "runtime_seconds": 71.56
+    },
+    {
+      "scale": 70,
+      "mode": "smart_graph",
+      "sdr": 0.5,
+      "coverage": 0.5294,
+      "aps": 0.3846,
+      "omissions": 32,
+      "hallucinations": 2,
+      "runtime_seconds": 263.7
+    }
+  ]
+}

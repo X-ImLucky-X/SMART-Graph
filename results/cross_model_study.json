@@ -1,0 +1,231 @@
+{
+  "model_statistics": {
+    "qwen2.5:7b": {
+      "t_statistic": -2.0112284198392576,
+      "p_value": 0.1819839658183335,
+      "cohens_d": -1.1611832695960211,
+      "sdr_baseline_mean": 0.3133333333333333,
+      "sdr_smart_mean": 0.46690000000000004
+    },
+    "llama3:latest": {
+      "t_statistic": 4.899871841254951,
+      "p_value": 0.03921761861405547,
+      "cohens_d": 2.828942326543213,
+      "sdr_baseline_mean": 0.5280333333333332,
+      "sdr_smart_mean": 0.4263666666666667
+    },
+    "gemma:latest": {
+      "t_statistic": 1.7236556707317034,
+      "p_value": 0.2269116707778506,
+      "cohens_d": 0.9951530654871739,
+      "sdr_baseline_mean": 0.6658333333333334,
+      "sdr_smart_mean": 0.4000333333333333
+    }
+  },
+  "results": {
+    "qwen2.5:7b": [
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "baseline_a",
+        "sdr": 0.1429,
+        "coverage": 0.8571,
+        "aps": 1.0,
+        "omissions": 1,
+        "hallucinations": 0,
+        "runtime_seconds": 1.98
+      },
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "smart_graph",
+        "sdr": 0.4286,
+        "coverage": 0.8571,
+        "aps": 1.0,
+        "omissions": 1,
+        "hallucinations": 2,
+        "runtime_seconds": 2.51
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "baseline_a",
+        "sdr": 0.3077,
+        "coverage": 0.6923,
+        "aps": 1.0,
+        "omissions": 4,
+        "hallucinations": 0,
+        "runtime_seconds": 3.1
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "smart_graph",
+        "sdr": 0.4615,
+        "coverage": 0.7692,
+        "aps": 1.0,
+        "omissions": 3,
+        "hallucinations": 3,
+        "runtime_seconds": 17.4
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "baseline_a",
+        "sdr": 0.4894,
+        "coverage": 0.5532,
+        "aps": 0.7778,
+        "omissions": 21,
+        "hallucinations": 2,
+        "runtime_seconds": 9.4
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "smart_graph",
+        "sdr": 0.5106,
+        "coverage": 0.5532,
+        "aps": 0.3333,
+        "omissions": 21,
+        "hallucinations": 3,
+        "runtime_seconds": 198.56
+      }
+    ],
+    "llama3:latest": [
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "baseline_a",
+        "sdr": 0.4286,
+        "coverage": 0.8571,
+        "aps": 1.0,
+        "omissions": 1,
+        "hallucinations": 2,
+        "runtime_seconds": 9.1
+      },
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "smart_graph",
+        "sdr": 0.2857,
+        "coverage": 0.8571,
+        "aps": 1.0,
+        "omissions": 1,
+        "hallucinations": 1,
+        "runtime_seconds": 2.58
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "baseline_a",
+        "sdr": 0.5385,
+        "coverage": 0.5385,
+        "aps": 0.5,
+        "omissions": 6,
+        "hallucinations": 1,
+        "runtime_seconds": 4.11
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "smart_graph",
+        "sdr": 0.4615,
+        "coverage": 0.7692,
+        "aps": 1.0,
+        "omissions": 3,
+        "hallucinations": 3,
+        "runtime_seconds": 27.98
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "baseline_a",
+        "sdr": 0.617,
+        "coverage": 0.383,
+        "aps": 0.6667,
+        "omissions": 29,
+        "hallucinations": 0,
+        "runtime_seconds": 7.92
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "smart_graph",
+        "sdr": 0.5319,
+        "coverage": 0.4681,
+        "aps": 0.6667,
+        "omissions": 25,
+        "hallucinations": 0,
+        "runtime_seconds": 184.78
+      }
+    ],
+    "gemma:latest": [
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "baseline_a",
+        "sdr": 0.7143,
+        "coverage": 0.5714,
+        "aps": 1.0,
+        "omissions": 3,
+        "hallucinations": 2,
+        "runtime_seconds": 15.04
+      },
+      {
+        "graph_name": "WebNLG_Astronaut",
+        "scale": 7,
+        "mode": "smart_graph",
+        "sdr": 0.1429,
+        "coverage": 0.8571,
+        "aps": 1.0,
+        "omissions": 1,
+        "hallucinations": 0,
+        "runtime_seconds": 4.41
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "baseline_a",
+        "sdr": 0.5385,
+        "coverage": 0.5385,
+        "aps": 1.0,
+        "omissions": 6,
+        "hallucinations": 1,
+        "runtime_seconds": 7.66
+      },
+      {
+        "graph_name": "WebNLG_Combined_0",
+        "scale": 13,
+        "mode": "smart_graph",
+        "sdr": 0.4615,
+        "coverage": 0.6154,
+        "aps": 0.5,
+        "omissions": 5,
+        "hallucinations": 1,
+        "runtime_seconds": 22.82
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "baseline_a",
+        "sdr": 0.7447,
+        "coverage": 0.2553,
+        "aps": 0.5556,
+        "omissions": 35,
+        "hallucinations": 0,
+        "runtime_seconds": 12.6
+      },
+      {
+        "graph_name": "Synthetic_Chained_Large",
+        "scale": 47,
+        "mode": "smart_graph",
+        "sdr": 0.5957,
+        "coverage": 0.4255,
+        "aps": 0.4444,
+        "omissions": 27,
+        "hallucinations": 1,
+        "runtime_seconds": 142.22
+      }
+    ]
+  }
+}

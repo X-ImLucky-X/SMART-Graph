@@ -6,25 +6,25 @@
     "aps": 0.0,
     "omissions": 47,
     "hallucinations": 19,
-    "runtime_seconds": 4.03
+    "runtime_seconds": 3.92
   },
   {
     "variant": "2. Variant A (SOS Only)",
-    "sdr": 1.4255,
-    "coverage": 0.0,
-    "aps": 0.0,
-    "omissions": 47,
-    "hallucinations": 20,
-    "runtime_seconds": 5.07
+    "sdr": 1.4681,
+    "coverage": 0.0213,
+    "aps": 0.1111,
+    "omissions": 46,
+    "hallucinations": 23,
+    "runtime_seconds": 4.68
   },
   {
     "variant": "3. Variant B (SOS + ACBS)",
-    "sdr": 1.6809,
+    "sdr": 1.7234,
     "coverage": 0.0,
     "aps": 0.0,
     "omissions": 47,
-    "hallucinations": 32,
-    "runtime_seconds": 137.54
+    "hallucinations": 34,
+    "runtime_seconds": 129.74
   },
   {
     "variant": "4. Full SMART-Graph",
@@ -33,6 +33,6 @@
     "aps": 0.5556,
     "omissions": 20,
     "hallucinations": 5,
-    "runtime_seconds": 149.36
+    "runtime_seconds": 139.83
   }
 ]
