@@ -36,7 +36,7 @@ Triples are partitioned into subgraphs using a greedy, neighborhood-expanding tr
    $$\sum_{t \in \text{cluster}} SOS(t) \le \mathcal{B}$$
 
 Once a cluster is formed, triples are sorted by $SOS$ and distributed in a **U-shape** across the prompt window, mapping the highest-risk facts to the primacy and recency boundaries where attention remains near 100%:
-$$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd\_highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th\_highest}}, t_{\text{2nd\_highest}}]$$
+$$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd-highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th-highest}}, t_{\text{2nd-highest}}]$$
 
 ### 1.3 Soft-Match Graph Alignment (SMGA)
 To evaluate fact retention without string matching sensitivities (such as "Apple Inc" vs "Apple"), we construct a weighted bipartite graph between input triples ($T_{\text{input}}$) and extracted triples ($T_{\text{extracted}}$). Edges represent cosine similarities of their nomic embeddings. We apply the **Hungarian Algorithm** (`linear_sum_assignment`) to find the optimal 1-to-1 matchings:

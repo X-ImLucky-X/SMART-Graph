@@ -37,7 +37,7 @@ Existing work in Data-to-Text generation focuses on linearizing RDF graphs using
 SMART-Graph comprises two primary components:
 \begin{enumerate}
     \item \textbf{Attention-Calibrated Boundary Stratification (ACBS)}: Traverses the relation graph, partitioning it into subgraphs bounded by size $K$ and cumulative vulnerability budget $\mathcal{B}$. It serializes clusters in a U-shape context sequence:
-    $$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd\_highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th\_highest}}, t_{\text{2nd\_highest}}]$$
+    $$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd-highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th-highest}}, t_{\text{2nd-highest}}]$$
     where vulnerability is determined by the Semantic Outlier Score ($SOS$):
     $$SOS(t_i) = \left( 1 - \cos(\vec{t}_i, \vec{C}) \right) \times \left(1 + \delta(t_i)\right)$$
     

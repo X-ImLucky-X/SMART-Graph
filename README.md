@@ -54,7 +54,7 @@ We decompose the global graph using a greedy, neighborhood-expanding traversal o
   $$\sum_{t \in \text{cluster}} SOS(t) \le \mathcal{B}$$
 
 Each cluster is serialized in a **U-shape** layout, placing high-SOS triples at the primacy (start) and recency (end) of the context window:
-$$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd\_highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th\_highest}}, t_{\text{2nd\_highest}}]$$
+$$\text{Sequence: } [t_{\text{highest}}, t_{\text{3rd-highest}}, \dots, t_{\text{lowest}}, \dots, t_{\text{4th-highest}}, t_{\text{2nd-highest}}]$$
 
 ### 2.3 Soft-Match Graph Alignment (SMGA)
 Exact string matching (set difference) fails to account for phrasing shifts (e.g. "Apple Inc" vs "Apple"). We build a dense similarity matrix between input and extracted triples and use the **Hungarian Bipartite Matching Algorithm** to find the optimal 1-to-1 alignments:
