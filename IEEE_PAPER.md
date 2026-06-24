@@ -1,14 +1,5 @@
 # SMART-Graph: Graph-Aware Serialization and Soft-Match Alignment for Long-Context Data-to-Text Generation
 
-**Lakshmanan**  
-*Department of Computer Science and Engineering, AI Specialization*  
-*Email: developer@smartgraph.org*
-
----
-
-> **Submitted for review — IEEE Access / EMNLP Findings**  
-> *Manuscript Type: Research Article | Submission Category: Natural Language Processing*
-
 ---
 
 ## Abstract
