@@ -99,7 +99,7 @@ def run_large_graph_study():
     scale_graphs[70] = scale_70[:70]
     
     # 4. Benchmark Execution Loop
-    modes = ["baseline_a", "baseline_b", "baseline_d", "smart_graph"]
+    modes = ["baseline_a", "baseline_b", "baseline_c", "baseline_d", "smart_graph"]
     large_results = []
     
     for scale, triples in scale_graphs.items():

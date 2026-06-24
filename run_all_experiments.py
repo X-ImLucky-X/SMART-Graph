@@ -26,9 +26,13 @@ def main():
     
     pipeline = [
         "experiments/sos_correlation.py",
+        "experiments/ablation.py",
         "experiments/large_graph_study.py",
         "experiments/cross_model_study.py",
         "experiments/sentence_isolation_study.py",
+        "run_benchmark.py",
+        "experiments/validate_aps.py",
+        "experiments/effect_size_report.py",
         "experiments/grid_search.py",
         "utils/compile_latex.py"
     ]

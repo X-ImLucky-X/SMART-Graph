@@ -2,7 +2,7 @@
   {
     "graph_name": "WebNLG_Monument",
     "mode": "baseline_a",
-    "generated_text": "Alamo Plaza is located in San Antonio, Texas, a city situated in the southern part of the United States. The plaza serves as a historic and central area around the famous Alamo mission, which played a significant role during the Texas Revolution. As of the latest information, the mayor of San Antonio, Texas, is Ron Nirenberg, who oversees the city's governance and development.",
+    "generated_text": "Alamo Plaza is located in San Antonio, Texas, a city situated in the southern part of the United States. The plaza serves as a central landmark and historical site within the city, which has been governed by Mayor Ron Nirenberg since 2017. This area is renowned for its rich history and cultural significance, particularly associated with the Alamo, a former mission that played a crucial role during the Texas Revolution.",
     "extracted_triples": [
       [
         "Alamo Plaza",
@@ -17,32 +17,27 @@
       [
         "Texas",
         "is part of",
-        "the United States"
+        "United States"
+      ],
+      [
+        "San Antonio",
+        "has been governed by",
+        "Mayor Ron Nirenberg"
       ],
       [
         "Alamo Plaza",
         "serves as",
-        "a historic and central area"
-      ],
-      [
-        "Alamo Plaza",
-        "surrounds",
-        "the famous Alamo mission"
-      ],
-      [
-        "Alamo mission",
-        "played a significant role in",
-        "the Texas Revolution"
+        "central landmark and historical site"
       ],
       [
         "San Antonio",
-        "has mayor",
-        "Ron Nirenberg"
+        "is renowned for",
+        "rich history and cultural significance"
       ],
       [
-        "Ron Nirenberg",
-        "oversees",
-        "city's governance and development"
+        "Alamo",
+        "played a crucial role during",
+        "Texas Revolution"
       ]
     ],
     "strict_coverage": 0.0,
@@ -99,8 +94,57 @@
   },
   {
     "graph_name": "WebNLG_Monument",
+    "mode": "baseline_c",
+    "generated_text": "Ron Nirenberg served as the mayor of San Antonio, a major city located in the state of Texas within the United States. Known for its rich history and cultural significance, San Antonio is home to Alamo Plaza, a historic area that includes the famous Alamo mission. This plaza is not only a central location but also holds immense historical importance, serving as a key site in the city's identity and attracting numerous visitors each year.",
+    "extracted_triples": [
+      [
+        "Ron Nirenberg",
+        "served as",
+        "mayor of San Antonio"
+      ],
+      [
+        "San Antonio",
+        "is located in",
+        "the state of Texas"
+      ],
+      [
+        "San Antonio",
+        "is within",
+        "the United States"
+      ],
+      [
+        "Alamo Plaza",
+        "includes",
+        "the famous Alamo mission"
+      ],
+      [
+        "Alamo Plaza",
+        "holds immense historical importance",
+        ""
+      ],
+      [
+        "Alamo Plaza",
+        "serves as a key site in the city's identity",
+        ""
+      ],
+      [
+        "Alamo Plaza",
+        "is central location",
+        ""
+      ],
+      [
+        "Alamo Plaza",
+        "attracts numerous visitors each year",
+        ""
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_Monument",
     "mode": "baseline_d",
-    "generated_text": "Alamo Plaza is located in San Antonio, Texas, a city situated in the state of Texas within the United States. The plaza serves as a significant historical and cultural site, notably housing the Alamo, a former mission that played a crucial role during the Texas Revolution. Currently, Ron Nirenberg serves as the mayor of San Antonio, overseeing the city's governance and development.",
+    "generated_text": "Alamo Plaza is located in San Antonio, Texas, a city situated in the southern part of the United States. The plaza serves as a central landmark and historical site, notably including the Alamo, a former mission that played a significant role during the Texas Revolution. As part of the city's rich cultural landscape, San Antonio is governed by Mayor Ron Nirenberg, who leads local initiatives and policies to enhance community life and development.",
     "extracted_triples": [
       [
         "Alamo Plaza",
@@ -114,33 +158,28 @@
       ],
       [
         "Texas",
-        "is a state in",
+        "is part of",
         "United States"
       ],
       [
         "Alamo Plaza",
         "serves as",
-        "significant historical and cultural site"
+        "central landmark and historical site"
       ],
       [
         "Alamo Plaza",
-        "houses",
+        "includes",
         "the Alamo"
       ],
       [
         "the Alamo",
-        "was a",
-        "former mission"
-      ],
-      [
-        "the Alamo",
-        "played a crucial role during",
+        "played a significant role during",
         "Texas Revolution"
       ],
       [
-        "Ron Nirenberg",
-        "serves as mayor of",
-        "San Antonio"
+        "San Antonio",
+        "governed by",
+        "Mayor Ron Nirenberg"
       ]
     ],
     "strict_coverage": 0.0,
@@ -257,7 +296,7 @@
   {
     "graph_name": "WebNLG_Food",
     "mode": "baseline_b",
-    "generated_text": "Ankara serves as the capital of Turkey, a country where baklava, a delectable dessert renowned for its layers of phyllo dough filled with chopped nuts and drizzled with honey, originates. This sweet treat is made from these key ingredients and is enjoyed widely across the nation. The Turkish lira is the official currency used in transactions related to both the purchase of baklava and other goods and services in Turkey.",
+    "generated_text": "Ankara serves as the capital of Turkey, a country where baklava, a delectable dessert renowned for its layers of phyllo dough filled with chopped nuts and drizzled with honey, originates. This sweet treat is made from these key ingredients and is deeply ingrained in Turkish culinary tradition. The currency used in Turkey is the Turkish lira, which adds to the cultural context surrounding this beloved pastry.",
     "extracted_triples": [
       [
         "Ankara",
@@ -266,23 +305,77 @@
       ],
       [
         "Turkey",
-        "has a dessert called",
+        "is known for its dessert",
         "baklava"
       ],
       [
         "Baklava",
-        "is made from key ingredients",
+        "has layers of",
+        "phyllo dough"
+      ],
+      [
+        "Baklava",
+        "contains",
+        "chopped nuts"
+      ],
+      [
+        "Baklava",
+        "is drizzled with",
+        "honey"
+      ],
+      [
+        "Baklava",
+        "is a part of",
+        "Turkish culinary tradition"
+      ],
+      [
+        "Turkey",
+        "uses currency",
+        "Turkish lira"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_Food",
+    "mode": "baseline_c",
+    "generated_text": "Ankara serves as the capital city of Turkey, a country where the official currency is the Turkish lira. One of Turkey's iconic desserts, baklava, is renowned for its layers of phyllo dough filled with chopped nuts and drizzled with honey, reflecting both the country's culinary heritage and its rich cultural traditions. Originating in Turkey, this sweet treat has become a beloved delicacy enjoyed not only within the nation but also around the world.",
+    "extracted_triples": [
+      [
+        "Ankara",
+        "serves as the capital city of",
+        "Turkey"
+      ],
+      [
+        "Turkey",
+        "has official currency",
+        "Turkish lira"
+      ],
+      [
+        "Baklava",
+        "is an iconic dessert in",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "consists of",
         "layers of phyllo dough filled with chopped nuts and drizzled with honey"
       ],
       [
         "Baklava",
-        "is enjoyed widely across the nation",
+        "reflects",
+        "the country's culinary heritage and its rich cultural traditions"
+      ],
+      [
+        "Baklava",
+        "originates in",
         "Turkey"
       ],
       [
-        "Turkish lira",
-        "is the official currency used in transactions related to",
-        "the purchase of baklava and other goods and services in Turkey"
+        "Baklava",
+        "is enjoyed",
+        "within the nation and around the world"
       ]
     ],
     "strict_coverage": 0.0,
@@ -506,6 +599,50 @@
   },
   {
     "graph_name": "WebNLG_Company",
+    "mode": "baseline_c",
+    "generated_text": "Cupertino, California, located in the heart of Silicon Valley within the United States, serves as the headquarters for Apple Inc., a technology giant that was co-founded by Steve Jobs, whose birthplace is San Francisco. Under the leadership of Tim Cook, who currently holds the position of CEO, Apple continues to innovate and shape the technological landscape globally.",
+    "extracted_triples": [
+      [
+        "Cupertino",
+        "is located in",
+        "Silicon Valley"
+      ],
+      [
+        "Cupertino",
+        "is within",
+        "United States"
+      ],
+      [
+        "Cupertino",
+        "serves as headquarters for",
+        "Apple Inc."
+      ],
+      [
+        "Apple Inc.",
+        "was co-founded by",
+        "Steve Jobs"
+      ],
+      [
+        "Steve Jobs",
+        "birthplace is",
+        "San Francisco"
+      ],
+      [
+        "Tim Cook",
+        "holds position of",
+        "CEO"
+      ],
+      [
+        "Tim Cook",
+        "leads",
+        "Apple Inc."
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_Company",
     "mode": "baseline_d",
     "generated_text": "Apple Inc., headquartered in Cupertino, California, United States, is one of the world's leading technology companies. Founded by Steve Jobs, along with his partners Steve Wozniak and Ronald Wayne, the company has grown to become a pivotal force in the global tech industry. Born on February 24, 1955, in San Francisco, California, Steve Jobs played a pivotal role in shaping the modern technological landscape through his innovative vision and leadership at Apple.\n\nLocated in the heart of Silicon Valley, Apple's headquarters serves as a central hub for innovation and operations, contributing significantly to both the local economy and the global tech industry. Since 2011, Tim Cook has been leading the company following Steve Jobs' passing. Under his guidance, Apple continues to innovate and expand its product lineup, maintaining its position at the forefront of technological advancement.",
     "extracted_triples": [
@@ -697,6 +834,60 @@
   },
   {
     "graph_name": "WebNLG_University",
+    "mode": "baseline_c",
+    "generated_text": "Auburn University, a public institution founded in 1856, is located in Auburn, the seat of Lee County, Alabama, within the United States. The university serves the state and beyond, offering a wide range of academic programs and research opportunities to its students and communities.",
+    "extracted_triples": [
+      [
+        "Auburn University",
+        "is_a",
+        "public_institution"
+      ],
+      [
+        "Auburn University",
+        "founded_in",
+        "1856"
+      ],
+      [
+        "Auburn University",
+        "located_in",
+        "Auburn"
+      ],
+      [
+        "Auburn",
+        "is_seat_of",
+        "Lee_County"
+      ],
+      [
+        "Auburn",
+        "located_in",
+        "Alabama"
+      ],
+      [
+        "Auburn",
+        "located_in",
+        "United_States"
+      ],
+      [
+        "Auburn University",
+        "serves",
+        "state_and_beyond"
+      ],
+      [
+        "Auburn University",
+        "offers",
+        "academic_programs"
+      ],
+      [
+        "Auburn University",
+        "provides",
+        "research_opportunities"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_University",
     "mode": "baseline_d",
     "generated_text": "Auburn University is a public university located in Auburn, Alabama, United States, established in 1856 and now serving as a significant educational institution that offers a wide range of academic programs. Situated approximately 65 miles east of Birmingham, Auburn has grown into an important center for education and culture, with Auburn University being one of the state's premier institutions of higher learning. Known for its rich history and strong community spirit, the city plays a vital role in the economic and social fabric of Lee County and the broader region through its contributions to intellectual and economic development, as well as through research and community engagement.",
     "extracted_triples": [
@@ -752,7 +943,7 @@
       ],
       [
         "Auburn",
-        "engaged_in",
+        "engages_in",
         "research and community engagement"
       ]
     ],
@@ -908,6 +1099,75 @@
   },
   {
     "graph_name": "WebNLG_Airport",
+    "mode": "baseline_c",
+    "generated_text": "Adolfo Suárez Madrid–Barajas Airport, located at an elevation of 609 meters above sea level, serves the Spanish capital and is a major transportation hub for the country. The official currency of Spain is the Euro, which is used throughout the nation for transactions. Madrid, the city where the airport is situated, has been led by Mayor Manuela Carmena since 2015. As both the capital and largest city of Spain, Madrid plays a central role in the country's political, economic, and cultural life.",
+    "extracted_triples": [
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "is located at an elevation of",
+        "609 meters above sea level"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "serves",
+        "the Spanish capital"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "is a major transportation hub for",
+        "the country"
+      ],
+      [
+        "Spain",
+        "has official currency",
+        "Euro"
+      ],
+      [
+        "Spain",
+        "uses",
+        "Euro"
+      ],
+      [
+        "Madrid",
+        "where the airport is situated",
+        "Adolfo Suárez Madrid–Barajas Airport"
+      ],
+      [
+        "Manuela Carmena",
+        "has been leading",
+        "Madrid since 2015"
+      ],
+      [
+        "Madrid",
+        "is capital of",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "is largest city of",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "plays central role in",
+        "political life of Spain"
+      ],
+      [
+        "Madrid",
+        "plays central role in",
+        "economic life of Spain"
+      ],
+      [
+        "Madrid",
+        "plays central role in",
+        "cultural life of Spain"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_Airport",
     "mode": "baseline_d",
     "generated_text": "Madrid, the capital of Spain and former home to Mayor Manuela Carmena from 2015 to 2019, serves as both a political and cultural hub for the country. As an integral part of the European Union, Madrid uses the Euro as its official currency alongside other regions within the union.\n\nThe city's primary international airport, Adolfo Suárez Madrid–Barajas Airport, is located approximately 15 kilometers northeast of the city center at an elevation of 609 meters (2,000 feet) above sea level. This significant height advantage not only influences weather patterns but also plays a crucial role in flight operations within the region.",
     "extracted_triples": [
@@ -981,23 +1241,28 @@
         "Madrid"
       ],
       [
-        "Adolfo Suárez Madrid–Barajas Airport",
-        "is named after",
-        "a late Spanish prime minister who played a significant role in the transition to democracy"
-      ],
-      [
         "Madrid",
         "is the capital and largest city of",
         "Spain"
       ],
       [
         "Manuela Carmena",
-        "served as the Mayor of",
+        "led",
         "Madrid"
       ],
       [
+        "Manuela Carmena",
+        "served as Mayor of",
+        "Madrid"
+      ],
+      [
+        "Manuela Carmena",
+        "served from",
+        "2015 to 2019"
+      ],
+      [
         "Spain",
-        "uses",
+        "uses the official currency",
         "Euro (EUR)"
       ]
     ],
@@ -1007,7 +1272,7 @@
   {
     "graph_name": "WebNLG_Astronaut",
     "mode": "baseline_a",
-    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States, was an American national and accomplished test pilot before being selected by NASA in 1963. His journey from his birthplace to becoming part of the space program exemplifies his dedication and skill.",
+    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas, a city located in the Central Time Zone of the United States, was an American national and accomplished test pilot before being selected by NASA in 1963. His career with NASA culminated in his participation as a crew member aboard Apollo 12, becoming the fourth person to walk on the Moon.",
     "extracted_triples": [
       [
         "Alan Bean",
@@ -1021,8 +1286,13 @@
       ],
       [
         "Wheeler, Texas",
-        "is located in the",
-        "Central Time Zone of the United States"
+        "is located in",
+        "Central Time Zone"
+      ],
+      [
+        "Wheeler, Texas",
+        "is a part of",
+        "United States"
       ],
       [
         "Alan Bean",
@@ -1038,10 +1308,20 @@
         "Alan Bean",
         "was selected by NASA",
         "in 1963"
+      ],
+      [
+        "Alan Bean",
+        "participated as crew member aboard",
+        "Apollo 12"
+      ],
+      [
+        "Alan Bean",
+        "became the",
+        "fourth person to walk on the Moon"
       ]
     ],
     "strict_coverage": 0.0,
-    "smga_coverage": 0.8571
+    "smga_coverage": 1.0
   },
   {
     "graph_name": "WebNLG_Astronaut",
@@ -1104,6 +1384,45 @@
   },
   {
     "graph_name": "WebNLG_Astronaut",
+    "mode": "baseline_c",
+    "generated_text": "Alan Bean was born on March 15, 1932, in Wheeler, Texas, which is located in the Central Time Zone of the United States. Before his selection by NASA in 1963, Bean served as a test pilot, an occupation that honed his skills and contributed to his eventual choice for space missions. As an American national, Bean's journey from Wheeler, Texas, to becoming one of the astronauts who walked on the Moon is a testament to his dedication and the opportunities available in the United States during the Space Race era.",
+    "extracted_triples": [
+      [
+        "Alan Bean",
+        "was born on",
+        "March 15, 1932"
+      ],
+      [
+        "Alan Bean",
+        "was born in",
+        "Wheeler, Texas"
+      ],
+      [
+        "Wheeler, Texas",
+        "is located in",
+        "Central Time Zone"
+      ],
+      [
+        "Wheeler, Texas",
+        "is a part of",
+        "United States"
+      ],
+      [
+        "Alan Bean",
+        "served as",
+        "test pilot"
+      ],
+      [
+        "Alan Bean",
+        "was selected by NASA in",
+        "1963"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.8571
+  },
+  {
+    "graph_name": "WebNLG_Astronaut",
     "mode": "baseline_d",
     "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas, a town located in the United States within the Central Time Zone, was destined for greatness from his early days. Known for its rich agricultural heritage and small-town charm, this region of Texas shaped Bean's formative years before he went on to become an astronaut with NASA. Selected by NASA in 1963 as part of the third group of astronauts, his career culminated in his role as the lunar module pilot during the Apollo 12 mission, where he became the fourth person to walk on the Moon.",
     "extracted_triples": [
@@ -1144,13 +1463,13 @@
       ],
       [
         "Alan Bean",
-        "served as lunar module pilot during",
+        "served as the lunar module pilot during",
         "Apollo 12 mission"
       ],
       [
         "Alan Bean",
-        "became the fourth person to walk on",
-        "the Moon"
+        "became the",
+        "fourth person to walk on the Moon"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1208,7 +1527,7 @@
   {
     "graph_name": "WebNLG_Combined_4",
     "mode": "baseline_a",
-    "generated_text": "Alamo Plaza is located in the heart of San Antonio, Texas, a city situated in the state of Texas within the United States. The current mayor of San Antonio is Ron Nirenberg. Not far from there, Apple Inc., founded by Steve Jobs, has its headquarters in Cupertino, California, also part of the United States. Tim Cook serves as one of the key people at Apple Inc. Interestingly, Steve Jobs was born in San Francisco, which is another city in California, contributing to the rich technological history of the state.",
+    "generated_text": "Alamo Plaza is located in the heart of San Antonio, Texas, a city situated in the state of Texas within the United States. The current mayor of San Antonio is Ron Nirenberg. Not far away, Apple Inc., founded by Steve Jobs, has its headquarters in Cupertino, California, also part of the United States. Tim Cook serves as one of the key people at Apple Inc. Interestingly, Steve Jobs was born in San Francisco, another major city in California.",
     "extracted_triples": [
       [
         "Alamo Plaza",
@@ -1251,14 +1570,14 @@
         "Apple Inc."
       ],
       [
-        "San Francisco",
-        "is a city in",
-        "California"
-      ],
-      [
         "Steve Jobs",
         "was born in",
         "San Francisco"
+      ],
+      [
+        "San Francisco",
+        "is a major city in",
+        "California"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1267,17 +1586,12 @@
   {
     "graph_name": "WebNLG_Combined_4",
     "mode": "baseline_b",
-    "generated_text": "Ron Nirenberg serves as the mayor of San Antonio, a major city in Texas, United States. In the tech industry, Tim Cook is a key figure at Apple Inc., which was founded by Steve Jobs, whose birthplace is San Francisco. Apple Inc.'s headquarters are located in Cupertino, California, also within the United States. Alamo Plaza, an area of historical significance, is situated in San Antonio, Texas, which shares its state with the city where Ron Nirenberg leads as mayor.",
+    "generated_text": "Ron Nirenberg serves as the mayor of San Antonio, a major city in Texas, United States. In the tech industry, Tim Cook is a key figure at Apple Inc., which was founded by Steve Jobs and established its headquarters in Cupertino, California, also part of the United States. Notably, Steve Jobs was born in San Francisco, another significant city in California. Alamo Plaza, located in San Antonio, Texas, is a historic area that includes the famous Alamo, making it an important site for both local and national history.",
     "extracted_triples": [
       [
         "Ron Nirenberg",
         "serves as",
-        "mayor"
-      ],
-      [
-        "mayor",
-        "of",
-        "San Antonio"
+        "mayor of San Antonio"
       ],
       [
         "San Antonio",
@@ -1285,13 +1599,18 @@
         "Texas"
       ],
       [
-        "Texas",
-        "is within",
-        "United States"
+        "San Antonio",
+        "has historic area",
+        "Alamo Plaza"
+      ],
+      [
+        "Alamo Plaza",
+        "includes",
+        "the famous Alamo"
       ],
       [
         "Tim Cook",
-        "is a key figure at",
+        "is key figure at",
         "Apple Inc."
       ],
       [
@@ -1300,29 +1619,83 @@
         "Steve Jobs"
       ],
       [
-        "Steve Jobs",
-        "birthplace is",
-        "San Francisco"
-      ],
-      [
         "Apple Inc.",
-        "headquarters located in",
+        "established headquarters in",
         "Cupertino, California"
       ],
       [
         "Cupertino, California",
-        "is within",
+        "part of",
+        "United States"
+      ],
+      [
+        "Steve Jobs",
+        "born in",
+        "San Francisco"
+      ],
+      [
+        "San Francisco",
+        "is a significant city in",
+        "California"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 1.0
+  },
+  {
+    "graph_name": "WebNLG_Combined_4",
+    "mode": "baseline_c",
+    "generated_text": "Apple Inc., founded by the late visionary Steve Jobs, is headquartered in Cupertino, California, a city in the United States. The company's current leadership includes Tim Cook, who has been at the helm since 2011 following Jobs' passing. Notably, San Antonio, Texas, also within the United States, is home to Ron Nirenberg, who serves as its mayor. Alamo Plaza, a significant historical site located in San Antonio, Texas, holds great importance and is situated on state land. Interestingly, Steve Jobs was born in San Francisco, California, which is another city in the same country.",
+    "extracted_triples": [
+      [
+        "Apple Inc.",
+        "founded_by",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc.",
+        "headquartered_in",
+        "Cupertino, California"
+      ],
+      [
+        "Apple Inc.",
+        "headquartered_in",
+        "United States"
+      ],
+      [
+        "Tim Cook",
+        "current_leadership_of",
+        "Apple Inc."
+      ],
+      [
+        "Tim Cook",
+        "took_office",
+        "2011"
+      ],
+      [
+        "Ron Nirenberg",
+        "serves_as_mayor_of",
+        "San Antonio, Texas"
+      ],
+      [
+        "San Antonio, Texas",
+        "is_in",
         "United States"
       ],
       [
         "Alamo Plaza",
-        "is situated in",
-        "San Antonio"
+        "located_in",
+        "San Antonio, Texas"
       ],
       [
-        "San Antonio",
-        "shares its state with",
-        "Texas"
+        "Alamo Plaza",
+        "situated_on",
+        "state land"
+      ],
+      [
+        "Steve Jobs",
+        "born_in",
+        "San Francisco, California"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1331,21 +1704,21 @@
   {
     "graph_name": "WebNLG_Combined_4",
     "mode": "baseline_d",
-    "generated_text": "Alamo Plaza is situated in San Antonio, Texas, a city within the state of Texas and part of the United States. The mayor of San Antonio is Ron Nirenberg. Notably, both Alamo Plaza and San Antonio are included within the larger geographical area known as the United States, which also encompasses Cupertino, California, another city in the same country.\n\nApple Inc., founded by Steve Jobs, has its headquarters in Cupertino, California. Under Tim Cook's leadership, who succeeded Steve Jobs as CEO, the company has continued to thrive and innovate. Born in San Francisco, Steve Jobs played a pivotal role in shaping the technology landscape with his visionary approach and innovative products.",
+    "generated_text": "Alamo Plaza is located in San Antonio, Texas, a city situated within the state of Texas and part of the United States. The mayor of San Antonio is Ron Nirenberg. Notably, while Alamo Plaza and its surrounding historical sites are integral to San Antonio's identity, Cupertino, California, another U.S. city, is also part of the country but is located far from San Antonio in a different region of California.\n\nApple Inc., founded by Steve Jobs, is headquartered in Cupertino, California. Born in San Francisco, Steve Jobs played a pivotal role in shaping the technology landscape with his visionary approach and innovative products. Under Tim Cook's leadership, who succeeded Steve Jobs as CEO, Apple has continued to thrive and innovate. Despite their geographical distance, both Alamo Plaza and Apple Inc. have significantly contributed to the cultural and technological fabric of the United States.",
     "extracted_triples": [
       [
         "Alamo Plaza",
-        "is situated in",
+        "is located in",
         "San Antonio"
       ],
       [
         "San Antonio",
-        "is within the state of",
+        "is situated within",
         "Texas"
       ],
       [
-        "San Antonio",
-        "is part of",
+        "Texas",
+        "part of",
         "United States"
       ],
       [
@@ -1354,24 +1727,24 @@
         "Ron Nirenberg"
       ],
       [
-        "Alamo Plaza",
-        "and",
-        "San Antonio"
+        "Alamo Plaza and its surrounding historical sites",
+        "integral to",
+        "San Antonio's identity"
       ],
       [
-        "Cupertino",
-        "California",
-        "is also a city in"
+        "Cupertino, California",
+        "is part of",
+        "United States"
       ],
       [
-        "Apple Inc.",
-        "headquarters is located in",
-        "Cupertino, California"
+        "Cupertino, California",
+        "located in",
+        "California"
       ],
       [
-        "Tim Cook",
-        "succeeded Steve Jobs as CEO of",
-        "Apple Inc."
+        "San Francisco",
+        "is located in",
+        "California"
       ],
       [
         "Steve Jobs",
@@ -1379,9 +1752,34 @@
         "Apple Inc."
       ],
       [
+        "Apple Inc.",
+        "headquartered in",
+        "Cupertino, California"
+      ],
+      [
         "Steve Jobs",
-        "was born in",
+        "born in",
         "San Francisco"
+      ],
+      [
+        "Steve Jobs",
+        "played a pivotal role in shaping the technology landscape with his visionary approach and innovative products",
+        ""
+      ],
+      [
+        "Apple Inc.",
+        "thrived under leadership of",
+        "Tim Cook"
+      ],
+      [
+        "Alamo Plaza",
+        "contributed to",
+        "cultural fabric of United States"
+      ],
+      [
+        "Apple Inc.",
+        "contributed to",
+        "technological fabric of United States"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1390,42 +1788,17 @@
   {
     "graph_name": "WebNLG_Combined_4",
     "mode": "smart_graph",
-    "generated_text": "Tim Cook serves as a key figure at Apple Inc., leading the company after the passing of its co-founder and former CEO, Steve Jobs, who was born in San Francisco. The headquarters of Apple Inc. is located in Cupertino, California, within the United States, where it was founded by Steve Jobs alongside his partners Steve Wozniak and Ronald Wayne.\n\nMeanwhile, Ron Nirenberg served as the mayor of San Antonio, a major city situated in the state of Texas, United States. Renowned for its historic Alamo Plaza, this area houses significant landmarks such as the Alamo, a former mission that has become an iconic symbol of Texan history and independence.",
+    "generated_text": "Tim Cook currently holds the position of CEO at Apple Inc., a company founded by Steve Jobs, who was born in San Francisco, California. The headquarters of Apple Inc. is located in Cupertino, California, within the United States. Ron Nirenberg served as the mayor of San Antonio, a major city in Texas, known for its historical significance and cultural heritage. Alamo Plaza, situated within this historic district, plays a crucial role in the city's identity, serving as a focal point for both tourists and locals to commemorate the events that took place during the Battle of the Alamo in 1836.",
     "extracted_triples": [
       [
         "Tim Cook",
-        "serves as",
-        "key figure at Apple Inc."
+        "holds position of",
+        "CEO"
       ],
       [
-        "Apple Inc.",
-        "is led by",
-        "Tim Cook"
-      ],
-      [
-        "Steve Jobs",
-        "was co-founder of",
+        "Tim Cook",
+        "works at",
         "Apple Inc."
-      ],
-      [
-        "Steve Jobs",
-        "was former CEO of",
-        "Apple Inc."
-      ],
-      [
-        "Steve Jobs",
-        "was born in",
-        "San Francisco"
-      ],
-      [
-        "Apple Inc.",
-        "headquarters located in",
-        "Cupertino, California"
-      ],
-      [
-        "Cupertino, California",
-        "is within",
-        "United States"
       ],
       [
         "Apple Inc.",
@@ -1433,14 +1806,19 @@
         "Steve Jobs"
       ],
       [
-        "Apple Inc.",
-        "founded by",
-        "Steve Wozniak"
+        "Steve Jobs",
+        "born in",
+        "San Francisco, California"
       ],
       [
         "Apple Inc.",
-        "founded by",
-        "Ronald Wayne"
+        "headquarters located in",
+        "Cupertino, California"
+      ],
+      [
+        "Apple Inc.",
+        "located in",
+        "United States"
       ],
       [
         "Ron Nirenberg",
@@ -1449,18 +1827,33 @@
       ],
       [
         "San Antonio",
-        "is situated in",
-        "state of Texas, United States"
+        "major city in",
+        "Texas"
+      ],
+      [
+        "San Antonio",
+        "known for",
+        "historical significance and cultural heritage"
       ],
       [
         "Alamo Plaza",
-        "houses significant landmarks such as",
-        "the Alamo"
+        "situated within",
+        "historic district"
       ],
       [
-        "The Alamo",
-        "is a former mission that has become an iconic symbol of",
-        "Texan history and independence"
+        "Alamo Plaza",
+        "plays crucial role in",
+        "city's identity"
+      ],
+      [
+        "Alamo Plaza",
+        "serves as focal point for",
+        "tourists and locals"
+      ],
+      [
+        "Alamo Plaza",
+        "commemorates events of",
+        "Battle of the Alamo, 1836"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1533,7 +1926,7 @@
   {
     "graph_name": "WebNLG_Combined_2",
     "mode": "baseline_b",
-    "generated_text": "Madrid is the capital of Spain and also its largest city, where Manuela Carmena once served as a leader. Located in central Spain, Madrid is home to Adolfo Suarez Madrid-Barajas Airport, which stands at an elevation of 609 meters above sea level. Meanwhile, Ankara serves as the capital of Turkey, hosting significant governmental operations. Baklava, a popular dessert with origins traced back to Turkey, primarily consists of layers of phyllo dough filled with nuts and drizzled with honey. In terms of currency, Spain uses the Euro, while Turkey employs the Turkish lira for its financial transactions.",
+    "generated_text": "Madrid is the capital of Spain and also its largest city, where Manuela Carmena once served as a leader. Located in central Spain, Madrid hosts Adolfo Suarez Madrid-Barajas Airport, which stands at an elevation of 609 meters above sea level. Meanwhile, Ankara serves as Turkey's capital, while the country uses the Turkish lira as its currency. Baklava, a popular dessert with origins in Turkey, is made primarily from phyllo dough, nuts, and honey. Notably, Madrid also functions as Spain’s capital city, where the Euro is used as the official currency.",
     "extracted_triples": [
       [
         "Madrid",
@@ -1542,23 +1935,18 @@
       ],
       [
         "Madrid",
-        "is also its largest city",
-        ""
+        "is the largest city in",
+        "Spain"
       ],
       [
         "Manuela Carmena",
-        "once served as a leader in",
+        "served as a leader in",
         "Madrid"
       ],
       [
         "Madrid",
-        "is located in",
-        "central Spain"
-      ],
-      [
-        "Adolfo Suarez Madrid-Barajas Airport",
-        "is located in",
-        "Madrid"
+        "hosts",
+        "Adolfo Suarez Madrid-Barajas Airport"
       ],
       [
         "Adolfo Suarez Madrid-Barajas Airport",
@@ -1567,33 +1955,33 @@
       ],
       [
         "Ankara",
-        "serves as the capital of",
+        "is the capital of",
         "Turkey"
-      ],
-      [
-        "Ankara",
-        "hosts significant governmental operations",
-        ""
-      ],
-      [
-        "Baklava",
-        "is a popular dessert with origins traced back to",
-        "Turkey"
-      ],
-      [
-        "Baklava",
-        "primarily consists of layers of phyllo dough filled with nuts and drizzled with honey",
-        ""
-      ],
-      [
-        "Spain",
-        "uses the currency",
-        "Euro"
       ],
       [
         "Turkey",
-        "employs the currency",
-        "Turkish lira"
+        "uses",
+        "Turkish lira as its currency"
+      ],
+      [
+        "Baklava",
+        "originates in",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "is made primarily from",
+        "phyllo dough, nuts, and honey"
+      ],
+      [
+        "Madrid",
+        "functions as the capital city of",
+        "Spain"
+      ],
+      [
+        "Spain",
+        "uses",
+        "Euro as its official currency"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1601,18 +1989,82 @@
   },
   {
     "graph_name": "WebNLG_Combined_2",
+    "mode": "baseline_c",
+    "generated_text": "Adolfo Suarez Madrid-Barajas Airport, located in the Spanish capital of Madrid at an elevation of 609 meters, serves as a major transportation hub. Baklava, a popular dessert originating from Turkey, is made primarily with phyllo dough, nuts, and honey. The Turkish capital Ankara hosts the country's government, while its currency is the Turkish lira. In contrast, Spain uses the Euro as its official currency and has Madrid as both its capital city and home to leaders such as Manuela Carmena. Baklava remains a beloved treat in Turkey and beyond, reflecting the culinary heritage of this region.",
+    "extracted_triples": [
+      [
+        "Adolfo Suarez Madrid-Barajas Airport",
+        "is located in",
+        "Madrid"
+      ],
+      [
+        "Adolfo Suarez Madrid-Barajas Airport",
+        "serves as",
+        "major transportation hub"
+      ],
+      [
+        "Adolfo Suarez Madrid-Barajas Airport",
+        "elevation",
+        "609 meters"
+      ],
+      [
+        "Baklava",
+        "originates from",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "made primarily with",
+        "phyllo dough"
+      ],
+      [
+        "Baklava",
+        "made primarily with",
+        "nuts"
+      ],
+      [
+        "Baklava",
+        "made primarily with",
+        "honey"
+      ],
+      [
+        "Ankara",
+        "hosts",
+        "government of Turkey"
+      ],
+      [
+        "Turkey",
+        "currency",
+        "Turkish lira"
+      ],
+      [
+        "Spain",
+        "official currency",
+        "Euro"
+      ],
+      [
+        "Spain",
+        "capital city",
+        "Madrid"
+      ],
+      [
+        "Spain",
+        "home to leaders such as",
+        "Manuela Carmena"
+      ]
+    ],
+    "strict_coverage": 0.0909,
+    "smga_coverage": 0.9091
+  },
+  {
+    "graph_name": "WebNLG_Combined_2",
     "mode": "baseline_d",
-    "generated_text": "Adolfo Suárez Madrid–Barajas Airport, situated in the municipality of Alcobendas at an elevation of 609 meters above sea level, serves as a major gateway to Madrid, the capital city of Spain. This airport plays a crucial role in connecting Madrid and its surrounding regions with destinations worldwide. As led by Mayor Manuela Carmena, Madrid is not only the political and cultural heart of Spain but also the country's economic hub. The city hosts numerous landmarks and institutions that reflect Spain’s rich history and modernity. Within Madrid, the official currency is the Euro (€), facilitating both domestic and international transactions.\n\nMeanwhile, Baklava, a delectable dessert originating from Turkey, exemplifies the culinary heritage of this nation. Renowned for its layers of phyllo dough filled with chopped nuts and drizzled with honey, baklava is a traditional treat that captures the essence of Turkish cuisine. The capital city, Ankara, stands as an important center in Turkey. In terms of currency, Turkish lira serves as the medium of exchange throughout the country, reflecting both its cultural richness and economic landscape.",
+    "generated_text": "Adolfo Suárez Madrid–Barajas Airport, located in the municipality of Alcobendas, serves as a major gateway to Madrid, the capital city of Spain. Situated at an elevation of 609 meters above sea level, this airport plays a crucial role in connecting Madrid and its surrounding regions with destinations worldwide. As the political and cultural heart of Spain, Madrid is also the country's economic hub under the leadership of Mayor Manuela Carmena. The city hosts numerous landmarks and institutions that reflect both Spain’s rich history and modernity. Within Madrid, the official currency is the Euro (€), facilitating both domestic and international transactions.\n\nSimilarly, baklava, a delectable dessert originating from Turkey, is renowned for its layers of phyllo dough interspersed with chopped nuts and sweetened with honey. This traditional pastry reflects the rich culinary heritage of the country. The capital city of Turkey, Ankara, stands as a significant political and cultural hub, while the Turkish lira serves as the nation's official currency, facilitating transactions in both everyday commerce and the vibrant food market where baklava is often savored.",
     "extracted_triples": [
       [
         "Adolfo Suárez Madrid–Barajas Airport",
-        "is situated in",
+        "is located in",
         "Alcobendas"
-      ],
-      [
-        "Adolfo Suárez Madrid–Barajas Airport",
-        "elevation above sea level",
-        "609 meters"
       ],
       [
         "Adolfo Suárez Madrid–Barajas Airport",
@@ -1625,28 +2077,23 @@
         "Spain"
       ],
       [
-        "Mayor Manuela Carmena",
-        "leads",
-        "Madrid"
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "plays a crucial role in connecting",
+        "Madrid and its surrounding regions with destinations worldwide"
       ],
       [
         "Madrid",
-        "is the political and cultural heart of",
-        "Spain"
-      ],
-      [
-        "Madrid",
-        "is the economic hub of",
-        "Spain"
-      ],
-      [
-        "Madrid",
-        "hosts landmarks and institutions that reflect",
-        "Spain’s rich history and modernity"
+        "is the economic hub under the leadership of",
+        "Mayor Manuela Carmena"
       ],
       [
         "Euro (€)",
         "is the official currency in",
+        "Madrid"
+      ],
+      [
+        "Euro (€)",
+        "facilitates domestic and international transactions in",
         "Madrid"
       ],
       [
@@ -1655,28 +2102,18 @@
         "Turkey"
       ],
       [
-        "Baklava",
-        "is a traditional treat",
-        "in Turkish cuisine"
-      ],
-      [
-        "Baklava",
-        "consists of layers of phyllo dough filled with chopped nuts and drizzled with honey",
-        "true"
-      ],
-      [
         "Ankara",
         "is the capital city of",
         "Turkey"
       ],
       [
         "Turkish lira",
-        "serves as the medium of exchange in",
+        "serves as the official currency in",
         "Turkey"
       ]
     ],
     "strict_coverage": 0.0,
-    "smga_coverage": 1.0
+    "smga_coverage": 0.6364
   },
   {
     "graph_name": "WebNLG_Combined_2",
@@ -1795,7 +2232,7 @@
   {
     "graph_name": "WebNLG_Combined_0",
     "mode": "baseline_a",
-    "generated_text": "Alan Bean was born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States. A test pilot by occupation, Bean's career took a significant turn when he was selected by NASA in 1963 as part of the astronaut corps. While not directly associated with Auburn University, which is a public university established in 1856 and located in Auburn, Alabama, Lee County, the connection highlights the educational landscape of the state where Bean's early life was spent.",
+    "generated_text": "Alan Bean was born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States. A test pilot by occupation, Bean's career took a significant turn when he was selected by NASA in 1963 as part of the astronaut corps. While not directly associated with Auburn University, which is a public university established in 1856 and located in Auburn, Alabama, Lee County, this information provides context about the geographical and historical setting relevant to Bean's life and career.",
     "extracted_triples": [
       [
         "Alan Bean",
@@ -1810,12 +2247,7 @@
       [
         "Wheeler, Texas",
         "is located in",
-        "Central Time Zone"
-      ],
-      [
-        "Wheeler, Texas",
-        "is part of",
-        "United States"
+        "Central Time Zone of the United States"
       ],
       [
         "Alan Bean",
@@ -1824,7 +2256,7 @@
       ],
       [
         "Alan Bean",
-        "selected by NASA as astronaut",
+        "selected by NASA as an astronaut",
         "1963"
       ],
       [
@@ -1844,12 +2276,12 @@
       ]
     ],
     "strict_coverage": 0.0769,
-    "smga_coverage": 0.6923
+    "smga_coverage": 0.6154
   },
   {
     "graph_name": "WebNLG_Combined_0",
     "mode": "baseline_b",
-    "generated_text": "Auburn University, a public university established in 1856 and located in Auburn, Alabama, serves the Lee County area. Meanwhile, Wheeler, Texas, which is situated in the Central Time Zone and part of the United States, shares its country with Auburn, Alabama. Born on March 15, 1932, in Wheeler, Alan Bean went on to become a test pilot before being selected by NASA in 1963 for their astronaut program. His contributions to space exploration are well-documented, though his roots trace back to the small town where he was born.",
+    "generated_text": "Auburn University, a public university established in 1856 and located in Auburn, Alabama, serves the Lee County area. Meanwhile, Wheeler, Texas, which is situated in the Central Time Zone and part of the United States, shares its national identity with Auburn, Alabama. Born on March 15, 1932, in Wheeler, Alan Bean went on to become a test pilot before being selected by NASA in 1963 for their astronaut program. His contributions to space exploration are well-documented, though his roots remain firmly planted in the small town of his birth.",
     "extracted_triples": [
       [
         "Auburn University",
@@ -1887,9 +2319,9 @@
         "United States"
       ],
       [
-        "Auburn, Alabama",
-        "shares_country_with",
-        "Wheeler"
+        "Wheeler",
+        "shares_national_identity_with",
+        "Auburn, Alabama"
       ],
       [
         "Alan Bean",
@@ -1913,8 +2345,8 @@
       ],
       [
         "Alan Bean",
-        "contributions_to",
-        "space exploration"
+        "contributions_to_space_exploration",
+        "well-documented"
       ]
     ],
     "strict_coverage": 0.0,
@@ -1922,8 +2354,62 @@
   },
   {
     "graph_name": "WebNLG_Combined_0",
+    "mode": "baseline_c",
+    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas (located in the Central Time Zone), was selected by NASA in 1963 to become an astronaut. He pursued his education at Auburn University, a public institution established in 1856 and located in Auburn, Alabama, which is part of Lee County. Prior to his career with NASA, Bean served as a test pilot. As an American national, his early life was rooted in Wheeler, Texas, before he moved on to achieve significant milestones in space exploration.",
+    "extracted_triples": [
+      [
+        "Alan Bean",
+        "was born on",
+        "March 15, 1932"
+      ],
+      [
+        "Alan Bean",
+        "was born in",
+        "Wheeler, Texas"
+      ],
+      [
+        "Wheeler, Texas",
+        "is located in",
+        "Central Time Zone"
+      ],
+      [
+        "Alan Bean",
+        "was selected by NASA to become an astronaut",
+        "in 1963"
+      ],
+      [
+        "Alan Bean",
+        "pursued education at",
+        "Auburn University"
+      ],
+      [
+        "Auburn University",
+        "is a public institution established in",
+        "1856"
+      ],
+      [
+        "Auburn University",
+        "is located in",
+        "Auburn, Alabama"
+      ],
+      [
+        "Auburn, Alabama",
+        "is part of",
+        "Lee County"
+      ],
+      [
+        "Alan Bean",
+        "served as",
+        "test pilot prior to his career with NASA"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.6154
+  },
+  {
+    "graph_name": "WebNLG_Combined_0",
     "mode": "baseline_d",
-    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas—a town located in the Central Time Zone of the United States—was an American national whose journey from his birthplace to becoming part of the space program exemplifies his dedication and skill. Before being selected by NASA in 1963, Bean had already distinguished himself as a test pilot. Auburn University, a public institution established in 1856 and located in the city of Auburn, which is situated in Lee County, Alabama, United States, has grown significantly over its long history and continues to be an important educational and cultural hub for the region.",
+    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States, was not only an American national but also an accomplished test pilot before being selected by NASA in 1963. His journey from Texas to becoming part of NASA's astronaut corps exemplifies his dedication and skill, setting him on a path that would eventually lead him to walk on the Moon as a crew member of Apollo 12.\n\nMeanwhile, Auburn University, a public university located in the city of Auburn, which is situated in Lee County, Alabama, United States, has a rich history dating back to its establishment in 1856. This institution has grown significantly over its long history and continues to be an important educational and cultural hub for the region.",
     "extracted_triples": [
       [
         "Alan Bean",
@@ -1942,27 +2428,42 @@
       ],
       [
         "Alan Bean",
-        "was an American national",
-        ""
+        "is an",
+        "American national"
       ],
       [
         "Alan Bean",
-        "distinguished himself as a test pilot before being selected by NASA",
-        "1963"
+        "was a",
+        "test pilot"
+      ],
+      [
+        "Alan Bean",
+        "was selected by NASA",
+        "in 1963"
+      ],
+      [
+        "Alan Bean",
+        "walked on the Moon as part of",
+        "Apollo 12"
+      ],
+      [
+        "Auburn University",
+        "is located in",
+        "the city of Auburn, Alabama"
+      ],
+      [
+        "Auburn, Alabama",
+        "is situated in",
+        "Lee County, United States"
       ],
       [
         "Auburn University",
         "was established in",
         "1856"
-      ],
-      [
-        "Auburn University",
-        "is located in",
-        "the city of Auburn, Lee County, Alabama, United States"
       ]
     ],
     "strict_coverage": 0.0,
-    "smga_coverage": 0.5385
+    "smga_coverage": 0.6923
   },
   {
     "graph_name": "WebNLG_Combined_0",
@@ -2026,7 +2527,7 @@
       ],
       [
         "Wheeler, Texas",
-        "situated in",
+        "located in",
         "Central Time Zone of the United States"
       ],
       [
@@ -2046,7 +2547,7 @@
   {
     "graph_name": "Synthetic_Chained_Large",
     "mode": "baseline_a",
-    "generated_text": "Alan Bean, born on March 15, 1932, in Wheeler, Texas, a city located in the Central Time Zone of the United States, served as a test pilot before being selected by NASA in 1963. He later graduated from Auburn University, a public university established in 1856 and situated in Auburn, Alabama. Notably, Turkey, where Baklava originated, has Ankara as its capital and uses Turkish lira as currency; meanwhile, Madrid, the capital of Spain, is governed by Manuela Carmena and operates on Central European Time, using the Euro. The Alamo Plaza, located in San Antonio, Texas, under Mayor Ron Nirenberg, stands as a significant historical site. Apple Inc., founded by Steve Jobs, has its headquarters in Cupertino, California, with Tim Cook serving as one of its key people; Jobs was born in San Francisco and later co-founded NeXT. Auburn University educated Tim Cook, while NATO, headquartered in Brussels, Belgium, includes both the United States and Spain among its members.",
+    "generated_text": "Alan Bean was born on March 15, 1932, in Wheeler, Texas, a city located in the Central Time Zone of the United States. A test pilot by profession, he was selected by NASA in 1963 and went on to become an astronaut. Auburn University, established in 1856 as a public institution in Alabama, played a significant role in Tim Cook's education. The university is part of Lee County, Alabama. Baklava, a dessert made primarily from phyllo dough, nuts, and honey, originates from Turkey, where Ankara serves as the capital and has a population of approximately 5,747,325. Adolfo Suarez Madrid-Barajas Airport, located in Madrid, Spain, is situated at an elevation of 609 meters above sea level. The city of Madrid, led by Mayor Manuela Carmena, is also the capital of Spain and uses Central European Time. Apple Inc., founded by Steve Jobs in San Francisco, has its headquarters in Cupertino, California, where Tim Cook, a graduate of Auburn University, serves as one of the key people. NATO, an alliance including Turkey, the United States, and Spain, with Brussels, Belgium, as the location of its headquarters, plays a crucial role in global security.",
     "extracted_triples": [
       [
         "Alan Bean",
@@ -2060,326 +2561,53 @@
       ],
       [
         "Wheeler, Texas",
-        "is located in",
-        "Central Time Zone of the United States"
+        "is located in the time zone",
+        "Central Time Zone"
+      ],
+      [
+        "Wheeler, Texas",
+        "is part of",
+        "the United States"
       ],
       [
         "Alan Bean",
-        "served as a test pilot before being selected by NASA",
-        "in 1963"
-      ],
-      [
-        "Auburn University",
-        "was established in",
-        "1856"
-      ],
-      [
-        "Auburn University",
-        "is situated in",
-        "Auburn, Alabama"
-      ],
-      [
-        "Baklava",
-        "originated from",
-        "Turkey"
-      ],
-      [
-        "Ankara",
-        "is the capital of",
-        "Turkey"
-      ],
-      [
-        "Turkey",
-        "uses",
-        "Turkish lira as currency"
-      ],
-      [
-        "Madrid",
-        "is governed by",
-        "Manuela Carmena"
-      ],
-      [
-        "Madrid",
-        "operates on",
-        "Central European Time"
-      ],
-      [
-        "Madrid",
-        "uses",
-        "Euro as currency"
-      ],
-      [
-        "The Alamo Plaza",
-        "is located in",
-        "San Antonio, Texas"
-      ],
-      [
-        "The Alamo Plaza",
-        "stands under",
-        "Mayor Ron Nirenberg"
-      ],
-      [
-        "Apple Inc.",
-        "was founded by",
-        "Steve Jobs"
-      ],
-      [
-        "Apple Inc.",
-        "has its headquarters in",
-        "Cupertino, California"
-      ],
-      [
-        "Tim Cook",
-        "is one of the key people at",
-        "Apple Inc."
-      ],
-      [
-        "Steve Jobs",
-        "was born in",
-        "San Francisco"
-      ],
-      [
-        "Steve Jobs",
-        "co-founded",
-        "NeXT"
-      ],
-      [
-        "Auburn University",
-        "educated",
-        "Tim Cook"
-      ],
-      [
-        "NATO",
-        "headquartered in",
-        "Brussels, Belgium"
-      ],
-      [
-        "United States",
-        "is a member of",
-        "NATO"
-      ],
-      [
-        "Spain",
-        "is a member of",
-        "NATO"
-      ]
-    ],
-    "strict_coverage": 0.0,
-    "smga_coverage": 0.4894
-  },
-  {
-    "graph_name": "Synthetic_Chained_Large",
-    "mode": "baseline_b",
-    "generated_text": "Apple Inc., founded by Steve Jobs and headquartered in Cupertino, California, a part of the United States, is a significant technology company. The U.S. currency used in Spain is the Euro, while Madrid, the capital of Spain, was led by Manuela Carmena. In contrast, Turkey, a NATO member country with Ankara as its capital and 5,747,325 inhabitants, uses the Turkish lira. Auburn University, a public institution established in 1856 and located in Auburn, Alabama, is where Tim Cook received his education. The Alamo Plaza, situated in San Antonio, Texas, also part of the U.S., hosts significant historical landmarks. Steve Jobs co-founded NeXT, while Alan Bean, born on March 15, 1932, in Wheeler, Texas, served as a test pilot before being selected by NASA in 1963. Adolfo Suarez Airport, located in Madrid, has an elevation of 609 meters and serves the Spanish capital. The United States, also a NATO member with Washington D.C. as its capital, is home to Auburn University and Apple Inc., while San Antonio, Texas, is governed by Mayor Ron Nirenberg. Baklava, a dessert made primarily from phyllo dough, nuts, and honey, has its origins in Turkey, another NATO member country whose currency is the Turkish lira.",
-    "extracted_triples": [
-      [
-        "Apple Inc.",
-        "founded_by",
-        "Steve Jobs"
-      ],
-      [
-        "Apple Inc.",
-        "headquartered_in",
-        "Cupertino, California"
-      ],
-      [
-        "Apple Inc.",
-        "part_of",
-        "United States"
-      ],
-      [
-        "United States",
-        "currency_used_in_Spain",
-        "Euro"
-      ],
-      [
-        "Spain",
-        "capital_city",
-        "Madrid"
-      ],
-      [
-        "Madrid",
-        "led_by",
-        "Manuela Carmena"
-      ],
-      [
-        "Turkey",
-        "NATO_member_country",
-        "True"
-      ],
-      [
-        "Turkey",
-        "capital_city",
-        "Ankara"
-      ],
-      [
-        "Turkey",
-        "population",
-        "5,747,325"
-      ],
-      [
-        "Turkey",
-        "currency_used",
-        "Turkish lira"
-      ],
-      [
-        "Auburn University",
-        "established_in",
-        "1856"
-      ],
-      [
-        "Auburn University",
-        "located_in",
-        "Auburn, Alabama"
-      ],
-      [
-        "Tim Cook",
-        "received_education_at",
-        "Auburn University"
-      ],
-      [
-        "Alamo Plaza",
-        "location",
-        "San Antonio, Texas"
-      ],
-      [
-        "San Antonio, Texas",
-        "governed_by",
-        "Ron Nirenberg"
-      ],
-      [
-        "Steve Jobs",
-        "co-founded",
-        "NeXT"
-      ],
-      [
-        "Alan Bean",
-        "born_on",
-        "March 15, 1932"
-      ],
-      [
-        "Alan Bean",
-        "born_in",
-        "Wheeler, Texas"
-      ],
-      [
-        "Alan Bean",
-        "served_as",
+        "profession",
         "test pilot"
       ],
       [
+        "NASA",
+        "selected",
+        "Alan Bean"
+      ],
+      [
         "Alan Bean",
-        "selected_by_NASA_in",
-        "1963"
-      ],
-      [
-        "Adolfo Suarez Airport",
-        "located_in",
-        "Madrid"
-      ],
-      [
-        "Adolfo Suarez Airport",
-        "elevation",
-        "609 meters"
-      ],
-      [
-        "Adolfo Suarez Airport",
-        "serves",
-        "Madrid"
-      ],
-      [
-        "United States",
-        "NATO_member_country",
-        "True"
-      ],
-      [
-        "United States",
-        "capital_city",
-        "Washington D.C."
+        "became",
+        "astronaut"
       ],
       [
         "Auburn University",
-        "located_in",
-        "United States"
+        "established in",
+        "1856"
       ],
       [
-        "Apple Inc.",
-        "located_in",
-        "United States"
+        "Auburn University",
+        "location",
+        "Alabama"
       ],
       [
-        "San Antonio, Texas",
-        "part_of",
-        "United States"
-      ]
-    ],
-    "strict_coverage": 0.0426,
-    "smga_coverage": 0.5319
-  },
-  {
-    "graph_name": "Synthetic_Chained_Large",
-    "mode": "baseline_d",
-    "generated_text": "Alamo Plaza is located in San Antonio, Texas, where Ron Nirenberg serves as the mayor. The city of San Antonio, along with its neighboring Cupertino, California, which houses the headquarters of Apple Inc., co-founded by Steve Jobs and later influenced by NeXT under his leadership, are both part of the United States. Tim Cook is one of the key figures at Apple Inc., a company that has significantly shaped the tech industry.\n\nSteve Jobs, born in San Francisco, was an American citizen who founded NeXT, which later had a profound impact on Apple's development. The United States, encompassing both San Antonio and Cupertino, is a member of NATO with its capital in Washington D.C.\n\nBaklava, a traditional dessert originating from Turkey, is made primarily with layers of phyllo dough, nuts, and honey. Ankara, the capital city of Turkey, has a population of approximately 5,747,325 and serves as the political center of the country. Turkey, which operates under Turkey Time Zone and is also a member of NATO, uses the Turkish lira as its currency.\n\nNATO's headquarters are located in Brussels, Belgium, while Adolfo Suárez Madrid–Barajas Airport, named after Spain’s first democratically elected prime minister following Francisco Franco's death, serves as a major transportation hub for the country. Situated at an elevation of 609 meters above sea level and led by Mayor Manuela Carmena, Madrid is not only the capital but also the heart of political and cultural life in Spain. As a member of NATO, Spain maintains strong international alliances. The official language of Spain is Spanish, and its currency is the Euro. Central European Time (CET) governs this region during standard time.\n\nAlan Bean, born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States, was an American national and accomplished test pilot before being selected by NASA in 1963. His journey from his birthplace to becoming part of the space program exemplifies his dedication and skill.\n\nAuburn University, established in 1856, is a public university located in Auburn, Lee County, Alabama, United States. Notably, Tim Cook, former CEO of Apple Inc., was an alumnus of Auburn University, highlighting the institution's significant influence beyond its local community.",
-    "extracted_triples": [
-      [
-        "Alamo Plaza",
-        "is located in",
-        "San Antonio"
+        "Auburn University",
+        "played a significant role in",
+        "Tim Cook's education"
       ],
       [
-        "San Antonio",
-        "has mayor",
-        "Ron Nirenberg"
+        "Auburn University",
+        "part of",
+        "Lee County, Alabama"
       ],
       [
-        "San Antonio",
-        "and Cupertino",
-        "are part of"
-      ],
-      [
-        "Cupertino",
-        "houses headquarters of",
-        "Apple Inc."
-      ],
-      [
-        "Apple Inc.",
-        "co-founded by",
-        "Steve Jobs"
-      ],
-      [
-        "Apple Inc.",
-        "influenced by",
-        "NeXT under Steve Jobs' leadership"
-      ],
-      [
-        "Tim Cook",
-        "is key figure at",
-        "Apple Inc."
-      ],
-      [
-        "San Francisco",
-        "is birthplace of",
-        "Steve Jobs"
-      ],
-      [
-        "NeXT",
-        "founded by",
-        "Steve Jobs"
-      ],
-      [
-        "NeXT",
-        "had profound impact on",
-        "Apple's development"
-      ],
-      [
-        "United States",
-        "is member of",
-        "NATO"
-      ],
-      [
-        "United States",
-        "capital is",
-        "Washington D.C."
+        "Baklava",
+        "made primarily from",
+        "phyllo dough, nuts, and honey"
       ],
       [
         "Baklava",
@@ -2387,69 +2615,143 @@
         "Turkey"
       ],
       [
-        "Baklava",
-        "made primarily with",
-        "layers of phyllo dough, nuts, and honey"
-      ],
-      [
         "Ankara",
-        "is capital city of",
+        "capital of",
         "Turkey"
       ],
       [
         "Ankara",
-        "has population of approximately",
-        "5,747,325"
+        "population",
+        "approximately 5,747,325"
       ],
       [
-        "Ankara",
-        "serves as political center of",
-        "Turkey"
-      ],
-      [
-        "Turkey",
-        "operates under",
-        "Turkey Time Zone"
-      ],
-      [
-        "NATO's headquarters",
+        "Adolfo Suarez Madrid-Barajas Airport",
         "located in",
-        "Brussels, Belgium"
+        "Madrid, Spain"
       ],
       [
-        "Adolfo Suárez Madrid–Barajas Airport",
-        "named after",
-        "Spain’s first democratically elected prime minister following Francisco Franco's death"
+        "Adolfo Suarez Madrid-Barajas Airport",
+        "elevation above sea level",
+        "609 meters"
       ],
       [
         "Madrid",
-        "is capital of",
+        "led by",
+        "Mayor Manuela Carmena"
+      ],
+      [
+        "Madrid",
+        "capital of",
         "Spain"
       ],
       [
         "Madrid",
-        "led by Mayor",
-        "Manuela Carmena"
+        "uses time zone",
+        "Central European Time"
       ],
       [
-        "Spain",
-        "official language is",
-        "Spanish"
+        "Apple Inc.",
+        "founded by",
+        "Steve Jobs"
       ],
       [
-        "Spain",
-        "currency is",
-        "Euro"
+        "Apple Inc.",
+        "headquarters located in",
+        "Cupertino, California"
       ],
       [
-        "Alan Bean",
-        "born on",
-        "March 15, 1932"
+        "Tim Cook",
+        "graduate of",
+        "Auburn University"
       ],
       [
-        "Alan Bean",
-        "born in",
-        "Wheeler, Texas"
+        "NATO",
+        "includes",
+        "Turkey"
+      ],
+      [
+        "NATO",
+        "includes",
+        "United States"
+      ],
+      [
+        "NATO",
+        "includes",
+        "Spain"
+      ],
+      [
+        "NATO",
+        "headquarters located in",
+        "Brussels, Belgium"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.5319
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "baseline_b",
+    "generated_text": "Apple Inc., headquartered in Cupertino, California, a part of the United States, was founded by Steve Jobs and is currently led by Tim Cook. The company's key people include Tim Cook, while Steve Jobs also co-founded NeXT. In Spain, the official currency is the Euro, and Madrid, with its capital status, has been led by figures such as Manuela Carmena. Meanwhile, in Texas, San Antonio is governed by Mayor Ron Nirenberg, and Alamo Plaza is located within this city. Auburn University, a public institution established in 1856, is situated in Auburn, Alabama, where the state capital is Montgomery, not mentioned but relevant to context. Alan Bean, an American test pilot and NASA astronaut selected in 1963, was born on March 15, 1932, in Wheeler, Texas, another U.S. city. Turkey, a NATO member with its capital Ankara and currency Turkish lira, is known for its dessert baklava, which features phyllo dough, nuts, and honey as main ingredients. The country's largest city, Istanbul, is not directly mentioned but relevant to the geographical context.",
+    "extracted_triples": [
+      [
+        "Apple Inc.",
+        "headquartered in",
+        "Cupertino"
+      ],
+      [
+        "Apple Inc.",
+        "located in",
+        "California"
+      ],
+      [
+        "Apple Inc.",
+        "part of",
+        "United States"
+      ],
+      [
+        "Apple Inc.",
+        "founded by",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc.",
+        "currently led by",
+        "Tim Cook"
+      ],
+      [
+        "Tim Cook",
+        "key person at",
+        "Apple Inc."
+      ],
+      [
+        "Steve Jobs",
+        "co-founded",
+        "NeXT"
+      ],
+      [
+        "Euro",
+        "official currency of",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "capital city of",
+        "Spain"
+      ],
+      [
+        "Manuela Carmena",
+        "led",
+        "Madrid"
+      ],
+      [
+        "San Antonio",
+        "governed by",
+        "Ron Nirenberg"
+      ],
+      [
+        "Alamo Plaza",
+        "located in",
+        "San Antonio"
       ],
       [
         "Auburn University",
@@ -2459,96 +2761,32 @@
       [
         "Auburn University",
         "located in",
-        "Auburn, Lee County, Alabama, United States"
-      ],
-      [
-        "Tim Cook",
-        "former CEO of Apple Inc.",
-        "alumnus of Auburn University"
-      ]
-    ],
-    "strict_coverage": 0.0,
-    "smga_coverage": 0.5745
-  },
-  {
-    "graph_name": "Synthetic_Chained_Large",
-    "mode": "smart_graph",
-    "generated_text": "The United States is a member of NATO (North Atlantic Treaty Organization), an intergovernmental military alliance that includes various cities such as Wheeler in Texas and Auburn in Alabama. Within these states, notable Americans include Alan Bean, who was born on March 15, 1932, in Wheeler, Texas, and served as a NASA astronaut, exemplifying American innovation and achievement alongside Steve Jobs, the renowned entrepreneur and co-founder of Apple Inc., whose headquarters is located in Cupertino, California. Washington D.C. serves as the capital of the United States, hosting numerous federal government institutions and landmarks.\n\nSan Antonio, situated in the state of Texas within the United States, is known for its rich history and cultural heritage, with Alamo Plaza being a historic site that commemorates the Battle of the Alamo during the Texan revolution against Mexico. Auburn University, founded in 1856, is located in Auburn, Alabama, where Tim Cook, who served as the CEO of Apple Inc., was an alumnus.\n\nTurkey, also a member of NATO since 1952, has its capital city Ankara, which hosts the Turkish government and parliament. The currency used in Turkey is the Turkish lira (TRY). Meanwhile, Spain joined NATO in 1982 following its transition to democracy and uses the Euro as its official currency.\n\nAdolfo Suárez Madrid–Barajas Airport serves as a major transportation hub for travelers coming to or leaving from Madrid, the capital city of Spain. As both the political and cultural heart of the nation, Madrid hosts the airport and stands as the seat of government, where Spanish heritage and modernity coexist. The city operates on Central European Time (CET) during standard time.\n\nAlan Bean, born in Wheeler, Texas, was selected by NASA in 1963 to join the astronaut corps, marking a significant milestone in his career as an aerospace engineer. He transitioned from testing aircraft to playing a crucial role in space exploration. In contrast, Steve Jobs co-founded NeXT in 1985 after being ousted from Apple Inc., which he had also founded. Following a period of restructuring and innovation, NeXT was eventually acquired by Apple in 1997, leading to Jobs' return as interim CEO. Today, Tim Cook serves as the CEO of Apple Inc., overseeing one of the world's most valuable technology companies.\n\nAuburn University is a public research university located in Auburn, Alabama, founded in 1856 and serving as an important educational institution in the state. Ron Nirenberg served as the Mayor of San Antonio, Texas from 2015 to 2023, focusing on issues such as economic development, public safety, and infrastructure improvement during his tenure.\n\nAnkara, the capital city of Turkey with a population of approximately 5,747,325 residents, operates under Turkish Standard Time (TRT), which is UTC+02:00 during standard time and shifts to UTC+03:00 during Daylight Saving Time. The local economy is bolstered by various sectors, including services, manufacturing, and education.\n\nBaklava, a sweet pastry made with layers of thin pastry dough filled with chopped nuts and held together with syrup or honey, has its origins in Turkish cuisine. Adolfo Suárez Madrid–Barajas Airport has an elevation of 609 meters (approximately 2,000 feet) above sea level, influencing various aspects of airport operations.\n\nWheeler, Texas, located in the central part of the state, operates under the Central Time Zone (CT). Similarly, Auburn is a city located in Lee County, Alabama, serving as the county seat and known for its strong connection to Auburn University. The university significantly contributes to the local economy and culture with a population exceeding 65,000 residents.\n\nThe North Atlantic Treaty Organization (NATO) maintains its headquarters in Brussels, Belgium, a city that has long served as a focal point for international diplomacy. As the capital of Belgium, Brussels hosts numerous other international organizations and embassies, reflecting its role as a hub for global governance and cooperation.",
-    "extracted_triples": [
-      [
-        "United States",
-        "is member of",
-        "NATO"
-      ],
-      [
-        "Wheeler",
-        "in state",
-        "Texas"
-      ],
-      [
-        "Auburn",
-        "in state",
-        "Alabama"
-      ],
-      [
-        "Alan Bean",
-        "born in",
-        "Wheeler, Texas"
-      ],
-      [
-        "Alan Bean",
-        "served as",
-        "NASA astronaut"
-      ],
-      [
-        "Steve Jobs",
-        "co-founder of",
-        "Apple Inc."
-      ],
-      [
-        "Steve Jobs",
-        "CEO of",
-        "Apple Inc."
-      ],
-      [
-        "Tim Cook",
-        "CEO of",
-        "Apple Inc."
-      ],
-      [
-        "Washington D.C.",
-        "capital of",
-        "United States"
-      ],
-      [
-        "San Antonio",
-        "in state",
-        "Texas"
-      ],
-      [
-        "Alamo Plaza",
-        "historic site in",
-        "San Antonio, Texas"
+        "Auburn"
       ],
       [
         "Auburn University",
         "located in",
-        "Auburn, Alabama"
+        "Alabama"
       ],
       [
-        "Auburn University",
-        "founded in",
-        "1856"
+        "Montgomery",
+        "state capital of",
+        "Alabama"
       ],
       [
-        "Tim Cook",
-        "alumnus of",
-        "Auburn University"
+        "Alan Bean",
+        "born on",
+        "March 15, 1932"
       ],
       [
-        "Turkey",
-        "member of",
-        "NATO"
+        "Alan Bean",
+        "born in",
+        "Wheeler"
+      ],
+      [
+        "Alan Bean",
+        "born in",
+        "Texas"
       ],
       [
         "Ankara",
@@ -2557,86 +2795,498 @@
       ],
       [
         "Turkish lira",
-        "currency used in",
+        "currency of",
         "Turkey"
       ],
       [
-        "Spain",
-        "member of",
-        "NATO"
-      ],
-      [
-        "Cupertino",
-        "headquarters location of",
-        "Apple Inc."
-      ],
-      [
-        "Cupertino",
-        "in state",
-        "California"
-      ],
-      [
-        "Adolfo Suárez Madrid–Barajas Airport",
-        "serves as",
-        "major transportation hub for travelers coming to or leaving from Madrid, Spain"
-      ],
-      [
-        "Madrid",
-        "capital city of",
-        "Spain"
-      ],
-      [
-        "Ron Nirenberg",
-        "Mayor of San Antonio, Texas",
-        "from 2015 to 2023"
-      ],
-      [
-        "Ankara",
-        "population",
-        "approximately 5,747,325 residents"
-      ],
-      [
-        "Ankara",
-        "operates under",
-        "Turkish Standard Time (TRT)"
-      ],
-      [
-        "Ankara",
-        "economy includes",
-        "services, manufacturing, and education"
+        "Baklava",
+        "desert of",
+        "Turkey"
       ],
       [
         "Baklava",
-        "origin of",
-        "Turkish cuisine"
+        "features",
+        "phyllo dough"
       ],
       [
-        "Adolfo Suárez Madrid–Barajas Airport",
-        "elevation above sea level",
-        "609 meters (approximately 2,000 feet)"
+        "Baklava",
+        "features",
+        "nuts"
       ],
       [
-        "Wheeler",
-        "operates under",
-        "Central Time Zone (CT)"
+        "Baklava",
+        "features",
+        "honey"
       ],
       [
-        "Auburn",
-        "county seat of",
-        "Lee County, Alabama"
-      ],
-      [
-        "Auburn University",
-        "contributes to local economy and culture with a population exceeding",
-        "65,000 residents"
-      ],
-      [
-        "NATO headquarters",
-        "located in",
-        "Brussels, Belgium"
+        "Istanbul",
+        "largest city in",
+        "Turkey"
       ]
     ],
     "strict_coverage": 0.0,
-    "smga_coverage": 0.6383
+    "smga_coverage": 0.4043
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "baseline_c",
+    "generated_text": "Adolfo Suarez Airport, located in Madrid, stands at an elevation of 609 meters above sea level. Established in 1856, Auburn University is a public institution in the state of Alabama. The city of Ankara, Turkey's capital, has a total population of approximately 5,747,325. Astronaut Alan Bean was selected by NASA in 1963 and was born on March 15, 1932, in Wheeler, Texas, United States. Baklava, an iconic dessert, is primarily made with phyllo dough, nuts, and honey. Steve Jobs founded NeXT and was a key figure at Apple Inc., which he co-founded and whose headquarters are located in Cupertino, California. Tim Cook, who serves as the CEO of Apple Inc., attended Auburn University. Madrid, Spain's capital, operates under Central European Time, while Ankara follows Turkey Time Zone. The United States is a member of NATO, with its capital being Washington D.C., and Steve Jobs was born in San Francisco, California. Alan Bean served as a test pilot before his NASA career.",
+    "extracted_triples": [
+      [
+        "Adolfo Suarez Airport",
+        "is located in",
+        "Madrid"
+      ],
+      [
+        "Adolfo Suarez Airport",
+        "stands at elevation of",
+        "609 meters above sea level"
+      ],
+      [
+        "Auburn University",
+        "established in",
+        "1856"
+      ],
+      [
+        "Auburn University",
+        "is a public institution in",
+        "Alabama"
+      ],
+      [
+        "Ankara",
+        "is the capital of",
+        "Turkey"
+      ],
+      [
+        "Ankara",
+        "has total population of",
+        "approximately 5,747,325"
+      ],
+      [
+        "Alan Bean",
+        "selected by NASA",
+        "in 1963"
+      ],
+      [
+        "Alan Bean",
+        "was born on",
+        "March 15, 1932"
+      ],
+      [
+        "Alan Bean",
+        "was born in",
+        "Wheeler, Texas, United States"
+      ],
+      [
+        "Baklava",
+        "is primarily made with",
+        "phyllo dough, nuts, and honey"
+      ],
+      [
+        "NeXT",
+        "founded by",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc.",
+        "co-founded by",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc.",
+        "headquarters located in",
+        "Cupertino, California"
+      ],
+      [
+        "Tim Cook",
+        "serves as the CEO of",
+        "Apple Inc."
+      ],
+      [
+        "Tim Cook",
+        "attended",
+        "Auburn University"
+      ],
+      [
+        "Madrid",
+        "is the capital of",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "operates under",
+        "Central European Time"
+      ],
+      [
+        "Ankara",
+        "follows",
+        "Turkey Time Zone"
+      ],
+      [
+        "United States",
+        "is a member of",
+        "NATO"
+      ],
+      [
+        "United States",
+        "capital is",
+        "Washington D.C."
+      ],
+      [
+        "Steve Jobs",
+        "was born in",
+        "San Francisco, California"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.4468
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "baseline_d",
+    "generated_text": "Alamo Plaza is located in San Antonio, Texas, which serves as the county seat of Bexar County and is part of the United States. The current mayor of San Antonio is Ron Nirenberg. Apple Inc., founded by Steve Jobs, has its headquarters in Cupertino, California, also within the U.S., where Tim Cook currently holds a key position. Born in San Francisco, California, and holding U.S. citizenship, Steve Jobs co-founded NeXT, a technology company that later contributed to the development of macOS and iOS operating systems for Apple Inc.\n\nThe United States, which includes both San Antonio and Cupertino, is a member of NATO and has Washington D.C. as its capital city. Turkey, another NATO member, is home to the delectable dessert baklava, primarily composed of layers of phyllo dough filled with chopped nuts and drizzled with honey. The capital city of Turkey, Ankara, has a population of approximately 5,747,325 and serves as the country's administrative center. NATO's headquarters are located in Brussels, Belgium.\n\nAdolfo Suárez Madrid–Barajas Airport, named after Adolfo Suárez, the first democratically elected prime minister of Spain following Francisco Franco’s death, is a major transportation hub for the country. Located in the city of Madrid, the capital and largest city of Spain, the airport serves as a vital link to the rest of Europe. Situated at an elevation of 609 meters above sea level, it operates under Central European Time (CET) during standard time. The city of Madrid is led by Mayor Manuela Carmena and is not only the capital but also the heart of political and cultural life in Spain. As a member of NATO, Spain maintains strong international alliances. The official language of Spain is Spanish, and its currency is the Euro.\n\nAlan Bean, born on March 15, 1932, in Wheeler, Texas, a town located in the Central Time Zone of the United States, was an American national and accomplished test pilot before being selected by NASA in 1963. His journey from his birthplace to becoming part of the space program exemplifies his dedication and skill.\n\nAuburn University, established in 1856, is a public university located in Auburn, Lee County, Alabama, United States. Notably, Tim Cook, former CEO of Apple Inc., was an alumnus of Auburn University, highlighting the university's influence beyond its local community.",
+    "extracted_triples": [
+      [
+        "Alamo Plaza",
+        "is located in",
+        "San Antonio"
+      ],
+      [
+        "San Antonio",
+        "serves as county seat of",
+        "Bexar County"
+      ],
+      [
+        "San Antonio",
+        "is part of",
+        "United States"
+      ],
+      [
+        "Ron Nirenberg",
+        "is the current mayor of",
+        "San Antonio"
+      ],
+      [
+        "Apple Inc.",
+        "was founded by",
+        "Steve Jobs"
+      ],
+      [
+        "Apple Inc.",
+        "has headquarters in",
+        "Cupertino, California"
+      ],
+      [
+        "Tim Cook",
+        "holds a key position at",
+        "Apple Inc."
+      ],
+      [
+        "Steve Jobs",
+        "co-founded",
+        "NeXT"
+      ],
+      [
+        "NeXT",
+        "contributed to development of",
+        "macOS and iOS operating systems for Apple Inc."
+      ],
+      [
+        "San Francisco",
+        "is the birthplace of",
+        "Steve Jobs"
+      ],
+      [
+        "San Francisco",
+        "is in",
+        "California"
+      ],
+      [
+        "California",
+        "is in",
+        "United States"
+      ],
+      [
+        "United States",
+        "includes",
+        "San Antonio"
+      ],
+      [
+        "United States",
+        "includes",
+        "Cupertino, California"
+      ],
+      [
+        "United States",
+        "is a member of",
+        "NATO"
+      ],
+      [
+        "Washington D.C.",
+        "is the capital city of",
+        "United States"
+      ],
+      [
+        "Turkey",
+        "is a member of",
+        "NATO"
+      ],
+      [
+        "Baklava",
+        "is primarily composed of",
+        "layers of phyllo dough filled with chopped nuts and drizzled with honey"
+      ],
+      [
+        "Ankara",
+        "serves as the administrative center of",
+        "Turkey"
+      ],
+      [
+        "NATO's headquarters",
+        "are located in",
+        "Brussels, Belgium"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "is named after",
+        "Adolfo Suárez"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "is a major transportation hub for",
+        "Spain"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "is located in",
+        "Madrid, Spain"
+      ],
+      [
+        "Madrid",
+        "serves as the capital of",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "serves as the largest city of",
+        "Spain"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "operates under",
+        "Central European Time (CET) during standard time"
+      ],
+      [
+        "Manuela Carmena",
+        "leads the city of",
+        "Madrid"
+      ],
+      [
+        "Spain",
+        "is a member of",
+        "NATO"
+      ],
+      [
+        "Spanish",
+        "is the official language of",
+        "Spain"
+      ],
+      [
+        "Euro",
+        "is the currency of",
+        "Spain"
+      ],
+      [
+        "Alan Bean",
+        "was born on March 15, 1932 in",
+        "Wheeler, Texas"
+      ],
+      [
+        "Wheeler, Texas",
+        "is located in the Central Time Zone of",
+        "United States"
+      ],
+      [
+        "Auburn University",
+        "was established in",
+        "1856"
+      ],
+      [
+        "Auburn, Lee County, Alabama, United States",
+        "is the location of",
+        "Auburn University"
+      ],
+      [
+        "Tim Cook",
+        "was an alumnus of",
+        "Auburn University"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.5957
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "smart_graph",
+    "generated_text": "The United States is a member of NATO (North Atlantic Treaty Organization), an intergovernmental military alliance that includes various cities such as Wheeler in Texas and Auburn in Alabama. Within these states, notable individuals include Alan Bean, a former NASA astronaut and lunar module pilot on Apollo 12, and Steve Jobs, co-founder of Apple Inc., known for his significant contributions to personal computer technology and mobile electronics.\n\nWashington D.C. serves as the capital of the United States, hosting numerous federal government institutions and landmarks. San Antonio, Texas, is renowned for its rich history and cultural heritage, with Alamo Plaza serving as a significant historical site known for its role during the Texas Revolution. Similarly, Cupertino, California, within the United States, is home to Apple Inc., whose headquarters plays a pivotal role in the technology industry worldwide.\n\nTurkey, another NATO member since 1952, has Ankara as its capital city, where the government and many important institutions are located. Baklava, a sweet pastry made with layers of thin pastry dough filled with chopped nuts and held together with a syrup or honey glaze, has its origins in Turkish cuisine. Spain also belongs to NATO, having joined the alliance in 1982 following its transition to democracy.\n\nSpain's official language is Spanish, which is spoken throughout the country. Adolfo Suárez Madrid–Barajas Airport serves as a major transportation hub for travelers coming to or leaving from Madrid, the capital city of Spain. As both the political and cultural heart of the nation, Madrid not only hosts government buildings but also embodies the essence of Spanish heritage and modernity.\n\nAlan Bean was born on March 15, 1932, in Wheeler, Texas, and was selected by NASA in 1963 to join the astronaut corps. This selection marked a significant milestone in his career as an aerospace engineer and set the stage for his future achievements in space exploration. As a test pilot before joining NASA, Bean accumulated extensive experience with high-performance jet aircraft, which later contributed significantly to his astronaut training and mission preparation for the Apollo program.\n\nAuburn University, founded in 1856, is located in Auburn, Alabama, an important educational institution that plays a significant role in the state's intellectual and economic landscape through its research and outreach initiatives. Notably, Tim Cook, who served as the CEO of Apple Inc., was an alumnus of Auburn University, having graduated with a degree from there.\n\nSteve Jobs co-founded NeXT in 1985 after being ousted from Apple Inc., which he had also founded. Following a period of restructuring and innovation, NeXT was eventually acquired by Apple in 1997, leading to Jobs' return as interim CEO. Today, Tim Cook serves as the CEO of Apple Inc., overseeing one of the world's most valuable technology companies known for its innovative products and services.\n\nMadrid, the capital city of Spain, was led by Manuela Carmena from 2015 to 2019 as the Mayor. During her tenure, she implemented various reforms and initiatives aimed at modernizing the city. Madrid operates on Central European Time (CET), aligning with most of Western Europe.\n\nThe currency used in Spain is the Euro (€), which was introduced as the official currency on January 1, 2002, replacing the Spanish peseta at a fixed exchange rate of 166.386 pesetas per one euro. The Euro serves as a symbol of economic integration and stability within the European Union.\n\nThe North Atlantic Treaty Organization (NATO) maintains its headquarters in Brussels, Belgium, a city that has long served as a focal point for international diplomacy. As the capital of Belgium, Brussels hosts not only NATO but also numerous other international organizations and embassies, reflecting its role as a hub for global governance and cooperation.\n\nSteve Jobs was born in San Francisco, California, on February 24, 1955. At the time of his birth, San Francisco was already a significant cultural and technological hub, though it would later become even more renowned during Jobs's tenure at Apple Inc., which revolutionized personal computing, music players, smartphones, and numerous other technologies from its headquarters in nearby Cupertino.\n\nAnkara, the capital city of Turkey, has a total population of approximately 5,747,325 residents as of the latest census data. Located in central Turkey, Ankara serves not only as a political and administrative hub but also as an important cultural center. The Turkish lira (TRY) is the official currency used throughout the country for transactions and economic activities, including those in Ankara.\n\nAuburn University is a public research university located in Auburn, Alabama, founded in 1856. It serves as an important educational institution in the state of Alabama, offering a wide range of academic programs and contributing significantly to the region's intellectual and economic landscape through its research and outreach initiatives.\n\nWheeler, Texas, operates under the Central Time Zone (CT), which is six hours behind Coordinated Universal Time (UTC-6) during standard time. During daylight saving time, it observes Central Daylight Time (CDT), which is five hours behind UTC (UTC-5).\n\nRon Nirenberg served as the Mayor of San Antonio, Texas from 2015 to 2023, focusing on issues such as economic development, public safety, and infrastructure improvement. His administration worked towards enhancing the city's resilience to natural disasters and promoting sustainable growth.\n\nAuburn is a city located in Lee County, Alabama, United States, situated in east-central Alabama. Known for its strong connection to Auburn University, which significantly contributes to the local economy and culture, the city has a population exceeding 65,000 residents.\n\nAdolfo Suárez Madrid–Barajas Airport has an elevation of 609 meters (approximately 2,000 feet) above sea level. This significant height can influence various aspects of airport operations, including air traffic management and the performance of aircraft during takeoff and landing.\n\nAlamo Plaza is located in San Antonio, Texas, and is home to several historically significant landmarks, including the Alamo, a former mission and church that played a crucial role during the Texas Revolution. The plaza itself serves as a central public space, offering visitors a glimpse into the city's rich history through its architecture and monuments, while also providing a vibrant setting for events and activities throughout the year.",
+    "extracted_triples": [
+      [
+        "United States",
+        "is_member_of",
+        "NATO"
+      ],
+      [
+        "Wheeler",
+        "in_state",
+        "Texas"
+      ],
+      [
+        "Auburn",
+        "in_state",
+        "Alabama"
+      ],
+      [
+        "Alan Bean",
+        "born_in",
+        "Wheeler, Texas"
+      ],
+      [
+        "Alan Bean",
+        "selected_by_NASA",
+        "1963"
+      ],
+      [
+        "Steve Jobs",
+        "co_founder_of",
+        "Apple Inc."
+      ],
+      [
+        "Steve Jobs",
+        "born_in",
+        "San Francisco, California"
+      ],
+      [
+        "Washington D.C.",
+        "capital_of",
+        "United States"
+      ],
+      [
+        "Alamo Plaza",
+        "located_in",
+        "San Antonio, Texas"
+      ],
+      [
+        "Ankara",
+        "capital_of",
+        "Turkey"
+      ],
+      [
+        "Turkey",
+        "is_member_of",
+        "NATO"
+      ],
+      [
+        "Spain",
+        "is_member_of",
+        "NATO"
+      ],
+      [
+        "Spanish",
+        "official_language_of",
+        "Spain"
+      ],
+      [
+        "Adolfo Suárez Madrid–Barajas Airport",
+        "serves_as_major_transportation_hub_for",
+        "Madrid, Spain"
+      ],
+      [
+        "Tim Cook",
+        "alumnus_of",
+        "Auburn University"
+      ],
+      [
+        "Apple Inc.",
+        "headquarters_located_in",
+        "Cupertino, California"
+      ],
+      [
+        "Manuela Carmena",
+        "mayor_of",
+        "Madrid, Spain"
+      ],
+      [
+        "Madrid",
+        "capital_city_of",
+        "Spain"
+      ],
+      [
+        "NATO",
+        "headquarters_located_in",
+        "Brussels, Belgium"
+      ],
+      [
+        "Tim Cook",
+        "CEO_of",
+        "Apple Inc."
+      ],
+      [
+        "NeXT",
+        "founded_by",
+        "Steve Jobs"
+      ],
+      [
+        "NeXT",
+        "acquired_by",
+        "Apple Inc."
+      ],
+      [
+        "Apple Inc.",
+        "founded_by",
+        "Steve Jobs"
+      ],
+      [
+        "Alan Bean",
+        "astronaut_for_NASA",
+        "Apollo 12"
+      ],
+      [
+        "Auburn University",
+        "located_in",
+        "Auburn, Alabama"
+      ],
+      [
+        "Ron Nirenberg",
+        "mayor_of_San_Antonio",
+        "2015-2023"
+      ],
+      [
+        "Auburn",
+        "population_exceeds",
+        "65,000_residents"
+      ],
+      [
+        "Ankara",
+        "total_population",
+        "approximately_5,747,325"
+      ],
+      [
+        "Alan Bean",
+        "test_pilot_experience",
+        "high-performance_jet_aircraft"
+      ],
+      [
+        "Auburn University",
+        "founded_in",
+        "1856"
+      ],
+      [
+        "Alamo Plaza",
+        "historically_significant_landmarks",
+        "Alamo"
+      ]
+    ],
+    "strict_coverage": 0.0,
+    "smga_coverage": 0.5745
   }
 ]

@@ -72,11 +72,11 @@
   },
   {
     "graph_name": "WebNLG_Astronaut",
-    "mode": "baseline_a",
+    "mode": "baseline_c",
     "omitted_facts": [
       [
-        "Wheeler, Texas",
-        "country",
+        "Alan_Bean",
+        "nationality",
         "United States"
       ]
     ]
@@ -116,12 +116,12 @@
   },
   {
     "graph_name": "WebNLG_Combined_4",
-    "mode": "baseline_b",
+    "mode": "baseline_c",
     "omitted_facts": [
       [
-        "Alamo Plaza",
-        "state",
-        "Texas"
+        "Cupertino, California",
+        "country",
+        "United States"
       ]
     ]
   },
@@ -130,9 +130,9 @@
     "mode": "smart_graph",
     "omitted_facts": [
       [
-        "Alamo Plaza",
-        "state",
-        "Texas"
+        "Cupertino, California",
+        "country",
+        "United States"
       ]
     ]
   },
@@ -153,8 +153,45 @@
     "omitted_facts": [
       [
         "Baklava",
-        "origin",
-        "Turkey"
+        "type",
+        "Dessert"
+      ]
+    ]
+  },
+  {
+    "graph_name": "WebNLG_Combined_2",
+    "mode": "baseline_c",
+    "omitted_facts": [
+      [
+        "Madrid",
+        "country",
+        "Spain"
+      ]
+    ]
+  },
+  {
+    "graph_name": "WebNLG_Combined_2",
+    "mode": "baseline_d",
+    "omitted_facts": [
+      [
+        "Baklava",
+        "mainIngredient",
+        "Phyllo dough, nuts, honey"
+      ],
+      [
+        "Baklava",
+        "type",
+        "Dessert"
+      ],
+      [
+        "Adolfo Suarez Airport",
+        "elevation",
+        "609 meters"
+      ],
+      [
+        "Madrid",
+        "country",
+        "Spain"
       ]
     ]
   },
@@ -179,24 +216,29 @@
     "mode": "baseline_a",
     "omitted_facts": [
       [
-        "Auburn University",
-        "state",
-        "Alabama"
-      ],
-      [
-        "Auburn, Alabama",
-        "country",
-        "United States"
-      ],
-      [
         "Alan_Bean",
         "nationality",
         "United States"
       ],
       [
+        "Wheeler, Texas",
+        "country",
+        "United States"
+      ],
+      [
+        "Auburn University",
+        "state",
+        "Alabama"
+      ],
+      [
         "Auburn University",
         "type",
         "Public university"
+      ],
+      [
+        "Auburn, Alabama",
+        "country",
+        "United States"
       ]
     ]
   },
@@ -223,12 +265,12 @@
   },
   {
     "graph_name": "WebNLG_Combined_0",
-    "mode": "baseline_d",
+    "mode": "baseline_c",
     "omitted_facts": [
       [
         "Alan_Bean",
-        "occupation",
-        "Test pilot"
+        "nationality",
+        "United States"
       ],
       [
         "Wheeler, Texas",
@@ -249,11 +291,32 @@
         "Auburn, Alabama",
         "country",
         "United States"
+      ]
+    ]
+  },
+  {
+    "graph_name": "WebNLG_Combined_0",
+    "mode": "baseline_d",
+    "omitted_facts": [
+      [
+        "Auburn University",
+        "state",
+        "Alabama"
+      ],
+      [
+        "Auburn University",
+        "type",
+        "Public university"
       ],
       [
         "Auburn, Alabama",
-        "county",
-        "Lee County, Alabama"
+        "country",
+        "United States"
+      ],
+      [
+        "Wheeler, Texas",
+        "country",
+        "United States"
       ]
     ]
   },
@@ -283,16 +346,6 @@
         "United States"
       ],
       [
-        "Alan_Bean",
-        "occupation",
-        "Test pilot"
-      ],
-      [
-        "Wheeler, Texas",
-        "country",
-        "United States"
-      ],
-      [
         "Auburn University",
         "state",
         "Alabama"
@@ -308,29 +361,14 @@
         "United States"
       ],
       [
-        "Auburn, Alabama",
-        "county",
-        "Lee County, Alabama"
-      ],
-      [
-        "Baklava",
-        "mainIngredient",
-        "Phyllo dough, nuts, honey"
-      ],
-      [
         "Baklava",
         "type",
         "Dessert"
       ],
       [
-        "Adolfo Suarez Airport",
-        "city",
-        "Madrid"
-      ],
-      [
-        "Adolfo Suarez Airport",
-        "elevation",
-        "609 meters"
+        "Turkey",
+        "currency",
+        "Turkish lira"
       ],
       [
         "Madrid",
@@ -339,8 +377,13 @@
       ],
       [
         "Spain",
-        "capital",
-        "Madrid"
+        "currency",
+        "Euro"
+      ],
+      [
+        "Alamo Plaza",
+        "location",
+        "San Antonio, Texas"
       ],
       [
         "Alamo Plaza",
@@ -353,9 +396,24 @@
         "United States"
       ],
       [
+        "San Antonio, Texas",
+        "mayor",
+        "Ron Nirenberg"
+      ],
+      [
+        "Apple Inc",
+        "keyPeople",
+        "Tim Cook"
+      ],
+      [
         "Cupertino, California",
         "country",
         "United States"
+      ],
+      [
+        "Steve Jobs",
+        "birthPlace",
+        "San Francisco"
       ],
       [
         "Ankara",
@@ -363,14 +421,9 @@
         "Turkey"
       ],
       [
-        "Ankara",
-        "populationTotal",
-        "5747325"
-      ],
-      [
-        "Turkey",
-        "memberOf",
-        "NATO"
+        "Steve Jobs",
+        "founded",
+        "NeXT"
       ],
       [
         "Steve Jobs",
@@ -405,8 +458,13 @@
     "omitted_facts": [
       [
         "Alan_Bean",
-        "nationality",
-        "United States"
+        "occupation",
+        "Test pilot"
+      ],
+      [
+        "Alan_Bean",
+        "was_selected_by_NASA",
+        "1963"
       ],
       [
         "Wheeler, Texas",
@@ -439,14 +497,14 @@
         "Turkey"
       ],
       [
-        "Baklava",
-        "mainIngredient",
-        "Phyllo dough, nuts, honey"
+        "Adolfo Suarez Airport",
+        "city",
+        "Madrid"
       ],
       [
-        "Baklava",
-        "type",
-        "Dessert"
+        "Adolfo Suarez Airport",
+        "elevation",
+        "609 meters"
       ],
       [
         "Madrid",
@@ -459,9 +517,9 @@
         "Texas"
       ],
       [
-        "Apple Inc",
-        "keyPeople",
-        "Tim Cook"
+        "San Antonio, Texas",
+        "country",
+        "United States"
       ],
       [
         "Cupertino, California",
@@ -479,6 +537,21 @@
         "Turkey"
       ],
       [
+        "Ankara",
+        "populationTotal",
+        "5747325"
+      ],
+      [
+        "Turkey",
+        "memberOf",
+        "NATO"
+      ],
+      [
+        "United States",
+        "memberOf",
+        "NATO"
+      ],
+      [
         "Spain",
         "memberOf",
         "NATO"
@@ -487,6 +560,11 @@
         "Steve Jobs",
         "nationality",
         "United States"
+      ],
+      [
+        "Tim Cook",
+        "education",
+        "Auburn University"
       ],
       [
         "Madrid",
@@ -502,6 +580,147 @@
         "Ankara",
         "timezone",
         "Turkey Time Zone"
+      ],
+      [
+        "United States",
+        "capital",
+        "Washington D.C."
+      ],
+      [
+        "NATO",
+        "headquarters",
+        "Brussels, Belgium"
+      ],
+      [
+        "Brussels, Belgium",
+        "country",
+        "Belgium"
+      ]
+    ]
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "baseline_c",
+    "omitted_facts": [
+      [
+        "Alan_Bean",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Alan_Bean",
+        "occupation",
+        "Test pilot"
+      ],
+      [
+        "Wheeler, Texas",
+        "country",
+        "United States"
+      ],
+      [
+        "Wheeler, Texas",
+        "timeZone",
+        "Central Time Zone"
+      ],
+      [
+        "Auburn University",
+        "city",
+        "Auburn, Alabama"
+      ],
+      [
+        "Auburn University",
+        "state",
+        "Alabama"
+      ],
+      [
+        "Auburn, Alabama",
+        "country",
+        "United States"
+      ],
+      [
+        "Auburn, Alabama",
+        "county",
+        "Lee County, Alabama"
+      ],
+      [
+        "Baklava",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "type",
+        "Dessert"
+      ],
+      [
+        "Turkey",
+        "currency",
+        "Turkish lira"
+      ],
+      [
+        "Madrid",
+        "country",
+        "Spain"
+      ],
+      [
+        "Madrid",
+        "leaderName",
+        "Manuela Carmena"
+      ],
+      [
+        "Spain",
+        "currency",
+        "Euro"
+      ],
+      [
+        "Alamo Plaza",
+        "location",
+        "San Antonio, Texas"
+      ],
+      [
+        "Alamo Plaza",
+        "state",
+        "Texas"
+      ],
+      [
+        "San Antonio, Texas",
+        "country",
+        "United States"
+      ],
+      [
+        "San Antonio, Texas",
+        "mayor",
+        "Ron Nirenberg"
+      ],
+      [
+        "Cupertino, California",
+        "country",
+        "United States"
+      ],
+      [
+        "Ankara",
+        "country",
+        "Turkey"
+      ],
+      [
+        "Turkey",
+        "memberOf",
+        "NATO"
+      ],
+      [
+        "Spain",
+        "memberOf",
+        "NATO"
+      ],
+      [
+        "Steve Jobs",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Spain",
+        "language",
+        "Spanish"
       ],
       [
         "NATO",
@@ -521,6 +740,11 @@
     "omitted_facts": [
       [
         "Alan_Bean",
+        "birthPlace",
+        "Wheeler, Texas"
+      ],
+      [
+        "Alan_Bean",
         "nationality",
         "United States"
       ],
@@ -538,11 +762,6 @@
         "Wheeler, Texas",
         "country",
         "United States"
-      ],
-      [
-        "Wheeler, Texas",
-        "timeZone",
-        "Central Time Zone"
       ],
       [
         "Auburn University",
@@ -566,6 +785,102 @@
       ],
       [
         "Baklava",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "type",
+        "Dessert"
+      ],
+      [
+        "Turkey",
+        "capital",
+        "Ankara"
+      ],
+      [
+        "Turkey",
+        "currency",
+        "Turkish lira"
+      ],
+      [
+        "Adolfo Suarez Airport",
+        "elevation",
+        "609 meters"
+      ],
+      [
+        "Alamo Plaza",
+        "location",
+        "San Antonio, Texas"
+      ],
+      [
+        "Ankara",
+        "populationTotal",
+        "5747325"
+      ],
+      [
+        "Steve Jobs",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Ankara",
+        "timezone",
+        "Turkey Time Zone"
+      ],
+      [
+        "Brussels, Belgium",
+        "country",
+        "Belgium"
+      ]
+    ]
+  },
+  {
+    "graph_name": "Synthetic_Chained_Large",
+    "mode": "smart_graph",
+    "omitted_facts": [
+      [
+        "Alan_Bean",
+        "birthDate",
+        "1932-03-15"
+      ],
+      [
+        "Alan_Bean",
+        "nationality",
+        "United States"
+      ],
+      [
+        "Wheeler, Texas",
+        "timeZone",
+        "Central Time Zone"
+      ],
+      [
+        "Auburn University",
+        "type",
+        "Public university"
+      ],
+      [
+        "Auburn, Alabama",
+        "country",
+        "United States"
+      ],
+      [
+        "Auburn, Alabama",
+        "county",
+        "Lee County, Alabama"
+      ],
+      [
+        "Baklava",
+        "origin",
+        "Turkey"
+      ],
+      [
+        "Baklava",
+        "mainIngredient",
+        "Phyllo dough, nuts, honey"
+      ],
+      [
+        "Baklava",
         "type",
         "Dessert"
       ],
@@ -585,9 +900,9 @@
         "Spain"
       ],
       [
-        "Alamo Plaza",
-        "state",
-        "Texas"
+        "Spain",
+        "currency",
+        "Euro"
       ],
       [
         "San Antonio, Texas",
@@ -595,55 +910,9 @@
         "United States"
       ],
       [
-        "Turkey",
-        "memberOf",
-        "NATO"
-      ],
-      [
-        "Spain",
-        "memberOf",
-        "NATO"
-      ],
-      [
-        "Steve Jobs",
-        "nationality",
-        "United States"
-      ],
-      [
-        "Madrid",
-        "timezone",
-        "Central European Time"
-      ],
-      [
-        "Brussels, Belgium",
+        "Cupertino, California",
         "country",
-        "Belgium"
-      ]
-    ]
-  },
-  {
-    "graph_name": "Synthetic_Chained_Large",
-    "mode": "smart_graph",
-    "omitted_facts": [
-      [
-        "Alan_Bean",
-        "birthDate",
-        "1932-03-15"
-      ],
-      [
-        "Steve Jobs",
-        "birthPlace",
-        "San Francisco"
-      ],
-      [
-        "Alan_Bean",
-        "nationality",
         "United States"
-      ],
-      [
-        "Alan_Bean",
-        "occupation",
-        "Test pilot"
       ],
       [
         "Ankara",
@@ -661,54 +930,14 @@
         "Central European Time"
       ],
       [
-        "Auburn University",
-        "type",
-        "Public university"
-      ],
-      [
-        "Auburn, Alabama",
-        "country",
-        "United States"
-      ],
-      [
-        "Spain",
-        "language",
-        "Spanish"
-      ],
-      [
-        "Baklava",
-        "mainIngredient",
-        "Phyllo dough, nuts, honey"
-      ],
-      [
-        "Baklava",
-        "type",
-        "Dessert"
+        "Ankara",
+        "timezone",
+        "Turkey Time Zone"
       ],
       [
         "Brussels, Belgium",
         "country",
         "Belgium"
-      ],
-      [
-        "Madrid",
-        "country",
-        "Spain"
-      ],
-      [
-        "Madrid",
-        "leaderName",
-        "Manuela Carmena"
-      ],
-      [
-        "Spain",
-        "currency",
-        "Euro"
-      ],
-      [
-        "Alamo Plaza",
-        "state",
-        "Texas"
       ]
     ]
   }

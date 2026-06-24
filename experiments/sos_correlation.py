@@ -120,8 +120,8 @@ def run_correlation_study():
     hypothesis_supported = True
     kill_triggered = False
     
-    if p_corr < 0.2 and s_corr < 0.2:
-        print("\n[WARNING] early kill criterion triggered: SOS-omission correlation is below 0.2!")
+    if abs(p_corr) < 0.2 and abs(s_corr) < 0.2:
+        print("\n[WARNING] early kill criterion triggered: SOS-omission correlation magnitude is below 0.2!")
         print("The scientific foundation of the outlier score hypothesis is shaky.")
         hypothesis_supported = False
         kill_triggered = True

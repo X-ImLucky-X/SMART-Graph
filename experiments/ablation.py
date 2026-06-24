@@ -40,10 +40,11 @@ def run_ablation_study():
     sos_scores = engine.compute_sos(triples)
     
     variants = [
-        {"name": "1. Baseline", "mode": "baseline_a", "evaluator": "strict"},
-        {"name": "2. Variant A (SOS Only)", "mode": "baseline_c", "evaluator": "strict"},
-        {"name": "3. Variant B (SOS + ACBS)", "mode": "smart_graph", "evaluator": "strict"},
-        {"name": "4. Full SMART-Graph", "mode": "smart_graph", "evaluator": "smga"}
+        {"name": "1. Flat + Strict", "mode": "baseline_a", "evaluator": "strict"},
+        {"name": "2. Flat + SMGA", "mode": "baseline_a", "evaluator": "smga"},
+        {"name": "3. Random + SMGA", "mode": "baseline_b", "evaluator": "smga"},
+        {"name": "4. SOS + SMGA", "mode": "baseline_c", "evaluator": "smga"},
+        {"name": "5. ACBS + SMGA (SMART)", "mode": "smart_graph", "evaluator": "smga"}
     ]
     
     ablation_results = []

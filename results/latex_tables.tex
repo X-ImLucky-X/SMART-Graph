@@ -3,17 +3,19 @@
 % ==================================================================
 
 
-\begin{table}[t]
+\begin{table}[h]
 \centering
-\caption{Cross-Model Generality Analysis (Baseline vs. SMART-Graph)}
-\label{tab:cross_model}
-\begin{tabular}{lccccc}
+\caption{Controlled Ablation Matrix on 47-Triple Graph}
+\label{tab:ablation_study}
+\begin{tabular}{llccccc}
 \toprule
-\textbf{Model} & \textbf{Baseline SDR} & \textbf{SMART SDR} & \textbf{$t$-stat} & \textbf{$p$-value} & \textbf{Cohen's $d$} \\
+\textbf{Variant} & \textbf{Serialization} & \textbf{Evaluation} & \textbf{Coverage (\%)} & \textbf{SDR} & \textbf{APS (\%)} & \textbf{Runtime (s)} \\
 \midrule
-qwen2.5:7b & 0.3133 & 0.4669 & -2.0112 & 0.1820 & \mathbf{-1.1612} \\
-llama3:latest & 0.5280 & 0.4264 & 4.8999 & \mathbf{0.0392} & \mathbf{2.8289} \\
-gemma:latest & 0.6658 & 0.4000 & 1.7237 & 0.2269 & \mathbf{0.9952} \\
+1. Flat + Strict & Flat & Strict & 0.00\% & 1.4468 & 0.00\% & 7.29s \\
+2. Flat + SMGA & Flat & SMGA & 46.81\% & 0.5319 & 66.67\% & 11.33s \\
+3. Random + SMGA & Random & SMGA & 48.94\% & 0.5319 & 55.56\% & 7.31s \\
+4. SOS + SMGA & SOS & SMGA & 44.68\% & 0.5532 & \mathbf{88.89\%} & 11.33s \\
+5. ACBS + SMGA (SMART) & ACBS & SMGA & \mathbf{57.45\%} & \mathbf{0.5106} & 66.67\% & 168.63s \\
 \bottomrule
 \end{tabular}
 \end{table}
@@ -22,33 +24,77 @@ gemma:latest & 0.6658 & 0.4000 & 1.7237 & 0.2269 & \mathbf{0.9952} \\
 
 \begin{table*}[t]
 \centering
-\caption{Large Graph Scaling Benchmarks (Fact Coverage \% / Semantic Divergence Rate)}
-\label{tab:large_graph}
-\begin{tabular}{ccccc}
+\caption{Rigorous Benchmark Results: Fact Coverage and Semantic Divergence Rate}
+\label{tab:benchmark_rigorous}
+\begin{tabular}{llccccc}
 \toprule
-\textbf{Scale (Triples)} & \textbf{Flat Seq. (A)} & \textbf{Flat Random (B)} & \textbf{Modularity (D)} & \textbf{SMART-Graph (Ours)} \\
+\textbf{Category} & \textbf{Metric} & \textbf{Flat Seq.} & \textbf{Flat Random} & \textbf{Flat SOS} & \textbf{Modularity} & \textbf{SMART-Graph (Ours)} \\
 \midrule
-40 & 60.00\% / 0.4250 & 57.50\% / 0.4500 & \mathbf{80.00\%} / \mathbf{0.2750} & 65.00\% / 0.4750 \\
-50 & 36.73\% / 0.6531 & 40.82\% / \mathbf{0.6122} & 36.73\% / 0.6735 & \mathbf{51.02\%} / 0.6735 \\
-60 & 41.38\% / \mathbf{0.5862} & 39.66\% / 0.6034 & 32.76\% / 0.6724 & \mathbf{46.55\%} / 0.7069 \\
-70 & 30.88\% / 0.7059 & 44.12\% / 0.5882 & \mathbf{61.76\%} / \mathbf{0.4412} & 52.94\% / 0.5000 \\
+\multicolumn{7}{l}{\textit{By Graph Size}} \\
+Large & Coverage (\%) & 53.19\% & 40.43\% & 44.68\% & \mathbf{59.57\%} & 57.45\% \\
+ & SDR & \mathbf{0.5106} & 0.7447 & 0.5532 & 0.5532 & \mathbf{0.5106} \\
+Small & Coverage (\%) & 87.93\% & \mathbf{92.72\%} & 91.89\% & 88.73\% & 91.60\% \\
+ & SDR & 0.4965 & \mathbf{0.4537} & 0.5012 & 0.8566 & 0.6892 \\
+\midrule
+\multicolumn{7}{l}{\textit{By Dataset Source}} \\
+Dataset A (WebNLG) & Coverage (\%) & 87.93\% & \mathbf{92.72\%} & 91.89\% & 88.73\% & 91.60\% \\
+ & SDR & 0.4965 & \mathbf{0.4537} & 0.5012 & 0.8566 & 0.6892 \\
+Dataset B (Synthetic) & Coverage (\%) & 53.19\% & 40.43\% & 44.68\% & \mathbf{59.57\%} & 57.45\% \\
+ & SDR & \mathbf{0.5106} & 0.7447 & 0.5532 & 0.5532 & \mathbf{0.5106} \\
 \bottomrule
 \end{tabular}
 \end{table*}
 
 
 
-\begin{table}[t]
+\begin{table}[h]
 \centering
-\caption{Pareto-Optimal Hyperparameter Configurations (Coverage vs. SDR)}
-\label{tab:pareto_frontier}
-\begin{tabular}{ccccc}
+\caption{Fact Omissions vs. Hallucinations Count Breakdown}
+\label{tab:omissions_hallucinations}
+\begin{tabular}{lccccc}
 \toprule
-\textbf{Config ($K, \mathcal{B}$)} & \textbf{Avg. Coverage} & \textbf{Avg. SDR} & \textbf{Avg. APS} & \textbf{Avg. Runtime (s)} \\
+ & \multicolumn{2}{c}{\textbf{Small Graphs (WebNLG)}} & & \multicolumn{2}{c}{\textbf{Large Graphs (Synthetic)}} \\
+\cmidrule{2-3} \cmidrule{5-6}
+\textbf{Mode} & \textbf{Omissions} & \textbf{Hallucinations} & & \textbf{Omissions} & \textbf{Hallucinations} \\
 \midrule
-($K=8$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 9.48s \\
-($K=10$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 0.00s \\
-($K=12$, $\mathcal{B}=2.0$) & 75.76\% & 0.5776 & 96.00\% & 0.00s \\
+Flat Sequential & 1.11 & \mathbf{2.11} & & 22.0 & 2.0 \\
+Flat Random & \mathbf{0.67} & 2.22 & & 28.0 & 7.0 \\
+Flat SOS & 0.89 & 2.44 & & 26.0 & \mathbf{0.0} \\
+Modularity & 1.11 & 4.44 & & \mathbf{19.0} & 7.0 \\
+SMART-Graph & 0.78 & 4.22 & & 20.0 & 4.0 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering
+\caption{Paired Effect Sizes (Cohen's $d$) on Fact Coverage}
+\label{tab:effect_sizes}
+\begin{tabular}{lc}
+\toprule
+\textbf{Comparison} & \textbf{Cohen's $d$} \\
+\midrule
+SMART-Graph vs. Flat Sequential & 0.2630 (Small) \\
+SMART-Graph vs. Flat Random & 0.0644 (Negligible) \\
+SMART-Graph vs. Flat SOS Descending & 0.0936 (Negligible) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+
+
+\begin{table}[h]
+\centering
+\caption{Attention Protection Score (APS) Validation Against Fact Coverage}
+\label{tab:aps_validation}
+\begin{tabular}{lcc}
+\toprule
+\textbf{Correlation Metric} & \textbf{Coefficient} & \textbf{$p$-value} \\
+\midrule
+Pearson ($r$) & \mathbf{0.3795} & \mathbf{0.0066} \\
+Spearman ($\rho$) & \mathbf{0.5312} & \mathbf{7.22e-05} \\
 \bottomrule
 \end{tabular}
 \end{table}

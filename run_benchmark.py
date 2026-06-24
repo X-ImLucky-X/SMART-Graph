@@ -98,8 +98,8 @@ def run_benchmark():
     print(f"Prepared {len(test_graphs)} test graphs across sizes from {test_graphs[0]['scale']} to {test_graphs[-1]['scale']} triples.")
     
     # 3. Benchmark Execution Loop
-    # Baselines: A (Flat), B (Flat Random), D (Modularity Clustering), E (Proposed SMART-Graph / ACBS)
-    modes = ["baseline_a", "baseline_b", "baseline_d", "smart_graph"]
+    # Baselines: A (Flat), B (Flat Random), C (Flat SOS Descending), D (Modularity Clustering), E (Proposed SMART-Graph / ACBS)
+    modes = ["baseline_a", "baseline_b", "baseline_c", "baseline_d", "smart_graph"]
     run_records = []
     
     # Position tracking structures for U-shaped attention retention curves
@@ -252,17 +252,20 @@ def run_benchmark():
     # Collect paired samples of SDR for each task under Baseline A vs Proposed
     sdr_a = [r["smga_sdr"] for r in run_records if r["mode"] == "baseline_a"]
     sdr_b = [r["smga_sdr"] for r in run_records if r["mode"] == "baseline_b"]
+    sdr_c = [r["smga_sdr"] for r in run_records if r["mode"] == "baseline_c"]
     sdr_d = [r["smga_sdr"] for r in run_records if r["mode"] == "baseline_d"]
     sdr_smart = [r["smga_sdr"] for r in run_records if r["mode"] == "smart_graph"]
     
     # paired t-tests
     t_a, p_a = ttest_rel(sdr_a, sdr_smart)
     t_b, p_b = ttest_rel(sdr_b, sdr_smart)
+    t_c, p_c = ttest_rel(sdr_c, sdr_smart)
     t_d, p_d = ttest_rel(sdr_d, sdr_smart)
     
     # cohen's d
     d_a = compute_cohens_d(sdr_a, sdr_smart)
     d_b = compute_cohens_d(sdr_b, sdr_smart)
+    d_c = compute_cohens_d(sdr_c, sdr_smart)
     d_d = compute_cohens_d(sdr_d, sdr_smart)
     
     # 5. Compile Averages with Confidence Intervals
@@ -329,10 +332,82 @@ def run_benchmark():
         "statistical_tests": {
             "baseline_a_vs_smart": {"t_stat": float(t_a) if not np.isnan(t_a) else 0.0, "p_value": float(p_a) if not np.isnan(p_a) else 1.0, "cohens_d": float(d_a)},
             "baseline_b_vs_smart": {"t_stat": float(t_b) if not np.isnan(t_b) else 0.0, "p_value": float(p_b) if not np.isnan(p_b) else 1.0, "cohens_d": float(d_b)},
+            "baseline_c_vs_smart": {"t_stat": float(t_c) if not np.isnan(t_c) else 0.0, "p_value": float(p_c) if not np.isnan(p_c) else 1.0, "cohens_d": float(d_c)},
             "baseline_d_vs_smart": {"t_stat": float(t_d) if not np.isnan(t_d) else 0.0, "p_value": float(p_d) if not np.isnan(p_d) else 1.0, "cohens_d": float(d_d)}
         },
         "runs": run_records
     }
+    
+    # 5.5 Categorized Rigorous Benchmark Aggregation
+    categorized_results = {
+        "size_categories": {},
+        "dataset_categories": {}
+    }
+    
+    def get_size_cat(scale):
+        if scale < 15:
+            return "Small"
+        elif 15 <= scale <= 30:
+            return "Medium"
+        elif 31 <= scale <= 50:
+            return "Large"
+        else:
+            return "Very Large"
+            
+    def get_dataset_cat(name):
+        return "Dataset A (WebNLG)" if name.startswith("WebNLG") else "Dataset B (Synthetic)"
+        
+    for mode in modes:
+        mode_runs = [r for r in run_records if r["mode"] == mode]
+        
+        # Aggregate by size
+        for r in mode_runs:
+            cat = get_size_cat(r["scale"])
+            if cat not in categorized_results["size_categories"]:
+                categorized_results["size_categories"][cat] = {}
+            if mode not in categorized_results["size_categories"][cat]:
+                categorized_results["size_categories"][cat][mode] = []
+            categorized_results["size_categories"][cat][mode].append(r)
+            
+        # Aggregate by dataset
+        for r in mode_runs:
+            cat = get_dataset_cat(r["graph_name"])
+            if cat not in categorized_results["dataset_categories"]:
+                categorized_results["dataset_categories"][cat] = {}
+            if mode not in categorized_results["dataset_categories"][cat]:
+                categorized_results["dataset_categories"][cat][mode] = []
+            categorized_results["dataset_categories"][cat][mode].append(r)
+            
+    rigorous_aggregates = {
+        "by_size": {},
+        "by_dataset": {}
+    }
+    
+    for cat, modes_dict in categorized_results["size_categories"].items():
+        rigorous_aggregates["by_size"][cat] = {}
+        for m, runs in modes_dict.items():
+            rigorous_aggregates["by_size"][cat][m] = {
+                "coverage": float(np.mean([r["smga_coverage"] for r in runs])) if runs else 0.0,
+                "sdr": float(np.mean([r["smga_sdr"] for r in runs])) if runs else 0.0,
+                "omissions": float(np.mean([r["omissions"] for r in runs])) if runs else 0.0,
+                "hallucinations": float(np.mean([r["hallucinations"] for r in runs])) if runs else 0.0,
+                "count": len(runs)
+            }
+            
+    for cat, modes_dict in categorized_results["dataset_categories"].items():
+        rigorous_aggregates["by_dataset"][cat] = {}
+        for m, runs in modes_dict.items():
+            rigorous_aggregates["by_dataset"][cat][m] = {
+                "coverage": float(np.mean([r["smga_coverage"] for r in runs])) if runs else 0.0,
+                "sdr": float(np.mean([r["smga_sdr"] for r in runs])) if runs else 0.0,
+                "omissions": float(np.mean([r["omissions"] for r in runs])) if runs else 0.0,
+                "hallucinations": float(np.mean([r["hallucinations"] for r in runs])) if runs else 0.0,
+                "count": len(runs)
+            }
+            
+    with open(os.path.join("results", "benchmark_rigorous.json"), "w", encoding="utf-8") as f:
+        json.dump(rigorous_aggregates, f, indent=2, ensure_ascii=False)
+    print("Exported results/benchmark_rigorous.json")
     
     # Find next run number
     run_dir = os.path.join("experiments", "runs")

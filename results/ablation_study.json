@@ -1,38 +1,47 @@
 [
   {
-    "variant": "1. Baseline",
-    "sdr": 1.4043,
+    "variant": "1. Flat + Strict",
+    "sdr": 1.4468,
     "coverage": 0.0,
     "aps": 0.0,
     "omissions": 47,
-    "hallucinations": 19,
-    "runtime_seconds": 3.92
+    "hallucinations": 21,
+    "runtime_seconds": 7.29
   },
   {
-    "variant": "2. Variant A (SOS Only)",
-    "sdr": 1.4681,
-    "coverage": 0.0213,
-    "aps": 0.1111,
-    "omissions": 46,
-    "hallucinations": 23,
-    "runtime_seconds": 4.68
-  },
-  {
-    "variant": "3. Variant B (SOS + ACBS)",
-    "sdr": 1.7234,
-    "coverage": 0.0,
-    "aps": 0.0,
-    "omissions": 47,
-    "hallucinations": 34,
-    "runtime_seconds": 129.74
-  },
-  {
-    "variant": "4. Full SMART-Graph",
+    "variant": "2. Flat + SMGA",
     "sdr": 0.5319,
-    "coverage": 0.5745,
+    "coverage": 0.4681,
+    "aps": 0.6667,
+    "omissions": 25,
+    "hallucinations": 0,
+    "runtime_seconds": 11.33
+  },
+  {
+    "variant": "3. Random + SMGA",
+    "sdr": 0.5319,
+    "coverage": 0.4894,
     "aps": 0.5556,
+    "omissions": 24,
+    "hallucinations": 1,
+    "runtime_seconds": 7.31
+  },
+  {
+    "variant": "4. SOS + SMGA",
+    "sdr": 0.5532,
+    "coverage": 0.4468,
+    "aps": 0.8889,
+    "omissions": 26,
+    "hallucinations": 0,
+    "runtime_seconds": 11.33
+  },
+  {
+    "variant": "5. ACBS + SMGA (SMART)",
+    "sdr": 0.5106,
+    "coverage": 0.5745,
+    "aps": 0.6667,
     "omissions": 20,
-    "hallucinations": 5,
-    "runtime_seconds": 139.83
+    "hallucinations": 4,
+    "runtime_seconds": 168.63
   }
 ]

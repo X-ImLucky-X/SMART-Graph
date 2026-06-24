@@ -1,0 +1,154 @@
+{
+  "by_size": {
+    "Small": {
+      "baseline_a": {
+        "coverage": 0.8792666666666666,
+        "sdr": 0.49652222222222225,
+        "omissions": 1.1111111111111112,
+        "hallucinations": 2.111111111111111,
+        "count": 9
+      },
+      "baseline_b": {
+        "coverage": 0.927211111111111,
+        "sdr": 0.45366666666666666,
+        "omissions": 0.6666666666666666,
+        "hallucinations": 2.2222222222222223,
+        "count": 9
+      },
+      "baseline_c": {
+        "coverage": 0.9189444444444445,
+        "sdr": 0.5011555555555556,
+        "omissions": 0.8888888888888888,
+        "hallucinations": 2.4444444444444446,
+        "count": 9
+      },
+      "baseline_d": {
+        "coverage": 0.8873111111111112,
+        "sdr": 0.8565666666666667,
+        "omissions": 1.1111111111111112,
+        "hallucinations": 4.444444444444445,
+        "count": 9
+      },
+      "smart_graph": {
+        "coverage": 0.9159666666666667,
+        "sdr": 0.6891777777777777,
+        "omissions": 0.7777777777777778,
+        "hallucinations": 4.222222222222222,
+        "count": 9
+      }
+    },
+    "Large": {
+      "baseline_a": {
+        "coverage": 0.5319,
+        "sdr": 0.5106,
+        "omissions": 22.0,
+        "hallucinations": 2.0,
+        "count": 1
+      },
+      "baseline_b": {
+        "coverage": 0.4043,
+        "sdr": 0.7447,
+        "omissions": 28.0,
+        "hallucinations": 7.0,
+        "count": 1
+      },
+      "baseline_c": {
+        "coverage": 0.4468,
+        "sdr": 0.5532,
+        "omissions": 26.0,
+        "hallucinations": 0.0,
+        "count": 1
+      },
+      "baseline_d": {
+        "coverage": 0.5957,
+        "sdr": 0.5532,
+        "omissions": 19.0,
+        "hallucinations": 7.0,
+        "count": 1
+      },
+      "smart_graph": {
+        "coverage": 0.5745,
+        "sdr": 0.5106,
+        "omissions": 20.0,
+        "hallucinations": 4.0,
+        "count": 1
+      }
+    }
+  },
+  "by_dataset": {
+    "Dataset A (WebNLG)": {
+      "baseline_a": {
+        "coverage": 0.8792666666666666,
+        "sdr": 0.49652222222222225,
+        "omissions": 1.1111111111111112,
+        "hallucinations": 2.111111111111111,
+        "count": 9
+      },
+      "baseline_b": {
+        "coverage": 0.927211111111111,
+        "sdr": 0.45366666666666666,
+        "omissions": 0.6666666666666666,
+        "hallucinations": 2.2222222222222223,
+        "count": 9
+      },
+      "baseline_c": {
+        "coverage": 0.9189444444444445,
+        "sdr": 0.5011555555555556,
+        "omissions": 0.8888888888888888,
+        "hallucinations": 2.4444444444444446,
+        "count": 9
+      },
+      "baseline_d": {
+        "coverage": 0.8873111111111112,
+        "sdr": 0.8565666666666667,
+        "omissions": 1.1111111111111112,
+        "hallucinations": 4.444444444444445,
+        "count": 9
+      },
+      "smart_graph": {
+        "coverage": 0.9159666666666667,
+        "sdr": 0.6891777777777777,
+        "omissions": 0.7777777777777778,
+        "hallucinations": 4.222222222222222,
+        "count": 9
+      }
+    },
+    "Dataset B (Synthetic)": {
+      "baseline_a": {
+        "coverage": 0.5319,
+        "sdr": 0.5106,
+        "omissions": 22.0,
+        "hallucinations": 2.0,
+        "count": 1
+      },
+      "baseline_b": {
+        "coverage": 0.4043,
+        "sdr": 0.7447,
+        "omissions": 28.0,
+        "hallucinations": 7.0,
+        "count": 1
+      },
+      "baseline_c": {
+        "coverage": 0.4468,
+        "sdr": 0.5532,
+        "omissions": 26.0,
+        "hallucinations": 0.0,
+        "count": 1
+      },
+      "baseline_d": {
+        "coverage": 0.5957,
+        "sdr": 0.5532,
+        "omissions": 19.0,
+        "hallucinations": 7.0,
+        "count": 1
+      },
+      "smart_graph": {
+        "coverage": 0.5745,
+        "sdr": 0.5106,
+        "omissions": 20.0,
+        "hallucinations": 4.0,
+        "count": 1
+      }
+    }
+  }
+}

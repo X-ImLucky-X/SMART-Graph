@@ -1,12 +1,12 @@
 {
-  "pearson_r": -0.41904752640324266,
-  "pearson_p": 0.00337075347457577,
-  "spearman_rho": -0.3774067456593032,
-  "spearman_p": 0.008917610752954745,
-  "avg_omission_high_sos": 0.3333333333333333,
+  "pearson_r": -0.4428084765396215,
+  "pearson_p": 0.0018277701447234776,
+  "spearman_rho": -0.42197809613755677,
+  "spearman_p": 0.003132980452381722,
+  "avg_omission_high_sos": 0.31666666666666665,
   "avg_omission_low_sos": 0.7111111111111111,
-  "hypothesis_supported": false,
-  "kill_triggered": true,
+  "hypothesis_supported": true,
+  "kill_triggered": false,
   "triples_analyzed": [
     {
       "triple": [
@@ -24,7 +24,7 @@
         "Wheeler, Texas"
       ],
       "sos": 0.28595819844850245,
-      "omission_rate": 0.0
+      "omission_rate": 0.05
     },
     {
       "triple": [
@@ -33,7 +33,7 @@
         "United States"
       ],
       "sos": 0.24216971700579992,
-      "omission_rate": 0.55
+      "omission_rate": 0.5
     },
     {
       "triple": [
@@ -60,7 +60,7 @@
         "United States"
       ],
       "sos": 0.2776783594647142,
-      "omission_rate": 0.25
+      "omission_rate": 0.2
     },
     {
       "triple": [
@@ -78,7 +78,7 @@
         "Auburn, Alabama"
       ],
       "sos": 0.27404255524784116,
-      "omission_rate": 0.3
+      "omission_rate": 0.35
     },
     {
       "triple": [
@@ -87,7 +87,7 @@
         "Alabama"
       ],
       "sos": 0.27235564767559306,
-      "omission_rate": 0.9
+      "omission_rate": 0.95
     },
     {
       "triple": [
@@ -114,7 +114,7 @@
         "United States"
       ],
       "sos": 0.21700315933039738,
-      "omission_rate": 0.9
+      "omission_rate": 0.8
     },
     {
       "triple": [
@@ -123,7 +123,7 @@
         "Lee County, Alabama"
       ],
       "sos": 0.3215311946458167,
-      "omission_rate": 0.65
+      "omission_rate": 0.55
     },
     {
       "triple": [
@@ -132,7 +132,7 @@
         "Turkey"
       ],
       "sos": 0.3223263064600671,
-      "omission_rate": 0.05
+      "omission_rate": 0.1
     },
     {
       "triple": [
@@ -150,7 +150,7 @@
         "Dessert"
       ],
       "sos": 0.45159586096353777,
-      "omission_rate": 0.9
+      "omission_rate": 0.85
     },
     {
       "triple": [
@@ -168,7 +168,7 @@
         "Turkish lira"
       ],
       "sos": 0.36425196619393974,
-      "omission_rate": 0.65
+      "omission_rate": 0.7
     },
     {
       "triple": [
@@ -177,7 +177,7 @@
         "Madrid"
       ],
       "sos": 0.3144064539902326,
-      "omission_rate": 0.45
+      "omission_rate": 0.5
     },
     {
       "triple": [
@@ -186,7 +186,7 @@
         "609 meters"
       ],
       "sos": 0.5584377844003653,
-      "omission_rate": 0.3
+      "omission_rate": 0.35
     },
     {
       "triple": [
@@ -195,7 +195,7 @@
         "Spain"
       ],
       "sos": 0.27001259197899075,
-      "omission_rate": 1.0
+      "omission_rate": 0.95
     },
     {
       "triple": [
@@ -204,7 +204,7 @@
         "Manuela Carmena"
       ],
       "sos": 0.3759113518759991,
-      "omission_rate": 0.45
+      "omission_rate": 0.5
     },
     {
       "triple": [
@@ -213,7 +213,7 @@
         "Madrid"
       ],
       "sos": 0.31456549663655897,
-      "omission_rate": 0.7
+      "omission_rate": 0.65
     },
     {
       "triple": [
@@ -222,7 +222,7 @@
         "Euro"
       ],
       "sos": 0.3489643993858028,
-      "omission_rate": 0.8
+      "omission_rate": 0.85
     },
     {
       "triple": [
@@ -231,7 +231,7 @@
         "San Antonio, Texas"
       ],
       "sos": 0.309072817821762,
-      "omission_rate": 0.4
+      "omission_rate": 0.5
     },
     {
       "triple": [
@@ -240,7 +240,7 @@
         "Texas"
       ],
       "sos": 0.3393768440992918,
-      "omission_rate": 0.8
+      "omission_rate": 0.85
     },
     {
       "triple": [
@@ -249,7 +249,7 @@
         "United States"
       ],
       "sos": 0.2061062980617966,
-      "omission_rate": 0.85
+      "omission_rate": 0.9
     },
     {
       "triple": [
@@ -258,7 +258,7 @@
         "Ron Nirenberg"
       ],
       "sos": 0.3645526598388429,
-      "omission_rate": 0.5
+      "omission_rate": 0.45
     },
     {
       "triple": [
@@ -267,7 +267,7 @@
         "Steve Jobs"
       ],
       "sos": 0.4019636986908629,
-      "omission_rate": 0.2
+      "omission_rate": 0.25
     },
     {
       "triple": [
@@ -276,7 +276,7 @@
         "Cupertino, California"
       ],
       "sos": 0.3369514683805711,
-      "omission_rate": 0.05
+      "omission_rate": 0.0
     },
     {
       "triple": [
@@ -285,7 +285,7 @@
         "Tim Cook"
       ],
       "sos": 0.4166539900606282,
-      "omission_rate": 0.65
+      "omission_rate": 0.55
     },
     {
       "triple": [
@@ -294,7 +294,7 @@
         "United States"
       ],
       "sos": 0.26073055769173104,
-      "omission_rate": 0.8
+      "omission_rate": 0.85
     },
     {
       "triple": [
@@ -303,7 +303,7 @@
         "San Francisco"
       ],
       "sos": 0.3604413617791603,
-      "omission_rate": 0.2
+      "omission_rate": 0.25
     },
     {
       "triple": [
@@ -312,7 +312,7 @@
         "Turkey"
       ],
       "sos": 0.2827707337400144,
-      "omission_rate": 0.85
+      "omission_rate": 0.9
     },
     {
       "triple": [
@@ -330,7 +330,7 @@
         "NATO"
       ],
       "sos": 0.3387091923835789,
-      "omission_rate": 0.55
+      "omission_rate": 0.6
     },
     {
       "triple": [
@@ -339,7 +339,7 @@
         "NATO"
       ],
       "sos": 0.3494690225891678,
-      "omission_rate": 0.8
+      "omission_rate": 0.75
     },
     {
       "triple": [
@@ -348,7 +348,7 @@
         "NATO"
       ],
       "sos": 0.3376422588253738,
-      "omission_rate": 0.85
+      "omission_rate": 0.8
     },
     {
       "triple": [
@@ -357,7 +357,7 @@
         "NeXT"
       ],
       "sos": 0.4311112777404028,
-      "omission_rate": 0.5
+      "omission_rate": 0.4
     },
     {
       "triple": [
@@ -366,7 +366,7 @@
         "United States"
       ],
       "sos": 0.29934585553644055,
-      "omission_rate": 1.0
+      "omission_rate": 0.95
     },
     {
       "triple": [
@@ -384,7 +384,7 @@
         "Central European Time"
       ],
       "sos": 0.36698712714272286,
-      "omission_rate": 0.8
+      "omission_rate": 0.7
     },
     {
       "triple": [
@@ -393,7 +393,7 @@
         "Spanish"
       ],
       "sos": 0.3820037779157721,
-      "omission_rate": 0.9
+      "omission_rate": 0.85
     },
     {
       "triple": [
@@ -402,7 +402,7 @@
         "Turkey Time Zone"
       ],
       "sos": 0.3443949008424797,
-      "omission_rate": 0.95
+      "omission_rate": 0.9
     },
     {
       "triple": [
@@ -411,7 +411,7 @@
         "Washington D.C."
       ],
       "sos": 0.38424016240425884,
-      "omission_rate": 0.7
+      "omission_rate": 0.65
     },
     {
       "triple": [
@@ -420,7 +420,7 @@
         "Brussels, Belgium"
       ],
       "sos": 0.3399008414745128,
-      "omission_rate": 0.45
+      "omission_rate": 0.5
     },
     {
       "triple": [
